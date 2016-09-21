@@ -1,0 +1,215 @@
+$issue-padding: 20px;
+$color-issue-bg: #fff9c4;
+
+$progress-height: 0.6em;
+$color-progress-closed-bg: #4DB6AC;
+
+$histry-padding: 15px;
+$color-history-bg: #ffffff;
+$color-history-border: #dfe8f1;
+
+$timeline-point-size: 8px;
+$color-timeline: #e5e5e5;
+
+$note-title-margin: 0 19px 0 10px;
+$note-title-padding: 6px 9px;
+$color-note-title-bg: #e9eaf1;
+
+
+div.issue {
+  background: $color-issue-bg;
+  padding: $issue-padding;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  border: none;
+
+  hr {
+    width: auto;
+    background: rgba(0,0,0,0.12);
+    padding: 0 10px;
+    margin: 8px -10px;
+  }
+}
+
+table.progress {
+  margin: 4px 6px 0px 0;
+
+  td {
+    height: $progress-height;
+    border-radius: 2px;
+
+    &.closed {
+      background-color: $color-progress-closed-bg;
+    }
+  }
+}
+
+p.percent {
+  padding-top: 2px;
+}
+
+.edit_issue fieldset {
+  border: none;
+  background: #f4f7f9;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 23px 12px 13px;
+
+  legend {
+    position: relative;
+    top: 18px;
+  }
+}
+
+// 作成日・更新日に実際の日時を表示
+a[href*="activity"][title*=":"] {
+  margin: 0 3px;
+  box-shadow: inset 0 -1.5em 0 rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  padding: 0 3px;
+  border-radius: 3px;
+  &:before {
+    content: ' [' attr(title) '] ';
+  }
+}
+
+#history {
+  background-color: $color-history-bg;
+  margin-bottom: 30px;
+  padding: $histry-padding;
+  border-radius: 3px;
+  border: 1px solid $color-history-border;
+
+  .journal {
+    padding: 3px;
+    background-color: $color-history-bg;
+    position: relative;
+    overflow: visible;
+
+    &:before {
+      content: "";
+      width: $timeline-point-size;
+      height: $timeline-point-size;
+      background-color: $color-history-bg;
+      position: absolute;
+      left: 6px;
+      top: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px $color-timeline;
+      z-index: 1;
+    }
+
+    &:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background-color: $color-timeline;
+      position: absolute;
+      left: 9px;
+      top: 0px;
+    }
+
+    &:first-of-type:after {
+      top: 15px;
+    }
+
+    &:last-of-type:after {
+      height: 18px;
+    }
+
+    &:first-of-type:last-of-type:after {
+      content: none;
+    }
+
+    h4 {
+      left: 20px;
+      position: relative;
+      margin: $note-title-margin;
+      border: none;
+      font-weight: bold;
+      background-color: $color-note-title-bg;
+      padding: $note-title-padding;
+      font-size: 0.9em;
+      border-radius: 4px;
+
+      a[href*="activity"][title*=":"] {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 6px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 6px solid $color-note-title-bg;
+      }
+
+      .gravatar {
+        position: absolute;
+        left: -35px;
+        z-index: 30;
+      }
+    }
+
+    .details {
+      list-style: none;
+      font-size: 0.9em;
+      line-height: 1.5;
+      margin-bottom: 1em;
+      padding-left: 46px;
+
+      li {
+        position: relative;
+
+        &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: .5em;
+          left: -1em;
+          width: 4px;
+          height: 4px;
+          background-color: $color-history-bg;
+          border: 1px solid #888;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    form {
+      .jstElements, .jstEditor, .wiki, p {
+        margin-left: 32px;
+      }
+    }
+    .wiki {
+      margin-left: 32px;
+    }
+  }
+}
+
+.tabular p {
+  padding-left: 160px;
+
+  .edit_issue & {
+    padding-left: 130px;
+  }
+}
+
+.tabular label {
+  margin-left: -160px;
+  width: 150px;
+
+  .edit_issue & {
+    margin-left: -130px;
+    width: 120px;
+  }
+}
+
+fieldset#filters td.values input {
+  height: inherit;
+}

@@ -1,0 +1,160 @@
+$input-padding: 4px 6px;
+$color-input-bg: #ffffff;
+$color-input-text: #2b2f33;
+$color-input-border: #dfe8f1;
+$color-input-border-focus: #3da6ff;
+
+$color-submit-text: #ffffff;
+$color-submit-border: #34495e;
+$color-submit-bg: #34495e;
+$color-submit-hover-border: #3f5872;
+$color-submit-hover-bg: #3f5872;
+
+$color-button-text: #555a60;
+$color-button-border: #dfe8f1;
+$color-button-bg: #fefeff;
+$color-button-hover-text: #2b2f33;
+$color-button-hover-border: #bfc8d1;
+$color-button-hover-bg: #f3f3f9;
+
+$checkbox-size: 16px;
+$checkbox-margin: 7px 0 7px 2px;
+
+
+#wrapper, .modal {
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    background-color: $color-input-bg;
+    padding: $input-padding;
+    color: $color-input-text;
+    border: 1px solid $color-input-border;
+    box-shadow: inset 1px 1px 3px #f6f6f6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    height: auto;
+    line-height: 1.3;
+
+    &:hover {
+      border-color: #ccc;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $color-input-border-focus !important;
+    }
+
+    &.filename {
+      box-shadow: none;
+    }
+
+    &[type="file"] {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  // テキストボックスで等幅フォントを使用
+
+  input[type="text"] {
+    font-family: "Osaka-Mono", "MS Gothic", sans-serif;
+    font-size: 100%;
+  }
+
+  textarea.wiki-edit {
+    font-size: 13px;
+    font-family: "Osaka-Mono", "MS Gothic", sans-serif;
+    letter-spacing: normal;
+    line-height: 130%;
+  }
+
+  select {
+    height: auto;
+    appearance: none;
+    background-image: url('../images/arrow.svg');
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    padding-right: 2.5em;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:hover {
+      border-color: #ccc;
+      outline: none;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $color-input-border-focus !important;
+    }
+
+    // Fix Firefox dotted focusring
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
+
+    &[multiple="multiple"] {
+      background: white;
+      padding-right: 5px;
+    }
+  }
+
+  .tabular label {
+    margin-top: 5px;
+  }
+
+  label.inline {
+    margin-right: 5px;
+  }
+
+  input[type="submit"] {
+    border-radius: 3px;
+    padding: 2px 12px 3px;
+    color: $color-submit-text;
+    border: 1px solid $color-submit-border;
+    background: $color-submit-bg;
+    box-shadow: none;
+    &:hover, &:active {
+      border-color: $color-submit-hover-border;
+      background-color: $color-submit-hover-bg;
+    }
+    &:active {
+      outline: 0;
+      box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    }
+  }
+
+  input[type="button"] {
+    border-radius: 3px;
+    padding: 2px 12px 3px;
+    color: $color-button-text;
+    border: 1px solid $color-button-border;
+    background: $color-button-bg;
+    box-shadow: none;
+    &:hover, &:active {
+      color: $color-button-hover-text;
+      border-color: $color-button-hover-border;
+      background-color: $color-button-hover-bg;
+    }
+    &:active {
+      outline: 0;
+      box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    }
+  }
+
+  input[type="checkbox"] {
+    width: $checkbox-size;
+    height: $checkbox-size;
+    margin: $checkbox-margin;
+    box-shadow: none;
+  }
+}
+
+form .attributes select { width: 85%; }

@@ -1,0 +1,36 @@
+$color-modal-titlebar-bg:     #f7f9fa;
+$color-modal-titlebar-text:   #555555;
+$color-modal-titlebar-border: #e5e5e5;
+
+
+div.modal {
+  border: none;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0;
+
+  .ui-dialog-titlebar {
+    padding: 15px;
+    border: none;
+    background: $color-modal-titlebar-bg;
+    color: $color-modal-titlebar-text;
+    font-weight: normal;
+    border-bottom: 1px solid $color-modal-titlebar-border;
+
+    .ui-dialog-title {
+      margin: 0;
+    }
+
+    .ui-dialog-titlebar-close {
+      right: 1em;
+    }
+  }
+
+  .ui-dialog-content {
+    padding: 5px 15px 15px;
+  }
+}
+
+.ui-widget-overlay {
+  background: black;
+  opacity: 0.55;
+}

@@ -1,0 +1,14 @@
+h1, h2, h3, h4 {
+  font-weight: normal;
+  color: #333;
+}
+
+#content h1 {
+  color: #333;
+}
+
+.wiki {
+  h1, h2, h3, h4 {
+    font-weight: bold;
+  }
+}

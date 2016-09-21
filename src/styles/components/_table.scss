@@ -1,0 +1,101 @@
+$table-head-cell-padding: 5px;
+$table-cell-padding:      4px;
+$line-height-base:        1.74;
+$line-height-computed:    25px;
+$color-table-border:      #dfe8f1;
+$color-th-bg:             #eff1f9;
+$color-odd-bg:            #f9f9f9;
+
+$color-priority-lowest  : #81D4FA;
+$color-priority-high3   : #EF9A9A;
+$color-priority-high2   : #E53935;
+$color-priority-highest : #C62828;
+$color-closed           : #777777;
+
+
+table.list {
+  border: none;
+  margin-bottom: $line-height-computed;
+  background-color: white;
+
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $table-cell-padding;
+        line-height: $line-height-base;
+        vertical-align: top;
+        border-top: 1px solid $color-table-border;
+        font-size: 0.9em;
+        &.checkbox {
+          padding: $table-cell-padding;
+
+          input {
+            margin: 0 7px 0 15px !important;
+          }
+        }
+      }
+      &.priority-lowest {
+        background-color: lighten($color-priority-lowest, 20%);
+        td.checkbox {
+          box-shadow: 6px 0px 0px 0px $color-priority-lowest inset;
+        }
+      }
+      &.priority-high3 {
+        background-color: lighten($color-priority-high3, 18%);
+        td.checkbox {
+          box-shadow: 6px 0px 0px 0px $color-priority-high3 inset;
+        }
+      }
+      &.priority-high2 {
+        background-color: lighten($color-priority-high2, 35%);
+        td.checkbox {
+          box-shadow: 6px 0px 0px 0px $color-priority-high2 inset;
+        }
+      }
+      &.priority-highest {
+        background-color: lighten($color-priority-highest, 35%);
+        td.checkbox {
+          box-shadow: 6px 0px 0px 0px $color-priority-highest inset;
+        }
+      }
+      &.closed {
+        color: $color-closed;
+        a { color: $color-closed; }
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    color: #4b5056;
+    font-weight: 700;
+    vertical-align: bottom;
+    border-bottom: 2px solid $color-table-border;
+    background-color: $color-th-bg;
+    padding: $table-head-cell-padding;
+    &.checkbox { padding: $table-head-cell-padding; }
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: 2px solid $color-table-border;
+  }
+
+  .odd {
+    background-color: $color-odd-bg;
+  }
+}
+

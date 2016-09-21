@@ -1,0 +1,549 @@
+@import url(../../../stylesheets/application.css);
+body {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;
+  font-size: 13px;
+  color: #222;
+  line-height: 1.5; }
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  color: #333; }
+
+#content h1 {
+  color: #333; }
+
+.wiki h1, .wiki h2, .wiki h3, .wiki h4 {
+  font-weight: bold; }
+
+#top-menu {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+  background: #223342;
+  z-index: 1;
+  position: relative; }
+
+#header {
+  background: radial-gradient(circle at 1.98% 20.98%, #4b6cb7, transparent 100%), radial-gradient(circle at 98.02% 20.98%, #2e4063, transparent 100%), radial-gradient(circle at 50% 50%, #19c8b5, #19c8b5 100%);
+  padding: 10px 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: white;
+  min-height: 1em; }
+  #header h1 {
+    padding-bottom: 20px;
+    color: white; }
+
+#main {
+  background-color: #fafcfe; }
+
+#content {
+  padding: 25px;
+  background-color: #fafcfe;
+  box-sizing: border-box;
+  width: 81%; }
+
+#sidebar {
+  padding-left: 17px;
+  padding-right: 17px;
+  width: 19%;
+  box-sizing: border-box;
+  font-size: 0.9em; }
+  #sidebar h3 {
+    color: #333; }
+
+.box, .mypage-box {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #dfe8f1; }
+
+#main-menu ul li {
+  margin: 0; }
+  #main-menu ul li a {
+    padding: 8px 12px;
+    letter-spacing: 0.5px;
+    font-weight: normal; }
+    #main-menu ul li a.selected, #main-menu ul li a:hover {
+      position: relative;
+      background: transparent;
+      color: inherit; }
+      #main-menu ul li a.selected:after, #main-menu ul li a:hover:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #ffd600;
+        bottom: 0px;
+        left: 0; }
+    #main-menu ul li a.selected:hover {
+      background: transparent;
+      color: white; }
+    #main-menu ul li a.new-object {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      position: relative;
+      margin: 0 10px;
+      padding: 0;
+      width: 26px;
+      height: 26px;
+      line-height: 25px;
+      border-radius: 50%;
+      text-align: center;
+      bottom: 1px; }
+      #main-menu ul li a.new-object:hover:after {
+        content: none; }
+
+#main-menu ul .menu-children {
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 1px 7px 2px rgba(135, 158, 171, 0.2);
+  border-radius: 3px; }
+  #main-menu ul .menu-children li {
+    border-bottom: #dddddd solid 1px; }
+    #main-menu ul .menu-children li a {
+      color: #777777;
+      background-color: transparent;
+      letter-spacing: 0.5px;
+      font-weight: normal; }
+      #main-menu ul .menu-children li a:after {
+        content: none; }
+      #main-menu ul .menu-children li a:hover {
+        color: #2b2f33;
+        background: #eff4f6; }
+
+table.list {
+  border: none;
+  margin-bottom: 25px;
+  background-color: white; }
+  table.list > thead > tr > th,
+  table.list > thead > tr > td,
+  table.list > tbody > tr > th,
+  table.list > tbody > tr > td,
+  table.list > tfoot > tr > th,
+  table.list > tfoot > tr > td {
+    padding: 4px;
+    line-height: 1.74;
+    vertical-align: top;
+    border-top: 1px solid #dfe8f1;
+    font-size: 0.9em; }
+    table.list > thead > tr > th.checkbox,
+    table.list > thead > tr > td.checkbox,
+    table.list > tbody > tr > th.checkbox,
+    table.list > tbody > tr > td.checkbox,
+    table.list > tfoot > tr > th.checkbox,
+    table.list > tfoot > tr > td.checkbox {
+      padding: 4px; }
+      table.list > thead > tr > th.checkbox input,
+      table.list > thead > tr > td.checkbox input,
+      table.list > tbody > tr > th.checkbox input,
+      table.list > tbody > tr > td.checkbox input,
+      table.list > tfoot > tr > th.checkbox input,
+      table.list > tfoot > tr > td.checkbox input {
+        margin: 0 7px 0 15px !important; }
+  table.list > thead > tr.priority-lowest,
+  table.list > tbody > tr.priority-lowest,
+  table.list > tfoot > tr.priority-lowest {
+    background-color: #e3f5fe; }
+    table.list > thead > tr.priority-lowest td.checkbox,
+    table.list > tbody > tr.priority-lowest td.checkbox,
+    table.list > tfoot > tr.priority-lowest td.checkbox {
+      box-shadow: 6px 0px 0px 0px #81D4FA inset; }
+  table.list > thead > tr.priority-high3,
+  table.list > tbody > tr.priority-high3,
+  table.list > tfoot > tr.priority-high3 {
+    background-color: #fce9e9; }
+    table.list > thead > tr.priority-high3 td.checkbox,
+    table.list > tbody > tr.priority-high3 td.checkbox,
+    table.list > tfoot > tr.priority-high3 td.checkbox {
+      box-shadow: 6px 0px 0px 0px #EF9A9A inset; }
+  table.list > thead > tr.priority-high2,
+  table.list > tbody > tr.priority-high2,
+  table.list > tfoot > tr.priority-high2 {
+    background-color: #f9d4d3; }
+    table.list > thead > tr.priority-high2 td.checkbox,
+    table.list > tbody > tr.priority-high2 td.checkbox,
+    table.list > tfoot > tr.priority-high2 td.checkbox {
+      box-shadow: 6px 0px 0px 0px #E53935 inset; }
+  table.list > thead > tr.priority-highest,
+  table.list > tbody > tr.priority-highest,
+  table.list > tfoot > tr.priority-highest {
+    background-color: #efb1b1; }
+    table.list > thead > tr.priority-highest td.checkbox,
+    table.list > tbody > tr.priority-highest td.checkbox,
+    table.list > tfoot > tr.priority-highest td.checkbox {
+      box-shadow: 6px 0px 0px 0px #C62828 inset; }
+  table.list > thead > tr.closed,
+  table.list > tbody > tr.closed,
+  table.list > tfoot > tr.closed {
+    color: #777777; }
+    table.list > thead > tr.closed a,
+    table.list > tbody > tr.closed a,
+    table.list > tfoot > tr.closed a {
+      color: #777777; }
+  table.list > thead > tr > th {
+    color: #4b5056;
+    font-weight: 700;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dfe8f1;
+    background-color: #eff1f9;
+    padding: 5px; }
+    table.list > thead > tr > th.checkbox {
+      padding: 5px; }
+  table.list > caption + thead > tr:first-child > th,
+  table.list > caption + thead > tr:first-child > td,
+  table.list > colgroup + thead > tr:first-child > th,
+  table.list > colgroup + thead > tr:first-child > td,
+  table.list > thead:first-child > tr:first-child > th,
+  table.list > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  table.list > tbody + tbody {
+    border-top: 2px solid #dfe8f1; }
+  table.list .odd {
+    background-color: #f9f9f9; }
+
+#wrapper input[type="text"],
+#wrapper input[type="password"],
+#wrapper input[type="date"],
+#wrapper select,
+#wrapper textarea, .modal input[type="text"],
+.modal input[type="password"],
+.modal input[type="date"],
+.modal select,
+.modal textarea {
+  background-color: #ffffff;
+  padding: 4px 6px;
+  color: #2b2f33;
+  border: 1px solid #dfe8f1;
+  box-shadow: inset 1px 1px 3px #f6f6f6;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: none;
+  height: auto;
+  line-height: 1.3; }
+  #wrapper input[type="text"]:hover,
+  #wrapper input[type="password"]:hover,
+  #wrapper input[type="date"]:hover,
+  #wrapper select:hover,
+  #wrapper textarea:hover, .modal input[type="text"]:hover,
+  .modal input[type="password"]:hover,
+  .modal input[type="date"]:hover,
+  .modal select:hover,
+  .modal textarea:hover {
+    border-color: #ccc; }
+  #wrapper input[type="text"]:focus, #wrapper input[type="text"]:active,
+  #wrapper input[type="password"]:focus,
+  #wrapper input[type="password"]:active,
+  #wrapper input[type="date"]:focus,
+  #wrapper input[type="date"]:active,
+  #wrapper select:focus,
+  #wrapper select:active,
+  #wrapper textarea:focus,
+  #wrapper textarea:active, .modal input[type="text"]:focus, .modal input[type="text"]:active,
+  .modal input[type="password"]:focus,
+  .modal input[type="password"]:active,
+  .modal input[type="date"]:focus,
+  .modal input[type="date"]:active,
+  .modal select:focus,
+  .modal select:active,
+  .modal textarea:focus,
+  .modal textarea:active {
+    border-color: #3da6ff !important; }
+  #wrapper input[type="text"].filename,
+  #wrapper input[type="password"].filename,
+  #wrapper input[type="date"].filename,
+  #wrapper select.filename,
+  #wrapper textarea.filename, .modal input[type="text"].filename,
+  .modal input[type="password"].filename,
+  .modal input[type="date"].filename,
+  .modal select.filename,
+  .modal textarea.filename {
+    box-shadow: none; }
+  #wrapper input[type="text"][type="file"],
+  #wrapper input[type="password"][type="file"],
+  #wrapper input[type="date"][type="file"],
+  #wrapper select[type="file"],
+  #wrapper textarea[type="file"], .modal input[type="text"][type="file"],
+  .modal input[type="password"][type="file"],
+  .modal input[type="date"][type="file"],
+  .modal select[type="file"],
+  .modal textarea[type="file"] {
+    border: none;
+    box-shadow: none; }
+
+#wrapper input[type="text"], .modal input[type="text"] {
+  font-family: "Osaka-Mono", "MS Gothic", sans-serif;
+  font-size: 100%; }
+
+#wrapper textarea.wiki-edit, .modal textarea.wiki-edit {
+  font-size: 13px;
+  font-family: "Osaka-Mono", "MS Gothic", sans-serif;
+  letter-spacing: normal;
+  line-height: 130%; }
+
+#wrapper select, .modal select {
+  height: auto;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../images/arrow.svg");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  padding-right: 2.5em; }
+  #wrapper select::-ms-expand, .modal select::-ms-expand {
+    display: none; }
+  #wrapper select:hover, .modal select:hover {
+    border-color: #ccc;
+    outline: none; }
+  #wrapper select:focus, #wrapper select:active, .modal select:focus, .modal select:active {
+    border-color: #3da6ff !important; }
+  #wrapper select:-moz-focusring, .modal select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000; }
+  #wrapper select[multiple="multiple"], .modal select[multiple="multiple"] {
+    background: white;
+    padding-right: 5px; }
+
+#wrapper .tabular label, .modal .tabular label {
+  margin-top: 5px; }
+
+#wrapper label.inline, .modal label.inline {
+  margin-right: 5px; }
+
+#wrapper input[type="submit"], .modal input[type="submit"] {
+  border-radius: 3px;
+  padding: 2px 12px 3px;
+  color: #ffffff;
+  border: 1px solid #34495e;
+  background: #34495e;
+  box-shadow: none; }
+  #wrapper input[type="submit"]:hover, #wrapper input[type="submit"]:active, .modal input[type="submit"]:hover, .modal input[type="submit"]:active {
+    border-color: #3f5872;
+    background-color: #3f5872; }
+  #wrapper input[type="submit"]:active, .modal input[type="submit"]:active {
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+
+#wrapper input[type="button"], .modal input[type="button"] {
+  border-radius: 3px;
+  padding: 2px 12px 3px;
+  color: #555a60;
+  border: 1px solid #dfe8f1;
+  background: #fefeff;
+  box-shadow: none; }
+  #wrapper input[type="button"]:hover, #wrapper input[type="button"]:active, .modal input[type="button"]:hover, .modal input[type="button"]:active {
+    color: #2b2f33;
+    border-color: #bfc8d1;
+    background-color: #f3f3f9; }
+  #wrapper input[type="button"]:active, .modal input[type="button"]:active {
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+
+#wrapper input[type="checkbox"], .modal input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 7px 0 7px 2px;
+  box-shadow: none; }
+
+form .attributes select {
+  width: 85%; }
+
+#errorExplanation, div.flash, .nodata, .warning, .conflict {
+  padding: 10px 12px;
+  border-radius: 3px;
+  border: none; }
+
+div.flash.error, #errorExplanation {
+  color: #620f0f;
+  background: #ffc6c6;
+  border: none; }
+
+div.flash.notice {
+  color: #1e620f;
+  background: #d3ffc6; }
+
+div.flash.warning, .conflict {
+  color: #624b0f;
+  background: #ffeec6; }
+
+.nodata, .warning {
+  text-align: center;
+  background-color: #ffeec6;
+  color: #624b0f; }
+
+div.modal {
+  border: none;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0; }
+  div.modal .ui-dialog-titlebar {
+    padding: 15px;
+    border: none;
+    background: #f7f9fa;
+    color: #555555;
+    font-weight: normal;
+    border-bottom: 1px solid #e5e5e5; }
+    div.modal .ui-dialog-titlebar .ui-dialog-title {
+      margin: 0; }
+    div.modal .ui-dialog-titlebar .ui-dialog-titlebar-close {
+      right: 1em; }
+  div.modal .ui-dialog-content {
+    padding: 5px 15px 15px; }
+
+.ui-widget-overlay {
+  background: black;
+  opacity: 0.55; }
+
+div.issue {
+  background: #fff9c4;
+  padding: 20px;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  border: none; }
+  div.issue hr {
+    width: auto;
+    background: rgba(0, 0, 0, 0.12);
+    padding: 0 10px;
+    margin: 8px -10px; }
+
+table.progress {
+  margin: 4px 6px 0px 0; }
+  table.progress td {
+    height: 0.6em;
+    border-radius: 2px; }
+    table.progress td.closed {
+      background-color: #4DB6AC; }
+
+p.percent {
+  padding-top: 2px; }
+
+.edit_issue fieldset {
+  border: none;
+  background: #f4f7f9;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 23px 12px 13px; }
+  .edit_issue fieldset legend {
+    position: relative;
+    top: 18px; }
+
+a[href*="activity"][title*=":"] {
+  margin: 0 3px;
+  box-shadow: inset 0 -1.5em 0 rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  padding: 0 3px;
+  border-radius: 3px; }
+  a[href*="activity"][title*=":"]:before {
+    content: " [" attr(title) "] "; }
+
+#history {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid #dfe8f1; }
+  #history .journal {
+    padding: 3px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: visible; }
+    #history .journal:before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #ffffff;
+      position: absolute;
+      left: 6px;
+      top: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px #e5e5e5;
+      z-index: 1; }
+    #history .journal:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background-color: #e5e5e5;
+      position: absolute;
+      left: 9px;
+      top: 0px; }
+    #history .journal:first-of-type:after {
+      top: 15px; }
+    #history .journal:last-of-type:after {
+      height: 18px; }
+    #history .journal:first-of-type:last-of-type:after {
+      content: none; }
+    #history .journal h4 {
+      left: 20px;
+      position: relative;
+      margin: 0 19px 0 10px;
+      border: none;
+      font-weight: bold;
+      background-color: #e9eaf1;
+      padding: 6px 9px;
+      font-size: 0.9em;
+      border-radius: 4px; }
+      #history .journal h4 a[href*="activity"][title*=":"] {
+        box-shadow: none;
+        padding: 0; }
+      #history .journal h4:before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 6px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 6px solid #e9eaf1; }
+      #history .journal h4 .gravatar {
+        position: absolute;
+        left: -35px;
+        z-index: 30; }
+    #history .journal .details {
+      list-style: none;
+      font-size: 0.9em;
+      line-height: 1.5;
+      margin-bottom: 1em;
+      padding-left: 46px; }
+      #history .journal .details li {
+        position: relative; }
+        #history .journal .details li:after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: .5em;
+          left: -1em;
+          width: 4px;
+          height: 4px;
+          background-color: #ffffff;
+          border: 1px solid #888;
+          border-radius: 50%; }
+    #history .journal form .jstElements, #history .journal form .jstEditor, #history .journal form .wiki, #history .journal form p {
+      margin-left: 32px; }
+    #history .journal .wiki {
+      margin-left: 32px; }
+
+.tabular p {
+  padding-left: 160px; }
+  .edit_issue .tabular p {
+    padding-left: 130px; }
+
+.tabular label {
+  margin-left: -160px;
+  width: 150px; }
+  .edit_issue .tabular label {
+    margin-left: -130px;
+    width: 120px; }
+
+fieldset#filters td.values input {
+  height: inherit; }
+
+div#activity dt .time {
+  color: #444; }
+
+div#activity dt.me .time {
+  border-color: #666; }
+
+div#activity dd span.description, #search-results dd span.description {
+  color: #444; }
+
+.task {
+  color: #444; }

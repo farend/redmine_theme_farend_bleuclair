@@ -1,0 +1,36 @@
+$flash-padding: 10px 12px;
+
+$color-flash-error-text:   #620f0f;
+$color-flash-error-bg:     #ffc6c6;
+$color-flash-notice-text:  #1e620f;
+$color-flash-notice-bg:    #d3ffc6;
+$color-flash-warning-text: #624b0f;
+$color-flash-warning-bg:   #ffeec6;
+
+#errorExplanation, div.flash, .nodata, .warning, .conflict {
+  padding: $flash-padding;
+  border-radius: 3px;
+  border: none;
+}
+
+div.flash.error, #errorExplanation {
+  color: $color-flash-error-text;
+  background: $color-flash-error-bg;
+  border: none;
+}
+
+div.flash.notice {
+  color: $color-flash-notice-text;
+  background: $color-flash-notice-bg;
+}
+
+div.flash.warning, .conflict {
+  color: $color-flash-warning-text;
+  background: $color-flash-warning-bg;
+}
+
+.nodata, .warning {
+  text-align: center;
+  background-color: #ffeec6;
+  color: #624b0f;
+}

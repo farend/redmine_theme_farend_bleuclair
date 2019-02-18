@@ -496,7 +496,8 @@ a[href*="activity"][title*=":"] {
       #history .journal h4 .gravatar {
         position: absolute;
         left: -35px;
-        z-index: 30; }
+        z-index: 30;
+        margin-left: 0; }
     #history .journal .details {
       list-style: none;
       font-size: 0.9em;

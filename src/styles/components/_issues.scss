@@ -121,6 +121,11 @@ a[href*="activity"][title*=":"] {
       content: none;
     }
 
+    .journal-actions {
+      position: relative;
+      z-index: 30;
+    }
+
     h4 {
       left: 20px;
       position: relative;

@@ -520,9 +520,9 @@ a[href*="activity"][title*=":"] {
           background-color: #ffffff;
           border: 1px solid #888;
           border-radius: 50%; }
-    #history .journal form .jstElements, #history .journal form .jstEditor, #history .journal form .wiki, #history .journal form p {
+    #history .journal form .jstBlock, #history .journal form input {
       margin-left: 32px; }
-    #history .journal .wiki {
+    #history .journal .wiki:not(.wiki-preview) {
       margin-left: 32px; }
 
 .tabular p {

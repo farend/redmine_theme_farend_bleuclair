@@ -188,11 +188,11 @@ a[href*="activity"][title*=":"] {
     }
 
     form {
-      .jstElements, .jstEditor, .wiki, p {
+      .jstBlock, input {
         margin-left: 32px;
       }
     }
-    .wiki {
+    .wiki:not(.wiki-preview) {
       margin-left: 32px;
     }
   }

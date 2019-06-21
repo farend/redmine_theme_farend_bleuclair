@@ -157,4 +157,10 @@ $checkbox-margin: 7px 0 7px 2px;
   }
 }
 
-form .attributes select { width: 85%; }
+form .attributes {
+  select { width: 85%; }
+
+  .check_box_group label {
+    width: 100%;
+  }
+}

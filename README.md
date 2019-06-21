@@ -25,12 +25,12 @@ Redmineのインストールディレクトリで以下のコマンドを実行�
 
 - Redmine3.4.nより古いバージョンの場合
 ```bash
-$ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone -b redmine3.4 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
 - Redmine4.0.nの場合
 ```bash
-$ git clone -b redmine4.0 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
 ### 2: テーマの設定を変更

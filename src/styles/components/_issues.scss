@@ -62,14 +62,14 @@ p.percent {
 }
 
 // 作成日・更新日に実際の日時を表示
-a[href*="activity"][title*=":"] {
+a[href*="activity"][data-absolute-date*=":"] {
   margin: 0 3px;
   box-shadow: inset 0 -1.5em 0 rgba(0, 0, 0, 0.08);
   display: inline-block;
   padding: 0 3px;
   border-radius: 3px;
   &:before {
-    content: ' [' attr(title) '] ';
+    content: ' [' attr(data-absolute-date) '] ';
   }
 }
 
@@ -142,7 +142,7 @@ a[href*="activity"][title*=":"] {
       font-size: 0.9em;
       border-radius: 4px;
 
-      a[href*="activity"][title*=":"] {
+      a[href*="activity"][data-absolute-date*=":"] {
         box-shadow: none;
         padding: 0;
       }

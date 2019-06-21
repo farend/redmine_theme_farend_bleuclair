@@ -74,14 +74,35 @@ a[href*="activity"][data-absolute-date*=":"] {
 }
 
 #history {
-  background-color: $color-history-bg;
-  margin-bottom: 30px;
-  padding: $histry-padding;
-  border-radius: 3px;
-  border: 1px solid $color-history-border;
+  .tabs {
+    margin-bottom: 0px;
 
-  .journal {
-    padding: 3px;
+    ul {
+      border-bottom: 1px solid $color-history-border;
+
+      li a {
+        background-color: #f0f0f0;
+        border: 1px solid $color-history-border;
+
+        &.selected {
+          background-color: $color-history-bg;
+          border: 1px solid $color-history-border;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    background-color: $color-history-bg;
+    border-radius: 3px;
+    border-right: 1px solid $color-history-border;
+    border-left: 1px solid $color-history-border;
+    border-bottom: 1px solid $color-history-border;
+    padding-top: $histry-padding;
+  }
+
+  .tab-content .journal {
+    padding: 8px 3px 3px 3px;
     background-color: $color-history-bg;
     position: relative;
     overflow: visible;

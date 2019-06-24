@@ -468,7 +468,7 @@ a[href*="activity"][data-absolute-date*=":"] {
     background-color: #ffffff;
     position: absolute;
     left: 6px;
-    top: 10px;
+    top: 16px;
     border-radius: 50%;
     box-shadow: 0 0 0 3px #e5e5e5;
     z-index: 1; }

@@ -1,6 +1,5 @@
-window.onload = function() {
-  const elementsWithTitle = document.querySelectorAll('a[href*="activity"][title*=":"]');
-  for (i = 0; i < elementsWithTitle.length; i++) {
-    elementsWithTitle[i].setAttribute("data-absolute-date", elementsWithTitle[i].title);
-  }
-}
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href*="activity"][title*=":"]').forEach(function (el) {
+    el.setAttribute("data-absolute-date", el.title);
+  });
+})

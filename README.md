@@ -37,5 +37,26 @@ $ git clone -b redmine4.0 https://github.com/farend/redmine_theme_farend_bleucla
 
 Redmineの管理画面で新しいテーマを利用する設定を行います。
 
-「管理」→「設定」→「表示」画面内の項目「テーマ」で「bleuclair」を選択、画面最下部の「保存」ボタンをクリックしてください。
+「管理」→「設定」→「表示」画面内の項目「テーマ」で「Bleuclair」を選択、画面最下部の「保存」ボタンをクリックしてください。
 
+## bleuclair/src/styles以下を変更したときの反映方法
+
+```bash
+# 最初のみ
+$ cd /your/path/redmine/public/themes/redmine_theme_farend_bleuclair-master/src
+$ npm install
+
+# bleuclair/src/styles以下を変更
+
+# bleuclair/src/styles以下を元にbleuclair/stylesheets/application.cssを変更
+$ gulp
+```
+
+## LICENSE
+
+GNU GPL v2  
+https://github.com/farend/redmine_theme_farend_bleuclair/blob/master/LICENSE
+
+## 著作者
+
+[ファーエンドテクノロジー株式会社](https://www.farend.co.jp/)

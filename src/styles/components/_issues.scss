@@ -218,7 +218,8 @@ a[href*="activity"][data-absolute-date*=":"] {
         margin-left: 32px;
       }
     }
-    .wiki:not(.wiki-preview) {
+    .wiki:not(.wiki-preview),
+    &.time_entry p {
       margin-left: 32px;
     }
   }

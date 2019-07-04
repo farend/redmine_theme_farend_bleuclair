@@ -49,6 +49,10 @@ h1, h2, h3, h4 {
   #sidebar h3 {
     color: #333; }
 
+.icon {
+  padding-bottom: 2px;
+  padding-top: 2px; }
+
 .box, .mypage-box {
   background-color: #fff;
   margin-bottom: 30px;
@@ -437,20 +441,25 @@ a[href*="activity"][data-absolute-date*=":"] {
   a[href*="activity"][data-absolute-date*=":"]:before {
     content: " [" attr(data-absolute-date) "] "; }
 
-#history .tabs {
+div#content .tabs ul {
+  border-bottom: 1px solid #dfe8f1; }
+  div#content .tabs ul li a {
+    background-color: #f0f0f0;
+    border: 1px solid #dfe8f1; }
+    div#content .tabs ul li a.selected {
+      background-color: #fafcfe;
+      border: 1px solid #dfe8f1;
+      border-bottom: 1px solid #fafcfe; }
+
+#history div.tabs {
   margin-bottom: 0px; }
-  #history .tabs ul {
-    border-bottom: 1px solid #dfe8f1; }
-    #history .tabs ul li a {
-      background-color: #f0f0f0;
-      border: 1px solid #dfe8f1; }
-      #history .tabs ul li a.selected {
-        background-color: #ffffff;
-        border: 1px solid #dfe8f1; }
+  #history div.tabs ul li a.selected {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
 
 #history .tab-content {
   background-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 0px 0px 3px 3px;
   border-right: 1px solid #dfe8f1;
   border-left: 1px solid #dfe8f1;
   border-bottom: 1px solid #dfe8f1;
@@ -520,6 +529,10 @@ a[href*="activity"][data-absolute-date*=":"] {
       left: -35px;
       z-index: 30;
       margin-left: 0; }
+  #history .tab-content .journal div:target h4 {
+    background-color: #DDEEFF; }
+    #history .tab-content .journal div:target h4:before {
+      border-right: 6px solid #DDEEFF; }
   #history .tab-content .journal .details {
     list-style: none;
     font-size: 0.9em;

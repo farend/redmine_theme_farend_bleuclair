@@ -15,6 +15,9 @@ $note-title-margin: 0 19px 0 10px;
 $note-title-padding: 6px 9px;
 $color-note-title-bg: #e9eaf1;
 
+$color-content-bg: #fafcfe;
+$color-unselected-tab-bg: #f0f0f0;
+$color-target-bg: #DDEEFF;
 
 div.issue {
   background: $color-issue-bg;
@@ -73,28 +76,35 @@ a[href*="activity"][data-absolute-date*=":"] {
   }
 }
 
-#history {
-  .tabs {
-    margin-bottom: 0px;
+div#content .tabs {
+  ul {
+    border-bottom: 1px solid $color-history-border;
 
-    ul {
-      border-bottom: 1px solid $color-history-border;
+    li a {
+      background-color: $color-unselected-tab-bg;
+      border: 1px solid $color-history-border;
 
-      li a {
-        background-color: #f0f0f0;
+      &.selected {
+        background-color: $color-content-bg;
         border: 1px solid $color-history-border;
-
-        &.selected {
-          background-color: $color-history-bg;
-          border: 1px solid $color-history-border;
-        }
+        border-bottom: 1px solid $color-content-bg;
       }
     }
   }
+}
 
+#history {
+  div.tabs {
+    margin-bottom: 0px;
+
+    ul li a.selected {
+      background-color: $color-history-bg;
+      border-bottom: 1px solid $color-history-bg;
+    }
+  }
   .tab-content {
     background-color: $color-history-bg;
-    border-radius: 3px;
+    border-radius: 0px 0px 3px 3px;
     border-right: 1px solid $color-history-border;
     border-left: 1px solid $color-history-border;
     border-bottom: 1px solid $color-history-border;
@@ -185,6 +195,14 @@ a[href*="activity"][data-absolute-date*=":"] {
         left: -35px;
         z-index: 30;
         margin-left: 0;
+      }
+    }
+
+    div:target h4 {
+      background-color:$color-target-bg;
+
+      &:before {
+        border-right: 6px solid $color-target-bg;
       }
     }
 

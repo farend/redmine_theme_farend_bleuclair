@@ -122,7 +122,7 @@ a[href*="activity"][title*=":"] {
       content: none;
     }
 
-    h4 {
+    & > div > h4 {
       left: 20px;
       position: relative;
       margin: $note-title-margin;
@@ -157,8 +157,11 @@ a[href*="activity"][title*=":"] {
       }
     }
 
-    div:target h4:before {
+    & > div:target > h4:before {
       border-right: 6px solid $color-target-bg;
+    }
+    & > div:target > h4 {
+      background: $color-target-bg;
     }
 
     .details {

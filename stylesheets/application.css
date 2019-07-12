@@ -473,7 +473,7 @@ a[href*="activity"][title*=":"] {
       height: 18px; }
     #history .journal:first-of-type:last-of-type:after {
       content: none; }
-    #history .journal h4 {
+    #history .journal > div > h4 {
       left: 20px;
       position: relative;
       margin: 0 19px 0 10px;
@@ -483,10 +483,10 @@ a[href*="activity"][title*=":"] {
       padding: 6px 9px;
       font-size: 0.9em;
       border-radius: 4px; }
-      #history .journal h4 a[href*="activity"][title*=":"] {
+      #history .journal > div > h4 a[href*="activity"][title*=":"] {
         box-shadow: none;
         padding: 0; }
-      #history .journal h4:before {
+      #history .journal > div > h4:before {
         content: '';
         position: absolute;
         left: -6px;
@@ -496,12 +496,14 @@ a[href*="activity"][title*=":"] {
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         border-right: 6px solid #e9eaf1; }
-      #history .journal h4 .gravatar {
+      #history .journal > div > h4 .gravatar {
         position: absolute;
         left: -35px;
         z-index: 30; }
-    #history .journal div:target h4:before {
+    #history .journal > div:target > h4:before {
       border-right: 6px solid #DDEEFF; }
+    #history .journal > div:target > h4 {
+      background: #DDEEFF; }
     #history .journal .details {
       list-style: none;
       font-size: 0.9em;

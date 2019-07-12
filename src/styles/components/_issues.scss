@@ -15,6 +15,7 @@ $note-title-margin: 0 19px 0 10px;
 $note-title-padding: 6px 9px;
 $color-note-title-bg: #e9eaf1;
 
+$color-target-bg: #DDEEFF;
 
 div.issue {
   background: $color-issue-bg;
@@ -154,6 +155,10 @@ a[href*="activity"][title*=":"] {
         left: -35px;
         z-index: 30;
       }
+    }
+
+    div:target h4:before {
+      border-right: 6px solid $color-target-bg;
     }
 
     .details {

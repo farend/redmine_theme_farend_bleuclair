@@ -92,6 +92,9 @@ div#content .tabs {
     }
   }
 }
+div#update .jstTabs.tabs li a {
+  border-bottom: 1px solid $color-history-border;
+}
 
 #history {
   div.tabs {
@@ -109,136 +112,143 @@ div#content .tabs {
     border-left: 1px solid $color-history-border;
     border-bottom: 1px solid $color-history-border;
     padding-top: $histry-padding;
-  }
+    padding-left: 10px;
 
-  .tab-content .journal {
-    padding: 8px 3px 3px 3px;
-    background-color: $color-history-bg;
-    position: relative;
-    overflow: visible;
+    // Do not show vertical lines connecting history if tab-notes or tab-properties
+    &.discontinuity .journal:after {
+        content: none;
+      }
 
-    &:before {
-      content: "";
-      width: $timeline-point-size;
-      height: $timeline-point-size;
+    .journal {
+      padding: 8px 3px 3px 3px;
       background-color: $color-history-bg;
-      position: absolute;
-      left: 6px;
-      top: 16px;
-      border-radius: 50%;
-      box-shadow: 0 0 0 3px $color-timeline;
-      z-index: 1;
-    }
-
-    &:after {
-      content: "";
-      height: 100%;
-      width: 2px;
-      background-color: $color-timeline;
-      position: absolute;
-      left: 9px;
-      top: 0px;
-    }
-
-    &:first-of-type:after {
-      top: 15px;
-    }
-
-    &:last-of-type:after {
-      height: 18px;
-    }
-
-    &:first-of-type:last-of-type:after {
-      content: none;
-    }
-
-    .contextual {
-      padding-right: 10px;
-      padding-top: 5px;
-
-      .journal-actions, a.journal-link {
-        position: relative;
-        z-index: 30;
-      }
-    }
-
-    h4 {
-      left: 20px;
       position: relative;
-      margin: $note-title-margin;
-      border: none;
-      font-weight: bold;
-      background-color: $color-note-title-bg;
-      padding: $note-title-padding;
-      font-size: 0.9em;
-      border-radius: 4px;
-
-      a[href*="activity"][data-absolute-date*=":"] {
-        box-shadow: none;
-        padding: 0;
-      }
+      overflow: visible;
 
       &:before {
-        content: '';
+        content: "";
+        width: $timeline-point-size;
+        height: $timeline-point-size;
+        background-color: $color-history-bg;
         position: absolute;
-        left: -6px;
-        top: 6px;
-        width: 0;
-        height: 0;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-right: 6px solid $color-note-title-bg;
+        left: 6px;
+        top: 16px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 3px $color-timeline;
+        z-index: 1;
       }
 
-      .gravatar {
+      &:after {
+        content: "";
+        height: 100%;
+        width: 2px;
+        background-color: $color-timeline;
         position: absolute;
-        left: -35px;
-        z-index: 30;
-        margin-left: 0;
+        left: 9px;
+        top: 0px;
       }
-    }
 
-    div:target h4 {
-      background-color:$color-target-bg;
-
-      &:before {
-        border-right: 6px solid $color-target-bg;
+      &:first-of-type:after {
+        top: 15px;
       }
-    }
 
-    .details {
-      list-style: none;
-      font-size: 0.9em;
-      line-height: 1.5;
-      margin-bottom: 1em;
-      padding-left: 46px;
+      &:last-of-type:after {
+        height: 18px;
+      }
 
-      li {
-        position: relative;
+      &:first-of-type:last-of-type:after {
+        content: none;
+      }
 
-        &:after {
-          display: block;
-          content: '';
-          position: absolute;
-          top: .5em;
-          left: -1em;
-          width: 4px;
-          height: 4px;
-          background-color: $color-history-bg;
-          border: 1px solid #888;
-          border-radius: 50%;
+      .contextual {
+        padding-right: 10px;
+        padding-top: 5px;
+
+        .journal-actions, a.journal-link {
+          position: relative;
+          z-index: 30;
         }
       }
-    }
 
-    form {
-      .jstBlock, input {
+      h4 {
+        left: 20px;
+        position: relative;
+        margin: $note-title-margin;
+        border: none;
+        font-weight: bold;
+        background-color: $color-note-title-bg;
+        padding: $note-title-padding;
+        font-size: 0.9em;
+        border-radius: 4px;
+
+        a[href*="activity"][data-absolute-date*=":"] {
+          box-shadow: none;
+          padding: 0;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: -6px;
+          top: 8px;
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-right: 6px solid $color-note-title-bg;
+        }
+
+        .gravatar {
+          position: absolute;
+          left: -35px;
+          top: 4px;
+          z-index: 30;
+          margin-left: 0;
+        }
+      }
+
+      div:target h4 {
+        background-color:$color-target-bg;
+
+        &:before {
+          border-right: 6px solid $color-target-bg;
+        }
+      }
+
+      .details {
+        list-style: none;
+        font-size: 0.9em;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        padding-left: 46px;
+
+        li {
+          position: relative;
+
+          &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: .5em;
+            left: -1em;
+            width: 4px;
+            height: 4px;
+            background-color: $color-history-bg;
+            border: 1px solid #888;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      form {
+        .jstBlock, input {
+          margin-left: 32px;
+        }
+      }
+      .wiki:not(.wiki-preview),
+      &.time_entry p, &.changeset > p {
         margin-left: 32px;
       }
-    }
-    .wiki:not(.wiki-preview),
-    &.time_entry p {
-      margin-left: 32px;
     }
   }
 }
@@ -263,4 +273,8 @@ div#content .tabs {
 
 fieldset#filters td.values input {
   height: inherit;
+}
+
+.jstBlock .wiki-preview {
+  border: 1px solid $color-history-border;
 }

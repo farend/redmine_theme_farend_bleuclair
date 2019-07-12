@@ -451,6 +451,9 @@ div#content .tabs ul {
       border: 1px solid #dfe8f1;
       border-bottom: 1px solid #fafcfe; }
 
+div#update .jstTabs.tabs li a {
+  border-bottom: 1px solid #dfe8f1; }
+
 #history div.tabs {
   margin-bottom: 0px; }
   #history div.tabs ul li a.selected {
@@ -463,100 +466,103 @@ div#content .tabs ul {
   border-right: 1px solid #dfe8f1;
   border-left: 1px solid #dfe8f1;
   border-bottom: 1px solid #dfe8f1;
-  padding-top: 15px; }
-
-#history .tab-content .journal {
-  padding: 8px 3px 3px 3px;
-  background-color: #ffffff;
-  position: relative;
-  overflow: visible; }
-  #history .tab-content .journal:before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-color: #ffffff;
-    position: absolute;
-    left: 6px;
-    top: 16px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 3px #e5e5e5;
-    z-index: 1; }
-  #history .tab-content .journal:after {
-    content: "";
-    height: 100%;
-    width: 2px;
-    background-color: #e5e5e5;
-    position: absolute;
-    left: 9px;
-    top: 0px; }
-  #history .tab-content .journal:first-of-type:after {
-    top: 15px; }
-  #history .tab-content .journal:last-of-type:after {
-    height: 18px; }
-  #history .tab-content .journal:first-of-type:last-of-type:after {
+  padding-top: 15px;
+  padding-left: 10px; }
+  #history .tab-content.discontinuity .journal:after {
     content: none; }
-  #history .tab-content .journal .contextual {
-    padding-right: 10px;
-    padding-top: 5px; }
-    #history .tab-content .journal .contextual .journal-actions, #history .tab-content .journal .contextual a.journal-link {
-      position: relative;
-      z-index: 30; }
-  #history .tab-content .journal h4 {
-    left: 20px;
+  #history .tab-content .journal {
+    padding: 8px 3px 3px 3px;
+    background-color: #ffffff;
     position: relative;
-    margin: 0 19px 0 10px;
-    border: none;
-    font-weight: bold;
-    background-color: #e9eaf1;
-    padding: 6px 9px;
-    font-size: 0.9em;
-    border-radius: 4px; }
-    #history .tab-content .journal h4 a[href*="activity"][data-absolute-date*=":"] {
-      box-shadow: none;
-      padding: 0; }
-    #history .tab-content .journal h4:before {
-      content: '';
+    overflow: visible; }
+    #history .tab-content .journal:before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #ffffff;
       position: absolute;
-      left: -6px;
-      top: 6px;
-      width: 0;
-      height: 0;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid transparent;
-      border-right: 6px solid #e9eaf1; }
-    #history .tab-content .journal h4 .gravatar {
+      left: 6px;
+      top: 16px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px #e5e5e5;
+      z-index: 1; }
+    #history .tab-content .journal:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background-color: #e5e5e5;
       position: absolute;
-      left: -35px;
-      z-index: 30;
-      margin-left: 0; }
-  #history .tab-content .journal div:target h4 {
-    background-color: #DDEEFF; }
-    #history .tab-content .journal div:target h4:before {
-      border-right: 6px solid #DDEEFF; }
-  #history .tab-content .journal .details {
-    list-style: none;
-    font-size: 0.9em;
-    line-height: 1.5;
-    margin-bottom: 1em;
-    padding-left: 46px; }
-    #history .tab-content .journal .details li {
-      position: relative; }
-      #history .tab-content .journal .details li:after {
-        display: block;
+      left: 9px;
+      top: 0px; }
+    #history .tab-content .journal:first-of-type:after {
+      top: 15px; }
+    #history .tab-content .journal:last-of-type:after {
+      height: 18px; }
+    #history .tab-content .journal:first-of-type:last-of-type:after {
+      content: none; }
+    #history .tab-content .journal .contextual {
+      padding-right: 10px;
+      padding-top: 5px; }
+      #history .tab-content .journal .contextual .journal-actions, #history .tab-content .journal .contextual a.journal-link {
+        position: relative;
+        z-index: 30; }
+    #history .tab-content .journal h4 {
+      left: 20px;
+      position: relative;
+      margin: 0 19px 0 10px;
+      border: none;
+      font-weight: bold;
+      background-color: #e9eaf1;
+      padding: 6px 9px;
+      font-size: 0.9em;
+      border-radius: 4px; }
+      #history .tab-content .journal h4 a[href*="activity"][data-absolute-date*=":"] {
+        box-shadow: none;
+        padding: 0; }
+      #history .tab-content .journal h4:before {
         content: '';
         position: absolute;
-        top: .5em;
-        left: -1em;
-        width: 4px;
-        height: 4px;
-        background-color: #ffffff;
-        border: 1px solid #888;
-        border-radius: 50%; }
-  #history .tab-content .journal form .jstBlock, #history .tab-content .journal form input {
-    margin-left: 32px; }
-  #history .tab-content .journal .wiki:not(.wiki-preview),
-  #history .tab-content .journal.time_entry p {
-    margin-left: 32px; }
+        left: -6px;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 6px solid #e9eaf1; }
+      #history .tab-content .journal h4 .gravatar {
+        position: absolute;
+        left: -35px;
+        top: 4px;
+        z-index: 30;
+        margin-left: 0; }
+    #history .tab-content .journal div:target h4 {
+      background-color: #DDEEFF; }
+      #history .tab-content .journal div:target h4:before {
+        border-right: 6px solid #DDEEFF; }
+    #history .tab-content .journal .details {
+      list-style: none;
+      font-size: 0.9em;
+      line-height: 1.5;
+      margin-bottom: 1em;
+      padding-left: 46px; }
+      #history .tab-content .journal .details li {
+        position: relative; }
+        #history .tab-content .journal .details li:after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: .5em;
+          left: -1em;
+          width: 4px;
+          height: 4px;
+          background-color: #ffffff;
+          border: 1px solid #888;
+          border-radius: 50%; }
+    #history .tab-content .journal form .jstBlock, #history .tab-content .journal form input {
+      margin-left: 32px; }
+    #history .tab-content .journal .wiki:not(.wiki-preview),
+    #history .tab-content .journal.time_entry p, #history .tab-content .journal.changeset > p {
+      margin-left: 32px; }
 
 .tabular p {
   padding-left: 160px; }
@@ -572,6 +578,9 @@ div#content .tabs ul {
 
 fieldset#filters td.values input {
   height: inherit; }
+
+.jstBlock .wiki-preview {
+  border: 1px solid #dfe8f1; }
 
 div#activity dt .time {
   color: #444; }

@@ -122,17 +122,11 @@ a[href*="activity"][title*=":"] {
       content: none;
     }
 
-    .contextual {
-      padding-right: 10px;
-      padding-top: 5px;
-
-      .journal-actions, a.journal-link {
-        position: relative;
-        z-index: 30;
-      }
+    div:target h4 {
+      background: initial;
     }
 
-    h4 {
+    & > div > h4 {
       left: 20px;
       position: relative;
       margin: $note-title-margin;
@@ -168,10 +162,12 @@ a[href*="activity"][title*=":"] {
       }
     }
 
-      div:target h4:before {
-        border-right: 6px solid $color-target-bg;
-      }
-
+    & > div:target > h4:before {
+      border-right: 6px solid $color-target-bg;
+    }
+    & > div:target > h4 {
+      background: $color-target-bg;
+    }
 
     .details {
       list-style: none;

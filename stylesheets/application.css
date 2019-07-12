@@ -473,6 +473,12 @@ a[href*="activity"][title*=":"] {
       height: 18px; }
     #history .journal:first-of-type:last-of-type:after {
       content: none; }
+    #history .journal .contextual {
+      padding-right: 10px;
+      padding-top: 5px; }
+      #history .journal .contextual .journal-actions, #history .journal .contextual a.journal-link {
+        position: relative;
+        z-index: 30; }
     #history .journal div:target h4 {
       background: initial; }
     #history .journal > div > h4 {

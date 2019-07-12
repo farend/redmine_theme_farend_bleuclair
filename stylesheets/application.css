@@ -507,6 +507,8 @@ a[href*="activity"][title*=":"] {
         left: -35px;
         z-index: 30;
         margin-left: 0; }
+    #history .journal div:target h4:before {
+      border-right: 6px solid #DDEEFF; }
     #history .journal .details {
       list-style: none;
       font-size: 0.9em;

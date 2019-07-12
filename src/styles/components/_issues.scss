@@ -169,8 +169,11 @@ div#update .jstTabs.tabs li a {
           z-index: 30;
         }
       }
+      div:target h4 {
+        background: initial;
+      }
 
-      h4 {
+      & > div > h4 {
         left: 20px;
         position: relative;
         margin: $note-title-margin;
@@ -207,8 +210,8 @@ div#update .jstTabs.tabs li a {
         }
       }
 
-      div:target h4 {
-        background-color:$color-target-bg;
+      & > div:target > h4 {
+        background: $color-target-bg;
 
         &:before {
           border-right: 6px solid $color-target-bg;

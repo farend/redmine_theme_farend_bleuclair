@@ -473,6 +473,8 @@ a[href*="activity"][title*=":"] {
       height: 18px; }
     #history .journal:first-of-type:last-of-type:after {
       content: none; }
+    #history .journal div:target h4 {
+      background: initial; }
     #history .journal > div > h4 {
       left: 20px;
       position: relative;

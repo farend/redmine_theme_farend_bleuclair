@@ -122,6 +122,10 @@ a[href*="activity"][title*=":"] {
       content: none;
     }
 
+    div:target h4 {
+      background: initial;
+    }
+
     & > div > h4 {
       left: 20px;
       position: relative;

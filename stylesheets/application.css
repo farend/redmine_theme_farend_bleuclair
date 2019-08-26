@@ -525,7 +525,7 @@ a[href*="activity"][title*=":"] {
           background-color: #ffffff;
           border: 1px solid #888;
           border-radius: 50%; }
-    #history .journal form .jstElements, #history .journal form .jstEditor, #history .journal form .wiki, #history .journal form p {
+    #history .journal form .jstElements, #history .journal form .jstEditor, #history .journal form .wiki, #history .journal form p, #history .journal form input[type='checkbox'] {
       margin-left: 32px; }
     #history .journal .wiki {
       margin-left: 32px; }

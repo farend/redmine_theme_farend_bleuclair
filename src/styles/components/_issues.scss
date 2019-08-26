@@ -194,7 +194,7 @@ a[href*="activity"][title*=":"] {
     }
 
     form {
-      .jstElements, .jstEditor, .wiki, p {
+      .jstElements, .jstEditor, .wiki, p, input[type='checkbox'] {
         margin-left: 32px;
       }
     }

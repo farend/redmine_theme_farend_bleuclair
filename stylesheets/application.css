@@ -506,40 +506,38 @@ div#update .jstTabs.tabs li a {
       #history .tab-content .journal .contextual .journal-actions, #history .tab-content .journal .contextual a.journal-link {
         position: relative;
         z-index: 30; }
-    #history .tab-content .journal div:target h4 {
-      background: initial; }
-    #history .tab-content .journal > div > h4 {
-      left: 20px;
-      position: relative;
-      margin: 0 19px 0 10px;
-      border: none;
-      font-weight: bold;
-      background-color: #e9eaf1;
-      padding: 6px 9px;
-      font-size: 0.9em;
-      border-radius: 4px; }
-      #history .tab-content .journal > div > h4 a[href*="activity"][data-absolute-date*=":"] {
-        box-shadow: none;
-        padding: 0; }
-      #history .tab-content .journal > div > h4:before {
-        content: '';
-        position: absolute;
-        left: -6px;
-        top: 8px;
-        width: 0;
-        height: 0;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-right: 6px solid #e9eaf1; }
-      #history .tab-content .journal > div > h4 .gravatar {
-        position: absolute;
-        left: -35px;
-        top: 4px;
-        z-index: 30;
-        margin-left: 0; }
-    #history .tab-content .journal > div:target > h4 {
+      #history .tab-content .journal .contextual + h4 {
+        left: 20px;
+        position: relative;
+        margin: 0 19px 0 10px;
+        border: none;
+        font-weight: bold;
+        background-color: #e9eaf1;
+        padding: 6px 9px;
+        font-size: 0.9em;
+        border-radius: 4px; }
+        #history .tab-content .journal .contextual + h4 a[href*="activity"][data-absolute-date*=":"] {
+          box-shadow: none;
+          padding: 0; }
+        #history .tab-content .journal .contextual + h4:before {
+          content: '';
+          position: absolute;
+          left: -6px;
+          top: 8px;
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-right: 6px solid #e9eaf1; }
+        #history .tab-content .journal .contextual + h4 .gravatar {
+          position: absolute;
+          left: -35px;
+          top: 4px;
+          z-index: 30;
+          margin-left: 0; }
+    #history .tab-content .journal:target .contextual + h4, #history .tab-content .journal div:target .contextual + h4 {
       background: #DDEEFF; }
-      #history .tab-content .journal > div:target > h4:before {
+      #history .tab-content .journal:target .contextual + h4:before, #history .tab-content .journal div:target .contextual + h4:before {
         border-right: 6px solid #DDEEFF; }
     #history .tab-content .journal .details {
       list-style: none;

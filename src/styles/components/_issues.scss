@@ -168,49 +168,47 @@ div#update .jstTabs.tabs li a {
           position: relative;
           z-index: 30;
         }
-      }
-      div:target h4 {
-        background: initial;
-      }
 
-      & > div > h4 {
-        left: 20px;
-        position: relative;
-        margin: $note-title-margin;
-        border: none;
-        font-weight: bold;
-        background-color: $color-note-title-bg;
-        padding: $note-title-padding;
-        font-size: 0.9em;
-        border-radius: 4px;
+        & + h4 {
+          left: 20px;
+          position: relative;
+          margin: $note-title-margin;
+          border: none;
+          font-weight: bold;
+          background-color: $color-note-title-bg;
+          padding: $note-title-padding;
+          font-size: 0.9em;
+          border-radius: 4px;
 
-        a[href*="activity"][data-absolute-date*=":"] {
-          box-shadow: none;
-          padding: 0;
-        }
+          a[href*="activity"][data-absolute-date*=":"] {
+            box-shadow: none;
+            padding: 0;
+          }
 
-        &:before {
-          content: '';
-          position: absolute;
-          left: -6px;
-          top: 8px;
-          width: 0;
-          height: 0;
-          border-top: 5px solid transparent;
-          border-bottom: 5px solid transparent;
-          border-right: 6px solid $color-note-title-bg;
-        }
+          &:before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 8px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 6px solid $color-note-title-bg;
+          }
 
-        .gravatar {
-          position: absolute;
-          left: -35px;
-          top: 4px;
-          z-index: 30;
-          margin-left: 0;
+          .gravatar {
+            position: absolute;
+            left: -35px;
+            top: 4px;
+            z-index: 30;
+            margin-left: 0;
+          }
         }
       }
 
-      & > div:target > h4 {
+      // #change-n               #note-n
+      &:target .contextual + h4, div:target .contextual + h4 {
         background: $color-target-bg;
 
         &:before {

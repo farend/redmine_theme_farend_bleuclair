@@ -172,11 +172,12 @@ a[href*="activity"][title*=":"] {
       }
     }
 
-    & > div:target > h4:before {
-      border-right: 6px solid $color-target-bg;
-    }
-    & > div:target > h4 {
+    & > div:target > h4, &:target > div > h4 {
       background: $color-target-bg;
+
+      &:before {
+        border-right: 6px solid $color-target-bg;
+      }
     }
 
     .details {

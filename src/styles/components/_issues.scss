@@ -205,7 +205,7 @@ a[href*="activity"][title*=":"] {
     }
 
     form {
-      .jstBlock, input {
+      .jstBlock, input, div[id^="template_journal"] {
         margin-left: 32px;
       }
     }

@@ -532,7 +532,7 @@ a[href*="activity"][title*=":"] {
           background-color: #ffffff;
           border: 1px solid #888;
           border-radius: 50%; }
-    #history .journal form .jstBlock, #history .journal form input {
+    #history .journal form .jstBlock, #history .journal form input, #history .journal form div[id^="template_journal"] {
       margin-left: 32px; }
     #history .journal .wiki:not(.wiki-preview) {
       margin-left: 32px; }

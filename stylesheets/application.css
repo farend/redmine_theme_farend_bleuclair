@@ -505,7 +505,7 @@ div#update .jstTabs.tabs li a {
       padding-top: 5px; }
       #history .tab-content .journal .contextual .journal-actions, #history .tab-content .journal .contextual a.journal-link {
         position: relative;
-        z-index: 30; }
+        z-index: 5; }
       #history .tab-content .journal .contextual + h4 {
         left: 20px;
         position: relative;
@@ -533,7 +533,7 @@ div#update .jstTabs.tabs li a {
           position: absolute;
           left: -35px;
           top: 4px;
-          z-index: 30;
+          z-index: 5;
           margin-left: 0; }
     #history .tab-content .journal:target .contextual + h4, #history .tab-content .journal div:target .contextual + h4 {
       background: #DDEEFF; }

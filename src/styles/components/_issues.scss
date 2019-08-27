@@ -166,7 +166,7 @@ div#update .jstTabs.tabs li a {
 
         .journal-actions, a.journal-link {
           position: relative;
-          z-index: 30;
+          z-index: 5;
         }
 
         & + h4 {
@@ -201,7 +201,7 @@ div#update .jstTabs.tabs li a {
             position: absolute;
             left: -35px;
             top: 4px;
-            z-index: 30;
+            z-index: 5;
             margin-left: 0;
           }
         }

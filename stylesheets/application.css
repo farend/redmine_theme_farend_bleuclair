@@ -478,7 +478,7 @@ a[href*="activity"][title*=":"] {
       padding-top: 5px; }
       #history .journal .contextual .journal-actions, #history .journal .contextual a.journal-link {
         position: relative;
-        z-index: 30; }
+        z-index: 5; }
     #history .journal div:target h4 {
       background: initial; }
     #history .journal > div > h4 {

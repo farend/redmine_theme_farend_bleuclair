@@ -558,8 +558,7 @@ div#update .jstTabs.tabs li a {
           background-color: #ffffff;
           border: 1px solid #888;
           border-radius: 50%; }
-    #history .tab-content .journal form .jstBlock, #history .tab-content .journal form input {
-      margin-left: 32px; }
+    #history .tab-content .journal form .jstBlock, #history .tab-content .journal form input, #history .tab-content .journal div[id^="template_journal"],
     #history .tab-content .journal .wiki:not(.wiki-preview),
     #history .tab-content .journal.time_entry p, #history .tab-content .journal.changeset > p {
       margin-left: 32px; }

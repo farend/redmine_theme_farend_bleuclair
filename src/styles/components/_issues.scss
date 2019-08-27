@@ -241,11 +241,7 @@ div#update .jstTabs.tabs li a {
         }
       }
 
-      form {
-        .jstBlock, input {
-          margin-left: 32px;
-        }
-      }
+      form .jstBlock, form input, div[id^="template_journal"],
       .wiki:not(.wiki-preview),
       &.time_entry p, &.changeset > p {
         margin-left: 32px;

@@ -437,6 +437,16 @@ a[href*="activity"][title*=":"] {
   a[href*="activity"][title*=":"]:before {
     content: " [" attr(title) "] "; }
 
+div#issue-changesets h3 {
+  padding-left: 15px; }
+
+div#issue-changesets, div#issue-changesets div.changeset {
+  padding: 15px;
+  position: relative;
+  z-index: 40;
+  border-radius: 3px;
+  border: 1px solid #dfe8f1; }
+
 #history {
   background-color: #ffffff;
   margin-bottom: 30px;
@@ -475,7 +485,8 @@ a[href*="activity"][title*=":"] {
       content: none; }
     #history .journal .contextual {
       padding-right: 10px;
-      padding-top: 5px; }
+      padding-top: 5px;
+      margin-left: 5px; }
       #history .journal .contextual .journal-actions, #history .journal .contextual a.journal-link {
         position: relative;
         z-index: 5; }

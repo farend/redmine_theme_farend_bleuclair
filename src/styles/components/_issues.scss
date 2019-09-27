@@ -74,6 +74,20 @@ a[href*="activity"][title*=":"] {
   }
 }
 
+div#issue-changesets {
+  h3 {
+    padding-left: 15px;
+  }
+
+  &, div.changeset{
+    padding: 15px;
+    position: relative;
+    z-index: 40;
+    border-radius: 3px;
+    border: 1px solid $color-history-border;
+  }
+}
+
 #history {
   background-color: $color-history-bg;
   margin-bottom: 30px;
@@ -125,6 +139,7 @@ a[href*="activity"][title*=":"] {
     .contextual {
       padding-right: 10px;
       padding-top: 5px;
+      margin-left: 5px;
 
       .journal-actions, a.journal-link {
         position: relative;

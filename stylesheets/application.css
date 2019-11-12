@@ -506,7 +506,7 @@ div#update .jstTabs.tabs li a {
       #history .tab-content .journal .contextual .journal-actions, #history .tab-content .journal .contextual a.journal-link {
         position: relative;
         z-index: 5; }
-    #history .tab-content .journal .contextual + h4, #history .tab-content .journal.changeset h4 {
+    #history .tab-content .journal .contextual + h4, #history .tab-content .journal h4 {
       left: 20px;
       position: relative;
       margin: 0 19px 0 10px;
@@ -516,10 +516,10 @@ div#update .jstTabs.tabs li a {
       padding: 6px 9px;
       font-size: 0.9em;
       border-radius: 4px; }
-      #history .tab-content .journal .contextual + h4 a[href*="activity"][data-absolute-date*=":"], #history .tab-content .journal.changeset h4 a[href*="activity"][data-absolute-date*=":"] {
+      #history .tab-content .journal .contextual + h4 a[href*="activity"][data-absolute-date*=":"], #history .tab-content .journal h4 a[href*="activity"][data-absolute-date*=":"] {
         box-shadow: none;
         padding: 0; }
-      #history .tab-content .journal .contextual + h4 .contextual:before, #history .tab-content .journal.changeset h4 .contextual:before {
+      #history .tab-content .journal .contextual + h4 .contextual:before, #history .tab-content .journal h4 .contextual:before {
         content: '';
         position: absolute;
         left: -6px;
@@ -529,7 +529,7 @@ div#update .jstTabs.tabs li a {
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         border-right: 6px solid #e9eaf1; }
-      #history .tab-content .journal .contextual + h4 .gravatar, #history .tab-content .journal.changeset h4 .gravatar {
+      #history .tab-content .journal .contextual + h4 .gravatar, #history .tab-content .journal h4 .gravatar {
         position: absolute;
         left: -35px;
         top: 4px;

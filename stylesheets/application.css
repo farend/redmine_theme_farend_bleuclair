@@ -519,7 +519,7 @@ div#update .jstTabs.tabs li a {
       #history .tab-content .journal .contextual + h4 a[href*="activity"][data-absolute-date*=":"], #history .tab-content .journal h4 a[href*="activity"][data-absolute-date*=":"] {
         box-shadow: none;
         padding: 0; }
-      #history .tab-content .journal .contextual + h4 .contextual:before, #history .tab-content .journal h4 .contextual:before {
+      #history .tab-content .journal .contextual + h4:before, #history .tab-content .journal h4:before {
         content: '';
         position: absolute;
         left: -6px;

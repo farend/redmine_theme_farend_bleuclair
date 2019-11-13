@@ -187,7 +187,7 @@ div#update .jstTabs.tabs li a {
           padding: 0;
         }
 
-        .contextual:before {
+        &:before {
           content: '';
           position: absolute;
           left: -6px;

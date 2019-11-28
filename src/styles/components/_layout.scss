@@ -42,3 +42,8 @@ $color-main-bg:     #fafcfe;
 
   h3 { color: #333; }
 }
+
+// Fix a problem that underlines is broken in chrome
+a:hover, a:active {
+  outline: 1px solid transparent;
+}

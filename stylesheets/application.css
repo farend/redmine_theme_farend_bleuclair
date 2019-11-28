@@ -53,6 +53,9 @@ h1, h2, h3, h4 {
   padding-bottom: 2px;
   padding-top: 2px; }
 
+a:hover, a:active {
+  outline: 1px solid transparent; }
+
 .box, .mypage-box {
   background-color: #fff;
   margin-bottom: 30px;

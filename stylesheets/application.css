@@ -49,6 +49,9 @@ h1, h2, h3, h4 {
   #sidebar h3 {
     color: #333; }
 
+a:hover, a:active {
+  outline: 1px solid transparent; }
+
 .box, .mypage-box {
   background-color: #fff;
   margin-bottom: 30px;

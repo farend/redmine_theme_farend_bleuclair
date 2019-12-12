@@ -33,23 +33,26 @@ $ git clone -b redmine3.4 https://github.com/farend/redmine_theme_farend_bleucla
 $ git clone -b redmine4.0 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
+- Redmine4.1.nの場合
+```bash
+$ git clone -b redmine4.1  https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+```
+
 ### 2: テーマの設定を変更
 
 Redmineの管理画面で新しいテーマを利用する設定を行います。
 
 「管理」→「設定」→「表示」画面内の項目「テーマ」で「Bleuclair」を選択、画面最下部の「保存」ボタンをクリックしてください。
 
-## bleuclair/src/styles以下を変更したときの反映方法
+## Development
+
+* Docker、docker-composeを利用
+* 下のようにすると、変更を監視し、新しく変更を加えて保存する度に反映されるようになる(scssをcssに変換)
 
 ```bash
-# 最初のみ
-$ cd /your/path/redmine/public/themes/redmine_theme_farend_bleuclair-master/src
-$ npm install
-
-# bleuclair/src/styles以下を変更
-
-# bleuclair/src/styles以下を元にbleuclair/stylesheets/application.cssを変更
-$ gulp
+$ cd /your/path/redmine/public/themes/bleuclair
+$ docker-compose up
+$ # 終わったらctr + c, command + cで止める
 ```
 
 ## LICENSE

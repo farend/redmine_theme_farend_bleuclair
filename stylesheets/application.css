@@ -123,7 +123,6 @@ table.list {
   table.list > tbody > tr > td,
   table.list > tfoot > tr > th,
   table.list > tfoot > tr > td {
-    padding: 4px;
     line-height: 1.74;
     vertical-align: top;
     border-top: 1px solid #dfe8f1;

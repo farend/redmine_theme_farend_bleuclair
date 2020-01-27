@@ -96,5 +96,8 @@ table.list {
   .odd {
     background-color: $color-odd-bg;
   }
-}
 
+  .odd:hover {
+    background-color: #ffffdd;
+  }
+}

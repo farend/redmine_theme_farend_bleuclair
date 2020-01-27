@@ -205,6 +205,8 @@ table.list {
     border-top: 2px solid #dfe8f1; }
   table.list .odd {
     background-color: #f9f9f9; }
+  table.list .odd:hover {
+    background-color: #ffffdd; }
 
 #wrapper input[type="text"],
 #wrapper input[type="password"],

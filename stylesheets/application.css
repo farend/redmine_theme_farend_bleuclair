@@ -205,8 +205,9 @@ table.list {
     border-top: 2px solid #dfe8f1; }
   table.list .odd {
     background-color: #f9f9f9; }
-  table.list .odd:hover {
-    background-color: #ffffdd; }
+
+table.list:not(.odd-even) tbody tr:nth-child(odd):hover, table.list .odd:hover, #issue-changesets div.changeset:nth-child(odd):hover, table.list:not(.odd-even) tbody tr:nth-child(even):hover, table.list .even:hover, #issue-changesets div.changeset:nth-child(even):hover {
+  background-color: #ffffdd; }
 
 #wrapper input[type="text"],
 #wrapper input[type="password"],

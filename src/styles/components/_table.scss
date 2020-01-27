@@ -98,3 +98,7 @@ table.list {
   }
 }
 
+// Fix overwritten :hover background-color
+table.list:not(.odd-even) tbody tr:nth-child(odd):hover, table.list .odd:hover, #issue-changesets div.changeset:nth-child(odd):hover, table.list:not(.odd-even) tbody tr:nth-child(even):hover, table.list .even:hover, #issue-changesets div.changeset:nth-child(even):hover {
+  background-color: #ffffdd;
+}

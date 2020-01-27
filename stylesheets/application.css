@@ -202,6 +202,9 @@ table.list {
   table.list .odd {
     background-color: #f9f9f9; }
 
+table.list:not(.odd-even) tbody tr:nth-child(odd):hover, table.list .odd:hover, #issue-changesets div.changeset:nth-child(odd):hover, table.list:not(.odd-even) tbody tr:nth-child(even):hover, table.list .even:hover, #issue-changesets div.changeset:nth-child(even):hover {
+  background-color: #ffffdd; }
+
 #wrapper input[type="text"],
 #wrapper input[type="password"],
 #wrapper input[type="date"],

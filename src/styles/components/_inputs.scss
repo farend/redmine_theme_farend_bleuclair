@@ -3,6 +3,7 @@ $color-input-bg: #ffffff;
 $color-input-text: #2b2f33;
 $color-input-border: #dfe8f1;
 $color-input-border-focus: #3da6ff;
+$color-validation-error-input-border: #bb0000;
 
 $color-submit-text: #ffffff;
 $color-submit-border: #34495e;
@@ -108,6 +109,13 @@ $checkbox-margin: 7px 0 7px 2px;
 
   .tabular label {
     margin-top: 5px;
+
+    &.error {
+      color: $color-validation-error-input-border !important;
+    }
+    &.error + * {
+      border: 1px solid $color-validation-error-input-border !important;
+    }
   }
 
   label.inline {

@@ -310,6 +310,10 @@ table.list:not(.odd-even) tbody tr:nth-child(odd):hover, table.list .odd:hover, 
 
 #wrapper .tabular label, .modal .tabular label {
   margin-top: 5px; }
+  #wrapper .tabular label.error, .modal .tabular label.error {
+    color: #bb0000 !important; }
+  #wrapper .tabular label.error + *, .modal .tabular label.error + * {
+    border: 1px solid #bb0000 !important; }
 
 #wrapper label.inline, .modal label.inline {
   margin-right: 5px; }

@@ -47,6 +47,7 @@ a.icon:hover::before, a.icon-only:hover::before{
   vertical-align: initial;
   font-size: 0;
   white-space: nowrap;
+  background-image: none;
 }
 
 .icon-only::after {
@@ -55,6 +56,7 @@ a.icon:hover::before, a.icon-only:hover::before{
 
 .icon {
   padding-left: initial;
+  background-image: none;
 }
 
 // Instead of padding-left when using background image.

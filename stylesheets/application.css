@@ -687,13 +687,15 @@ a.icon:hover::before, a.icon-only:hover::before {
   padding-bottom: initial;
   vertical-align: initial;
   font-size: 0;
-  white-space: nowrap; }
+  white-space: nowrap;
+  background-image: none; }
 
 .icon-only::after {
   content: initial; }
 
 .icon {
-  padding-left: initial; }
+  padding-left: initial;
+  background-image: none; }
 
 .icon:before {
   content: "\00a0\00a0\00a0"; }

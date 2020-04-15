@@ -676,11 +676,23 @@ a.icon:hover::before, a.icon-only:hover::before {
   color: #333; }
 
 .icon-only {
+  background-position: initial;
+  background-repeat: initial;
+  padding-left: initial;
+  display: initial;
+  width: initial;
+  height: initial;
+  overflow: initial;
+  padding-top: initial;
+  padding-bottom: initial;
+  vertical-align: initial;
   font-size: 0;
   white-space: nowrap; }
 
+.icon-only::after {
+  content: initial; }
+
 .icon {
-  background-image: initial;
   padding-left: initial; }
 
 .icon:before {

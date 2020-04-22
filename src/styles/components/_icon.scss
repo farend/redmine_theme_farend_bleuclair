@@ -15,6 +15,11 @@ form .attributes select + a.icon-only:before { margin-left: 4px; }
 a.atom { background: transparent; padding: 2px 0px 3px 16px; }
 a.atom:before { /* fa-atom */ font-family: 'Font Awesome 5 Solid'; content: "\f143"; }
 
+input.autocomplete {
+  background: #fff url(../images/search.svg) no-repeat 2px 50%;
+  background-size: 12px 12px;
+  background-position: 5px center;
+}
 .icon:before, .icon-only:before, a.atom:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -63,6 +68,10 @@ a.icon:hover::before, a.icon-only:hover::before{
 // When using font awasome, it is overwritten with another content
 .icon:before {
   content: "\00a0\00a0\00a0";
+}
+
+#context-menu ul li a.icon {
+  padding-left: 2px;
 }
 
 .icon-add:before { /* fa-plus-circle */ font-family: 'Font Awesome 5 Solid'; content: "\f055";}

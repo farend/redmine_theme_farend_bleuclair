@@ -60,6 +60,16 @@ $ # 終わったらctr + c, command + cで止める
 GNU GPL v2  
 https://github.com/farend/redmine_theme_farend_bleuclair/blob/master/LICENSE
 
+---
+
+Web fonts in [/webfonts](webfonts) uses the following library:  
+Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com  
+License - https://fontawesome.com/license/free (Fonts: SIL OFL 1.1 License)
+
+The icon [/images/search.svg](images/search.svg) uses svg files from the following library:  
+Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com  
+License - https://fontawesome.com/license/free (Icons: CC BY 4.0 License)
+
 ## 著作者
 
 [ファーエンドテクノロジー株式会社](https://www.farend.co.jp/)

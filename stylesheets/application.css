@@ -625,7 +625,7 @@ a.collapsible {
   padding-left: initial; }
 
 tr span.expander, .gantt_subjects div > span.expander {
-  padding-left: 8px;
+  padding-left: 0px !important;
   cursor: pointer;
   background-position: initial;
   margin-left: initial; }
@@ -672,6 +672,14 @@ input.autocomplete {
   text-rendering: auto;
   font-size: 12px;
   padding-right: 5px; }
+
+.gantt-table .icon:not(.expander):before {
+  width: 12px;
+  padding-left: 2px;
+  padding-right: 5px; }
+
+.gantt-table .icon.expander:before {
+  width: 7px; }
 
 a.icon:before, a.icon-only:before {
   color: #666;

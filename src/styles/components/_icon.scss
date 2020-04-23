@@ -1,7 +1,7 @@
 #admin-menu a.selected {padding-left: initial !important; background-position: 2px 40%;}
 a.collapsible {padding-left: initial; }
 
-tr span.expander, .gantt_subjects div > span.expander {padding-left: 8px; cursor: pointer; background-position: initial; margin-left: initial;}
+tr span.expander, .gantt_subjects div > span.expander {padding-left: 0px !important; cursor: pointer; background-position: initial; margin-left: initial;}
 
 tr.member td.icon-user::before, #principals_for_new_member .icon-user:before {content: "";}
 
@@ -30,6 +30,17 @@ input.autocomplete {
   font-size: 12px;
   padding-right: 5px;
 }
+
+// ガントチャートの折りたたみが崩れる問題に対処
+.gantt-table .icon:not(.expander):before {
+  width: 12px;
+  padding-left: 2px;
+  padding-right: 5px;
+}
+.gantt-table .icon.expander:before {
+  width: 7px;
+}
+
 a.icon:before, a.icon-only:before{
   color: #666;
   -webkit-transition: color .2s ease-in;

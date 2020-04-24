@@ -1,5 +1,8 @@
 # Redmine用テーマ "farend bleuclair"
 
+| :warning: | 利用しているRedmineのバージョンによってインストール方法が違います。インストール方法をご確認ください。 |
+| --- | --- |
+
 ## このテーマについて
 
 Redmine用のカスタムテーマです。
@@ -30,7 +33,7 @@ $ git clone -b redmine3.4 https://github.com/farend/redmine_theme_farend_bleucla
 
 - Redmine4.0.nの場合
 ```bash
-$ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone -b redmine4.0 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
 - Redmine4.1.nの場合

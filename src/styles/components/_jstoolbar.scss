@@ -1,0 +1,108 @@
+.jstElements {
+  display: inline-flex;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 12px;
+
+  button {
+    background-image: initial;
+
+    .jstb_code {
+      font-size: 14px;
+      padding: 0;
+    }
+    .jstb_h1, .jstb_h2, .jstb_h3 {
+      padding: 0;
+    }
+  }
+}
+
+.jstb_strong:before {
+   /* fa-bold */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f032";
+}
+.jstb_em:before {
+   /* fa-italic */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f033";
+}
+.jstb_ins:before {
+   /* fa-underline */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f0cd";
+}
+.jstb_del:before {
+   /* fa-strikethrough */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f0cc";
+}
+.jstb_code:before {
+  content: "C";
+  font-weight: 700;
+}
+.jstb_h1:before {
+  content: "H1";
+  font-weight: 700;
+}
+.jstb_h2:before {
+  content: "H2";
+  font-weight: 700;
+}
+.jstb_h3:before {
+  content: "H3";
+  font-weight: 700;
+}
+.jstb_ul:before {
+  /* fa-list-ul */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f0ca";
+}
+.jstb_ol:before {
+  /* fa-list-ol */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f0cb";
+}
+.jstb_bq:before {
+  /* fa-indent */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f03c";
+}
+.jstb_unbq:before {
+  /* fa-outdent */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f03b";
+}
+.jstb_pre:before {
+  /* fa-file-code */
+  font-family: 'Font Awesome 5 Regular';
+  content: "\f1c9";
+}
+.jstb_precode:before {
+  /* fa-code */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f121";
+}
+.jstb_link:before {
+  /* fa-link */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f0c1";
+}
+.jstb_img:before {
+  /* fa-image */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f03e";
+}
+.jstb_table:before {
+  /* fa-image */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f0ce";
+}
+.jstb_help:before {
+  /* fa-question-circle */
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f059";
+}

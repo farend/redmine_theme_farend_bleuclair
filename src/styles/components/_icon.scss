@@ -1,4 +1,3 @@
-#admin-menu a.selected {padding-left: initial !important; background-position: 2px 40%;}
 a.collapsible {padding-left: initial; }
 
 tr span.expander, .gantt_subjects div > span.expander {padding-left: 0px !important; cursor: pointer; background-position: initial; margin-left: initial;}
@@ -41,44 +40,13 @@ input.autocomplete {
   width: 7px;
 }
 
-a.icon:before, a.icon-only:before{
+a.icon:before, a.icon-only:before, #context-menu a.icon-checked:before {
   color: #666;
   -webkit-transition: color .2s ease-in;
   transition: color .2s ease-in;
 }
-a.icon:hover::before, a.icon-only:hover::before{
+a.icon:hover::before, a.icon-only:hover::before, #context-menu a.icon-checked:before {
   color: #333;
-}
-
-.icon-only {
-  background-position: initial;
-  background-repeat: initial;
-  padding-left: initial;
-  display: initial;
-  width: initial;
-  height: initial;
-  overflow: initial;
-  padding-top: initial;
-  padding-bottom: initial;
-  vertical-align: initial;
-  font-size: 0;
-  white-space: nowrap;
-  background-image: none;
-}
-
-.icon-only::after {
-  content: initial;
-}
-
-.icon {
-  padding-left: initial;
-  background-image: none;
-}
-
-// Instead of padding-left when using background image.
-// When using font awasome, it is overwritten with another content
-.icon:before {
-  content: "\00a0\00a0\00a0";
 }
 
 #context-menu ul li a.icon {
@@ -175,6 +143,39 @@ a.icon:hover::before, a.icon-only:hover::before{
 .icon-file.application-zip:before { /* fa-file-archive */ font-family: 'Font Awesome 5 Regular'; content: "\f1c6" !important; }
 .icon-file.application-x-gzip:before { /* fa-file-archive */ font-family: 'Font Awesome 5 Regular'; content: "\f1c6" !important; }
 
+.icon-add, .icon-edit, .icon-copy, .icon-del, .icon-move, .icon-save, .icon-download, .icon-cancel,
+.icon-multiple, .icon-folder, .open, .icon-folder, .icon-package,
+.icon-user, .icon-project, .icon-projects, .icon-help, .icon-attachment, .icon-history, .icon-time-entry, .icon-time,
+.icon-time-add, .icon-stats, .icon-warning, .icon-error, .icon-fav, .icon-fav-off, .icon-reload,
+.icon-lock, .icon-locked, .icon-unlock, .icon-checked, .icon-comment, .icon-comments, .icon-summary, .icon-server-authentication,
+.icon-issue, .icon-zoom-in, .icon-zoom-out, .icon-passwd, .icon-arrow-right, .icon-test, .icon-sticky,
+.icon-email, .icon-email-disabled, .icon-email-add, .icon-ok, .icon-not-ok, .icon-link-break, .icon-list,
+.icon-close, .icon-settings, .icon-roles, .icon-issue-edit,
+.icon-workflows, .icon-custom-fields, .icon-plugins, .icon-news, .icon-issue-closed, .icon-issue-note, .icon-changeset,
+.icon-message, .icon-reply, .icon-wiki-page, .icon-wiki-page, .icon-document, .icon-add-bullet, .icon-shared, .icon-actions,
+.icon-expended, .icon-collapsed, .icon-bookmark, .icon-bookmark-off,
+.icon-sort-handle, .icon-sorted-asc, .icon-sorted-desc, .icon-toggle-plus, .icon-toggle-minus, .icon-file {
+  background-image: none !important;
+  padding-left: initial !important;
+
+  &.icon-only {
+    background-position: initial;
+    background-repeat: initial;
+    display: initial;
+    width: initial;
+    height: initial;
+    overflow: initial;
+    padding-top: initial;
+    padding-bottom: initial;
+    vertical-align: initial;
+    font-size: 0;
+    white-space: nowrap;
+  }
+
+  &.icon-only::after {
+    content: initial;
+  }
+}
 // 一部のgroupアイコンはimgタグのsrcとして直接埋め込まれており置換が難しい
 // .members.boxと#admin-menuのアイコンのみはメニューのアイコンと言うことでFont Awesomeに置き換え、
 // それ以外はグループのアバターという扱いでそのままにしておく(Gravatarと同じような扱い)

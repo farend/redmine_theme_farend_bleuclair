@@ -381,7 +381,7 @@ form .attributes .check_box_group label {
 
 div.flash.error, #errorExplanation {
   color: #620f0f;
-  background: #ffc6c6;
+  background-color: #ffc6c6;
   border: none; }
 
 div.flash.notice {
@@ -701,10 +701,6 @@ div#activity dd span.description, #search-results dd span.description {
   padding-bottom: 2px;
   padding-top: 1px; }
 
-#admin-menu a.selected {
-  padding-left: initial !important;
-  background-position: 2px 40%; }
-
 a.collapsible {
   padding-left: initial; }
 
@@ -765,37 +761,12 @@ input.autocomplete {
 .gantt-table .icon.expander:before {
   width: 7px; }
 
-a.icon:before, a.icon-only:before {
+a.icon:before, a.icon-only:before, #context-menu a.icon-checked:before {
   color: #666;
   transition: color .2s ease-in; }
 
-a.icon:hover::before, a.icon-only:hover::before {
+a.icon:hover::before, a.icon-only:hover::before, #context-menu a.icon-checked:before {
   color: #333; }
-
-.icon-only {
-  background-position: initial;
-  background-repeat: initial;
-  padding-left: initial;
-  display: initial;
-  width: initial;
-  height: initial;
-  overflow: initial;
-  padding-top: initial;
-  padding-bottom: initial;
-  vertical-align: initial;
-  font-size: 0;
-  white-space: nowrap;
-  background-image: none; }
-
-.icon-only::after {
-  content: initial; }
-
-.icon {
-  padding-left: initial;
-  background-image: none; }
-
-.icon:before {
-  content: "\00a0\00a0\00a0"; }
 
 #context-menu ul li a.icon {
   padding-left: 2px; }
@@ -1244,6 +1215,57 @@ a.icon:hover::before, a.icon-only:hover::before {
   /* fa-file-archive */
   font-family: 'Font Awesome 5 Regular';
   content: "\f1c6" !important; }
+
+.icon-add, .icon-edit, .icon-copy, .icon-del, .icon-move, .icon-save, .icon-download, .icon-cancel,
+.icon-multiple, .icon-folder, .open, .icon-folder, .icon-package,
+.icon-user, .icon-project, .icon-projects, .icon-help, .icon-attachment, .icon-history, .icon-time-entry, .icon-time,
+.icon-time-add, .icon-stats, .icon-warning, .icon-error, .icon-fav, .icon-fav-off, .icon-reload,
+.icon-lock, .icon-locked, .icon-unlock, .icon-checked, .icon-comment, .icon-comments, .icon-summary, .icon-server-authentication,
+.icon-issue, .icon-zoom-in, .icon-zoom-out, .icon-passwd, .icon-arrow-right, .icon-test, .icon-sticky,
+.icon-email, .icon-email-disabled, .icon-email-add, .icon-ok, .icon-not-ok, .icon-link-break, .icon-list,
+.icon-close, .icon-settings, .icon-roles, .icon-issue-edit,
+.icon-workflows, .icon-custom-fields, .icon-plugins, .icon-news, .icon-issue-closed, .icon-issue-note, .icon-changeset,
+.icon-message, .icon-reply, .icon-wiki-page, .icon-wiki-page, .icon-document, .icon-add-bullet, .icon-shared, .icon-actions,
+.icon-expended, .icon-collapsed, .icon-bookmark, .icon-bookmark-off,
+.icon-sort-handle, .icon-sorted-asc, .icon-sorted-desc, .icon-toggle-plus, .icon-toggle-minus, .icon-file {
+  background-image: none !important;
+  padding-left: initial !important; }
+  .icon-add.icon-only, .icon-edit.icon-only, .icon-copy.icon-only, .icon-del.icon-only, .icon-move.icon-only, .icon-save.icon-only, .icon-download.icon-only, .icon-cancel.icon-only,
+  .icon-multiple.icon-only, .icon-folder.icon-only, .open.icon-only, .icon-folder.icon-only, .icon-package.icon-only,
+  .icon-user.icon-only, .icon-project.icon-only, .icon-projects.icon-only, .icon-help.icon-only, .icon-attachment.icon-only, .icon-history.icon-only, .icon-time-entry.icon-only, .icon-time.icon-only,
+  .icon-time-add.icon-only, .icon-stats.icon-only, .icon-warning.icon-only, .icon-error.icon-only, .icon-fav.icon-only, .icon-fav-off.icon-only, .icon-reload.icon-only,
+  .icon-lock.icon-only, .icon-locked.icon-only, .icon-unlock.icon-only, .icon-checked.icon-only, .icon-comment.icon-only, .icon-comments.icon-only, .icon-summary.icon-only, .icon-server-authentication.icon-only,
+  .icon-issue.icon-only, .icon-zoom-in.icon-only, .icon-zoom-out.icon-only, .icon-passwd.icon-only, .icon-arrow-right.icon-only, .icon-test.icon-only, .icon-sticky.icon-only,
+  .icon-email.icon-only, .icon-email-disabled.icon-only, .icon-email-add.icon-only, .icon-ok.icon-only, .icon-not-ok.icon-only, .icon-link-break.icon-only, .icon-list.icon-only,
+  .icon-close.icon-only, .icon-settings.icon-only, .icon-roles.icon-only, .icon-issue-edit.icon-only,
+  .icon-workflows.icon-only, .icon-custom-fields.icon-only, .icon-plugins.icon-only, .icon-news.icon-only, .icon-issue-closed.icon-only, .icon-issue-note.icon-only, .icon-changeset.icon-only,
+  .icon-message.icon-only, .icon-reply.icon-only, .icon-wiki-page.icon-only, .icon-wiki-page.icon-only, .icon-document.icon-only, .icon-add-bullet.icon-only, .icon-shared.icon-only, .icon-actions.icon-only,
+  .icon-expended.icon-only, .icon-collapsed.icon-only, .icon-bookmark.icon-only, .icon-bookmark-off.icon-only,
+  .icon-sort-handle.icon-only, .icon-sorted-asc.icon-only, .icon-sorted-desc.icon-only, .icon-toggle-plus.icon-only, .icon-toggle-minus.icon-only, .icon-file.icon-only {
+    background-position: initial;
+    background-repeat: initial;
+    display: initial;
+    width: initial;
+    height: initial;
+    overflow: initial;
+    padding-top: initial;
+    padding-bottom: initial;
+    vertical-align: initial;
+    font-size: 0;
+    white-space: nowrap; }
+  .icon-add.icon-only::after, .icon-edit.icon-only::after, .icon-copy.icon-only::after, .icon-del.icon-only::after, .icon-move.icon-only::after, .icon-save.icon-only::after, .icon-download.icon-only::after, .icon-cancel.icon-only::after,
+  .icon-multiple.icon-only::after, .icon-folder.icon-only::after, .open.icon-only::after, .icon-folder.icon-only::after, .icon-package.icon-only::after,
+  .icon-user.icon-only::after, .icon-project.icon-only::after, .icon-projects.icon-only::after, .icon-help.icon-only::after, .icon-attachment.icon-only::after, .icon-history.icon-only::after, .icon-time-entry.icon-only::after, .icon-time.icon-only::after,
+  .icon-time-add.icon-only::after, .icon-stats.icon-only::after, .icon-warning.icon-only::after, .icon-error.icon-only::after, .icon-fav.icon-only::after, .icon-fav-off.icon-only::after, .icon-reload.icon-only::after,
+  .icon-lock.icon-only::after, .icon-locked.icon-only::after, .icon-unlock.icon-only::after, .icon-checked.icon-only::after, .icon-comment.icon-only::after, .icon-comments.icon-only::after, .icon-summary.icon-only::after, .icon-server-authentication.icon-only::after,
+  .icon-issue.icon-only::after, .icon-zoom-in.icon-only::after, .icon-zoom-out.icon-only::after, .icon-passwd.icon-only::after, .icon-arrow-right.icon-only::after, .icon-test.icon-only::after, .icon-sticky.icon-only::after,
+  .icon-email.icon-only::after, .icon-email-disabled.icon-only::after, .icon-email-add.icon-only::after, .icon-ok.icon-only::after, .icon-not-ok.icon-only::after, .icon-link-break.icon-only::after, .icon-list.icon-only::after,
+  .icon-close.icon-only::after, .icon-settings.icon-only::after, .icon-roles.icon-only::after, .icon-issue-edit.icon-only::after,
+  .icon-workflows.icon-only::after, .icon-custom-fields.icon-only::after, .icon-plugins.icon-only::after, .icon-news.icon-only::after, .icon-issue-closed.icon-only::after, .icon-issue-note.icon-only::after, .icon-changeset.icon-only::after,
+  .icon-message.icon-only::after, .icon-reply.icon-only::after, .icon-wiki-page.icon-only::after, .icon-wiki-page.icon-only::after, .icon-document.icon-only::after, .icon-add-bullet.icon-only::after, .icon-shared.icon-only::after, .icon-actions.icon-only::after,
+  .icon-expended.icon-only::after, .icon-collapsed.icon-only::after, .icon-bookmark.icon-only::after, .icon-bookmark-off.icon-only::after,
+  .icon-sort-handle.icon-only::after, .icon-sorted-asc.icon-only::after, .icon-sorted-desc.icon-only::after, .icon-toggle-plus.icon-only::after, .icon-toggle-minus.icon-only::after, .icon-file.icon-only::after {
+    content: initial; }
 
 .members.box .icon-group, #admin-menu .icon-group {
   padding-left: initial;

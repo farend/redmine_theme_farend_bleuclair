@@ -566,6 +566,75 @@ div#issue-changesets, div#issue-changesets div.changeset {
 fieldset#filters td.values input {
   height: inherit; }
 
+.controller-messages.action-show div.message {
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #dfe8f1;
+  padding: 15px; }
+  .controller-messages.action-show div.message.reply {
+    padding: 8px 3px 3px 3px !important;
+    background-color: #ffffff;
+    position: relative;
+    overflow: visible; }
+    .controller-messages.action-show div.message.reply:before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #ffffff;
+      position: absolute;
+      left: 10px;
+      top: 16px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px #e5e5e5;
+      z-index: 1; }
+    .controller-messages.action-show div.message.reply:first-of-type:after {
+      top: 15px; }
+    .controller-messages.action-show div.message.reply:last-of-type:after {
+      height: 18px; }
+    .controller-messages.action-show div.message.reply:first-of-type:last-of-type:after {
+      content: none; }
+    .controller-messages.action-show div.message.reply .contextual {
+      padding-right: 10px;
+      padding-top: 5px; }
+      .controller-messages.action-show div.message.reply .contextual a {
+        position: relative;
+        z-index: 5; }
+    .controller-messages.action-show div.message.reply .wiki {
+      padding-left: 32px; }
+    .controller-messages.action-show div.message.reply .contextual + h4 {
+      left: 20px;
+      position: relative;
+      margin: 0 19px 0 10px;
+      border: none;
+      font-weight: bold;
+      background-color: #e9eaf1;
+      padding: 6px 9px;
+      font-size: 0.9em;
+      border-radius: 4px; }
+      .controller-messages.action-show div.message.reply .contextual + h4 a[href*="activity"][data-absolute-date*=":"] {
+        box-shadow: none;
+        padding: 0; }
+      .controller-messages.action-show div.message.reply .contextual + h4:before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 6px solid #e9eaf1; }
+      .controller-messages.action-show div.message.reply .contextual + h4 .gravatar {
+        position: absolute;
+        left: -30px;
+        top: 4px;
+        z-index: 5;
+        margin-left: 0; }
+    .controller-messages.action-show div.message.reply:target .contextual + h4, .controller-messages.action-show div.message.reply div:target .contextual + h4 {
+      background: #DDEEFF; }
+      .controller-messages.action-show div.message.reply:target .contextual + h4:before, .controller-messages.action-show div.message.reply div:target .contextual + h4:before {
+        border-right: 6px solid #DDEEFF; }
+
 div#activity dt .time {
   color: #444; }
 

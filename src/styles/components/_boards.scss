@@ -1,0 +1,118 @@
+// forum(board)
+
+.controller-messages.action-show #content > div.message {
+  border-radius: 3px;
+  background-color: $color-history-bg;
+  border: 1px solid $color-history-border;
+  padding: $histry-padding;
+}
+
+#replies {
+  background-color: $color-history-bg;
+  border-radius: 0px 0px 3px 3px;
+  border: 1px solid $color-history-border;
+  padding-top: $histry-padding;
+  padding-left: 10px;
+
+  .message.reply {
+    padding: 8px 3px 3px 3px !important;
+    background-color: $color-history-bg;
+    position: relative;
+    overflow: visible;
+
+    &:before {
+      content: "";
+      width: $timeline-point-size;
+      height: $timeline-point-size;
+      background-color: $color-history-bg;
+      position: absolute;
+      left: 6px;
+      top: 16px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px $color-timeline;
+      z-index: 1;
+    }
+
+    &:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background-color: $color-timeline;
+      position: absolute;
+      left: 9px;
+      top: 0px;
+    }
+
+    &:first-of-type:after {
+      top: 15px;
+    }
+
+    &:last-of-type:after {
+      height: 18px;
+    }
+
+    &:first-of-type:last-of-type:after {
+      content: none;
+    }
+
+    .contextual {
+      padding-right: 10px;
+      padding-top: 5px;
+
+      a {
+        position: relative;
+        z-index: 5;
+      }
+    }
+
+    .wiki {
+      padding-left: 32px;
+    }
+
+    .contextual + h4 {
+      left: 20px;
+      position: relative;
+      margin: $note-title-margin;
+      border: none;
+      font-weight: bold;
+      background-color: $color-note-title-bg;
+      padding: $note-title-padding;
+      font-size: 0.9em;
+      border-radius: 4px;
+
+      a[href*="activity"][data-absolute-date*=":"] {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 6px solid $color-note-title-bg;
+      }
+
+      .gravatar {
+        position: absolute;
+        left: -35px;
+        top: 4px;
+        z-index: 5;
+        margin-left: 0;
+      }
+    }
+
+    // #change-n               #note-n
+    &:target .contextual + h4, div:target .contextual + h4 {
+      background: $color-target-bg;
+
+      &:before {
+        border-right: 6px solid $color-target-bg;
+      }
+    }
+  }
+}

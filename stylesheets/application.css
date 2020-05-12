@@ -572,6 +572,90 @@ div#issue-changesets, div#issue-changesets div.changeset {
 fieldset#filters td.values input {
   height: inherit; }
 
+.controller-messages.action-show #content > div.message {
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #dfe8f1;
+  padding: 15px; }
+
+#replies {
+  background-color: #ffffff;
+  border-radius: 0px 0px 3px 3px;
+  border: 1px solid #dfe8f1;
+  padding-top: 15px;
+  padding-left: 10px; }
+  #replies .message.reply {
+    padding: 8px 3px 3px 3px !important;
+    background-color: #ffffff;
+    position: relative;
+    overflow: visible; }
+    #replies .message.reply:before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #ffffff;
+      position: absolute;
+      left: 6px;
+      top: 16px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px #e5e5e5;
+      z-index: 1; }
+    #replies .message.reply:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background-color: #e5e5e5;
+      position: absolute;
+      left: 9px;
+      top: 0px; }
+    #replies .message.reply:first-of-type:after {
+      top: 15px; }
+    #replies .message.reply:last-of-type:after {
+      height: 18px; }
+    #replies .message.reply:first-of-type:last-of-type:after {
+      content: none; }
+    #replies .message.reply .contextual {
+      padding-right: 10px;
+      padding-top: 5px; }
+      #replies .message.reply .contextual a {
+        position: relative;
+        z-index: 5; }
+    #replies .message.reply .wiki {
+      padding-left: 32px; }
+    #replies .message.reply .contextual + h4 {
+      left: 20px;
+      position: relative;
+      margin: 0 19px 0 10px;
+      border: none;
+      font-weight: bold;
+      background-color: #e9eaf1;
+      padding: 6px 9px;
+      font-size: 0.9em;
+      border-radius: 4px; }
+      #replies .message.reply .contextual + h4 a[href*="activity"][data-absolute-date*=":"] {
+        box-shadow: none;
+        padding: 0; }
+      #replies .message.reply .contextual + h4:before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 6px solid #e9eaf1; }
+      #replies .message.reply .contextual + h4 .gravatar {
+        position: absolute;
+        left: -35px;
+        top: 4px;
+        z-index: 5;
+        margin-left: 0; }
+    #replies .message.reply:target .contextual + h4, #replies .message.reply div:target .contextual + h4 {
+      background: #DDEEFF; }
+      #replies .message.reply:target .contextual + h4:before, #replies .message.reply div:target .contextual + h4:before {
+        border-right: 6px solid #DDEEFF; }
+
 div#activity dt .time {
   color: #444; }
 

@@ -9,100 +9,142 @@
 
   button {
     background-image: initial;
+    background-color: white !important;
+    border-color: #c9c9c9 !important;
+  }
 
-    .jstb_code {
-      font-size: 14px;
-      padding: 0;
-    }
-    .jstb_h1, .jstb_h2, .jstb_h3 {
-      padding: 0;
+  .jstb_strong:before {
+    /* fa-bold */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f032";
+    font-size: 15px;
+  }
+  .jstb_em:before {
+    /* fa-italic */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f033";
+    font-size: 15px;
+  }
+  .jstb_ins:before {
+    /* fa-underline */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f0cd";
+    font-size: 15px;
+  }
+  .jstb_del:before {
+    /* fa-strikethrough */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f0cc";
+    font-size: 15px;
+  }
+  .jstb_code {
+    padding: 1px;
+    &:before {
+      content: "C";
+      font-size: 18px;
+      font-weight: 700;
     }
   }
-}
-
-.jstb_strong:before {
-   /* fa-bold */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f032";
-}
-.jstb_em:before {
-   /* fa-italic */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f033";
-}
-.jstb_ins:before {
-   /* fa-underline */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f0cd";
-}
-.jstb_del:before {
-   /* fa-strikethrough */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f0cc";
-}
-.jstb_code:before {
-  content: "C";
-  font-weight: 700;
-}
-.jstb_h1:before {
-  content: "H1";
-  font-weight: 700;
-}
-.jstb_h2:before {
-  content: "H2";
-  font-weight: 700;
-}
-.jstb_h3:before {
-  content: "H3";
-  font-weight: 700;
-}
-.jstb_ul:before {
-  /* fa-list-ul */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f0ca";
-}
-.jstb_ol:before {
-  /* fa-list-ol */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f0cb";
-}
-.jstb_bq:before {
-  /* fa-indent */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f03c";
-}
-.jstb_unbq:before {
-  /* fa-outdent */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f03b";
-}
-.jstb_pre:before {
-  /* fa-file-code */
-  font-family: 'Font Awesome 5 Regular';
-  content: "\f1c9";
-}
-.jstb_precode:before {
-  /* fa-code */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f121";
-}
-.jstb_link:before {
-  /* fa-link */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f0c1";
-}
-.jstb_img:before {
-  /* fa-image */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f03e";
-}
-.jstb_table:before {
-  /* fa-image */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f0ce";
-}
-.jstb_help:before {
-  /* fa-question-circle */
-  font-family: 'Font Awesome 5 Solid';
-  content: "\f059";
+  .jstb_h1 {
+    padding: 1px;
+    &:before {
+      content: "H1";
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  .jstb_h2 {
+    padding: 1px;
+    &:before {
+      content: "H2";
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  .jstb_h3 {
+    padding: 1px;
+    &:before {
+      content: "H3";
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  .jstb_ul {
+    padding: 0px;
+    &:before {
+      /* fa-list-ul */
+      font-family: 'Font Awesome 5 Solid';
+      content: "\f0ca";
+      font-size: 18px;
+      position: 0px;
+    }
+  }
+  .jstb_ol {
+    padding: 0px;
+    &:before {
+      /* fa-list-ol */
+      font-family: 'Font Awesome 5 Solid';
+      content: "\f0cb";
+      font-size: 18px;
+    }
+  }
+  .jstb_bq {
+    padding: 0px;
+    &:before {
+      /* fa-indent */
+      font-family: 'Font Awesome 5 Solid';
+      content: "\f03c";
+      font-size: 18px;
+    }
+  }
+  .jstb_unbq {
+    padding: 0px;
+    &:before {
+      /* fa-outdent */
+      font-family: 'Font Awesome 5 Solid';
+      content: "\f03b";
+      font-size: 18px;
+    }
+  }
+  .jstb_pre {
+    padding-top: 0px;
+    padding-left: 1px;
+    &:before {
+      content: "pre";
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+  .jstb_precode {
+    padding-left: 2px;
+    &:before {
+      /* fa-code */
+      font-family: 'Font Awesome 5 Solid';
+      content: "\f121";
+      font-size: 15px;
+    }
+  }
+  .jstb_link:before {
+    /* fa-link */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f0c1";
+    font-size: 15px;
+  }
+  .jstb_img:before {
+    /* fa-image */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f03e";
+    font-size: 15px;
+  }
+  .jstb_table:before {
+    /* fa-image */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f0ce";
+    font-size: 15px;
+  }
+  .jstb_help:before {
+    /* fa-question-circle */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f059";
+  }
 }

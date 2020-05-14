@@ -231,3 +231,10 @@ input.autocomplete {
 .icon.my-project {
   padding-left: 5px !important;
 }
+
+// 拡大画面でのサイドバーの検索フォームのレイアウトを修正
+@media screen and (max-width: 899px) {
+  .flyout-menu .flyout-menu__search input[type='text'] {
+    padding-left: 27px !important;
+  }
+}

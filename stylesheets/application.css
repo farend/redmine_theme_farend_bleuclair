@@ -375,7 +375,7 @@ form .attributes .check_box_group label {
   width: 100%; }
 
 #errorExplanation, div.flash, .nodata, .warning, .conflict {
-  padding: 10px 12px;
+  padding: 10px 12px 10px 30px;
   border-radius: 3px;
   border: none; }
 

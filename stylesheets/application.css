@@ -761,6 +761,12 @@ input.autocomplete {
 .gantt-table .icon.expander:before {
   width: 7px; }
 
+@media screen and (max-width: 899px) {
+  .gantt-table .icon:not(.expander):before {
+    width: 20px; }
+  .gantt-table .icon.expander:before {
+    width: 12px; } }
+
 .icon:before, .icon-only:before, #context-menu .icon-checked:before {
   color: #666;
   transition: color .2s ease-in; }

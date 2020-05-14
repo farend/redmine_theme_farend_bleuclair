@@ -1408,4 +1408,5 @@ input.autocomplete {
   .jstElements .jstb_help:before {
     /* fa-question-circle */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f059"; }
+    content: "\f059";
+    font-size: 15px; }

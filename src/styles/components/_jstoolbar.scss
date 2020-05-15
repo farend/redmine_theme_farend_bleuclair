@@ -17,31 +17,31 @@
     /* fa-bold */
     font-family: 'Font Awesome 5 Solid';
     content: "\f032";
-    font-size: 15px;
+    font-size: 14px;
   }
   .jstb_em:before {
     /* fa-italic */
     font-family: 'Font Awesome 5 Solid';
     content: "\f033";
-    font-size: 15px;
+    font-size: 14px;
   }
   .jstb_ins:before {
     /* fa-underline */
     font-family: 'Font Awesome 5 Solid';
     content: "\f0cd";
-    font-size: 15px;
+    font-size: 14px;
   }
   .jstb_del:before {
     /* fa-strikethrough */
     font-family: 'Font Awesome 5 Solid';
     content: "\f0cc";
-    font-size: 15px;
+    font-size: 14px;
   }
   .jstb_code {
     padding: 1px;
     &:before {
       content: "C";
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
     }
   }
@@ -49,7 +49,7 @@
     padding: 1px;
     &:before {
       content: "H1";
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
     }
   }
@@ -57,7 +57,7 @@
     padding: 1px;
     &:before {
       content: "H2";
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
     }
   }
@@ -65,7 +65,7 @@
     padding: 1px;
     &:before {
       content: "H3";
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
     }
   }
@@ -75,7 +75,7 @@
       /* fa-list-ul */
       font-family: 'Font Awesome 5 Solid';
       content: "\f0ca";
-      font-size: 18px;
+      font-size: 16px;
       position: 0px;
     }
   }
@@ -85,7 +85,7 @@
       /* fa-list-ol */
       font-family: 'Font Awesome 5 Solid';
       content: "\f0cb";
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   .jstb_bq {
@@ -94,7 +94,7 @@
       /* fa-indent */
       font-family: 'Font Awesome 5 Solid';
       content: "\f03c";
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   .jstb_unbq {
@@ -103,15 +103,15 @@
       /* fa-outdent */
       font-family: 'Font Awesome 5 Solid';
       content: "\f03b";
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   .jstb_pre {
-    padding-top: 0px;
+    padding-top: 2px;
     padding-left: 1px;
     &:before {
       content: "pre";
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
     }
   }
@@ -121,31 +121,31 @@
       /* fa-code */
       font-family: 'Font Awesome 5 Solid';
       content: "\f121";
-      font-size: 15px;
+      font-size: 14px;
     }
   }
   .jstb_link:before {
     /* fa-link */
     font-family: 'Font Awesome 5 Solid';
     content: "\f0c1";
-    font-size: 15px;
+    font-size: 14px;
   }
   .jstb_img:before {
     /* fa-image */
     font-family: 'Font Awesome 5 Solid';
     content: "\f03e";
-    font-size: 15px;
+    font-size: 14px;
   }
   .jstb_table:before {
     /* fa-image */
     font-family: 'Font Awesome 5 Solid';
     content: "\f0ce";
-    font-size: 15px;
+    font-size: 14px;
   }
   .jstb_help:before {
     /* fa-question-circle */
     font-family: 'Font Awesome 5 Solid';
     content: "\f059";
-    font-size: 15px;
+    font-size: 14px;
   }
 }

@@ -1,23 +1,16 @@
-a.collapsible {padding-left: initial; }
+$overridden-selectors: '.icon-add', '.icon-edit', '.icon-copy', '.icon-del', '.icon-move', '.icon-save', '.icon-download', '.icon-cancel', '.icon-multiple', '.icon-folder', '.open', '.icon-folder', '.icon-package', '.icon-user', '.icon-project', '.icon-projects', '.icon-help', '.icon-attachment', '.icon-history', '.icon-time-entry', '.icon-time', '.icon-time-add', '.icon-stats', '.icon-warning', '.icon-error', '.icon-fav', '.icon-fav-off', '.icon-reload', '.icon-lock', '.icon-locked', '.icon-unlock', '.icon-checked', '.icon-comment', '.icon-comments', '.icon-summary', '.icon-server-authentication', '.icon-issue', '.icon-zoom-in', '.icon-zoom-out', '.icon-passwd', '.icon-arrow-right', '.icon-test', '.icon-sticky', '.icon-email', '.icon-email-disabled', '.icon-email-add', '.icon-ok', '.icon-not-ok', '.icon-link-break', '.icon-list', '.icon-close', '.icon-settings', '.icon-roles', '.icon-issue-edit', '.icon-workflows', '.icon-custom-fields', '.icon-plugins', '.icon-news', '.icon-issue-closed', '.icon-issue-note', '.icon-changeset', '.icon-message', '.icon-reply', '.icon-wiki-page', '.icon-wiki-page', '.icon-document', '.icon-add-bullet', '.icon-shared', '.icon-actions', '.icon-expended', '.icon-collapsed', '.icon-bookmark', '.icon-bookmark-off', '.icon-sort-handle', '.icon-sorted-asc', '.icon-sorted-desc', '.icon-toggle-plus', '.icon-toggle-minus', '.icon-file', '.icon-clear-query', '.icon-import', '.icon-group';
 
-tr span.expander, .gantt_subjects div > span.expander {padding-left: 0px !important; cursor: pointer; background-position: initial; margin-left: initial;}
-
-tr.member td.icon-user::before, #principals_for_new_member .icon-user:before {content: "";}
-
-fieldset.collapsible>legend { cursor:pointer; padding-left: 5px; background-position: initial;}
-
-.toggle-multiselect { margin-left: 4px; cursor:pointer;}
-
-form .attributes select + a.icon-only { vertical-align: initial; margin-left: initial; }
-form .attributes select + a.icon-only:before { margin-left: 4px; }
-
+// .atomアイコンは個別に置き換え
 a.atom { background: transparent; padding: 2px 0px 3px 16px; }
 a.atom:before { /* fa-atom */ font-family: 'Font Awesome 5 Solid'; content: "\f143"; }
 
-input.autocomplete {
-  background: #fff url(../images/search.svg) no-repeat 2px 50%;
-  background-size: 12px 12px;
-  background-position: 5px center;
+.icon:before, .icon-only:before, #context-menu .icon-checked:before {
+  color: #666;
+  -webkit-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+}
+.icon:hover::before, .icon-only:hover::before, #context-menu .icon-checked:before {
+  color: #333;
 }
 .icon:before, .icon-only:before, a.atom:before {
   -moz-osx-font-smoothing: grayscale;
@@ -28,37 +21,6 @@ input.autocomplete {
   text-rendering: auto;
   font-size: 14px;
   padding-right: 5px;
-}
-
-// ガントチャートの折りたたみが崩れる問題に対処
-.gantt-table .icon:not(.expander):before {
-  width: 12px;
-  padding-left: 2px;
-  padding-right: 5px;
-}
-.gantt-table .icon.expander:before {
-  width: 7px;
-}
-@media screen and (max-width: 899px) {
-  .gantt-table .icon:not(.expander):before {
-    width: 20px;
-  }
-  .gantt-table .icon.expander:before {
-    width: 12px;
-  }
-}
-
-.icon:before, .icon-only:before, #context-menu .icon-checked:before {
-  color: #666;
-  -webkit-transition: color .2s ease-in;
-  transition: color .2s ease-in;
-}
-.icon:hover::before, .icon-only:hover::before, #context-menu .icon-checked:before {
-  color: #333;
-}
-
-#context-menu ul li .icon {
-  padding-left: 2px;
 }
 
 .icon-add:before { /* fa-plus-circle */ font-family: 'Font Awesome 5 Solid'; content: "\f055";}
@@ -149,10 +111,10 @@ input.autocomplete {
     /* fa-bookmark */
     font-family: 'Font Awesome 5 Solid';
     content: "\f02e";
-    color: #2e5fff;
+    color: #557cff;
   }
   &:hover:before {
-    color: darken(#2e5fff, 20%);
+    color: darken(#557cff, 20%);
   }
 }
 .icon-bookmark-off:before { /* fa-bookmark */ font-family: 'Font Awesome 5 Regular'; content: "\f02e"; }
@@ -183,25 +145,17 @@ input.autocomplete {
 .icon-file.application-zip:before { /* fa-file-archive */ font-family: 'Font Awesome 5 Regular'; content: "\f1c6"; }
 .icon-file.application-x-gzip:before { /* fa-file-archive */ font-family: 'Font Awesome 5 Regular'; content: "\f1c6"; }
 
-.icon-add, .icon-edit, .icon-copy, .icon-del, .icon-move, .icon-save, .icon-download, .icon-cancel,
-.icon-multiple, .icon-folder, .open, .icon-folder, .icon-package,
-.icon-user, .icon-project, .icon-projects, .icon-help, .icon-attachment, .icon-history, .icon-time-entry, .icon-time,
-.icon-time-add, .icon-stats, .icon-warning, .icon-error, .icon-fav, .icon-fav-off, .icon-reload,
-.icon-lock, .icon-locked, .icon-unlock, .icon-checked, .icon-comment, .icon-comments, .icon-summary, .icon-server-authentication,
-.icon-issue, .icon-zoom-in, .icon-zoom-out, .icon-passwd, .icon-arrow-right, .icon-test, .icon-sticky,
-.icon-email, .icon-email-disabled, .icon-email-add, .icon-ok, .icon-not-ok, .icon-link-break, .icon-list,
-.icon-close, .icon-settings, .icon-roles, .icon-issue-edit,
-.icon-workflows, .icon-custom-fields, .icon-plugins, .icon-news, .icon-issue-closed, .icon-issue-note, .icon-changeset,
-.icon-message, .icon-reply, .icon-wiki-page, .icon-wiki-page, .icon-document, .icon-add-bullet, .icon-shared, .icon-actions,
-.icon-expended, .icon-collapsed, .icon-bookmark, .icon-bookmark-off,
-.icon-sort-handle, .icon-sorted-asc, .icon-sorted-desc, .icon-toggle-plus, .icon-toggle-minus, .icon-file, .icon-clear-query, .icon-import {
+#{$overridden-selectors} {
   background-image: none !important;
-  padding-left: initial !important;
+  padding-left: 0px !important;
 
+  &:before {
+    padding-right: 3px;
+  }
   &.icon-only {
     background-position: initial;
     background-repeat: initial;
-    display: initial;
+    display: inline-block;
     width: initial;
     height: initial;
     overflow: initial;
@@ -213,6 +167,36 @@ input.autocomplete {
   }
 }
 
+// autocompleteのinput field内のサーチアイコンをsvgアイコンに置き換え
+input.autocomplete {
+  background: #fff url(../images/search.svg) no-repeat 2px 50%;
+  background-size: 12px 12px;
+  background-position: 5px center;
+}
+
+// ガントチャートの折りたたみが崩れる問題に対処
+.gantt-table .icon:not(.expander):before {
+  width: 12px;
+  padding-left: 2px;
+  padding-right: 5px;
+}
+.gantt-table .icon.expander:before {
+  width: 9px;
+}
+@media screen and (max-width: 899px) {
+  .gantt-table .icon:not(.expander):before {
+    width: 20px;
+  }
+  .gantt-table .icon.expander:before {
+    width: 12px;
+  }
+}
+
+// context-menuのicon位置がずれないように固定
+#context-menu ul li .icon {
+  padding-left: 2px;
+}
+
 // 行を選択して背景色が青くなったときはアイコン色を白に変える
 .context-menu-selection .icon:before {
   color: white;
@@ -221,7 +205,6 @@ input.autocomplete {
 // .members.boxと#admin-menuのアイコンのみはメニューのアイコンと言うことでFont Awesomeに置き換え、
 // それ以外はグループのアバターという扱いでそのままにしておく(Gravatarと同じような扱い)
 .members.box .icon-group, #admin-menu .icon-group {
-  padding-left: initial;
   background-image: none;
 
   &:before { /* fa-users */ font-family: 'Font Awesome 5 Solid'; content: "\f0c0"; }
@@ -236,5 +219,37 @@ input.autocomplete {
 @media screen and (max-width: 899px) {
   .flyout-menu .flyout-menu__search input[type='text'] {
     padding-left: 27px !important;
+  }
+}
+
+// admin-menuで選択されたメニューの位置がずれる問題を修正
+#admin-menu {
+  #{$overridden-selectors}, .icon-group {
+    padding-left: 2px !important;
+    &.selected {
+      padding-left: 2px !important;
+    }
+  }
+}
+
+// アイコンをボタンのように見せるとき、padding-leftを入れる
+@media screen and (max-width: 899px) {
+  p.buttons {
+    #{$overridden-selectors} {
+      padding-left: 6px !important;
+    }
+  }
+  @each $selector in $overridden-selectors {
+    #content>.contextual>#{$selector} {
+      padding-left: 6px !important;
+    }
+  }
+}
+
+.flyout-menu {
+  #{$overridden-selectors} {
+    &:before {
+      color: white !important;
+    }
   }
 }

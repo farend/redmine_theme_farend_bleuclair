@@ -1427,7 +1427,7 @@ input.autocomplete {
 .flyout-menu .icon-add:before, .flyout-menu .icon-edit:before, .flyout-menu .icon-copy:before, .flyout-menu .icon-del:before, .flyout-menu .icon-move:before, .flyout-menu .icon-save:before, .flyout-menu .icon-download:before, .flyout-menu .icon-cancel:before, .flyout-menu .icon-multiple:before, .flyout-menu .icon-folder:before, .flyout-menu .open:before, .flyout-menu .icon-folder:before, .flyout-menu .icon-package:before, .flyout-menu .icon-user:before, .flyout-menu .icon-project:before, .flyout-menu .icon-projects:before, .flyout-menu .icon-help:before, .flyout-menu .icon-attachment:before, .flyout-menu .icon-history:before, .flyout-menu .icon-time-entry:before, .flyout-menu .icon-time:before, .flyout-menu .icon-time-add:before, .flyout-menu .icon-stats:before, .flyout-menu .icon-warning:before, .flyout-menu .icon-error:before, .flyout-menu .icon-fav:before, .flyout-menu .icon-fav-off:before, .flyout-menu .icon-reload:before, .flyout-menu .icon-lock:before, .flyout-menu .icon-locked:before, .flyout-menu .icon-unlock:before, .flyout-menu .icon-checked:before, .flyout-menu .icon-comment:before, .flyout-menu .icon-comments:before, .flyout-menu .icon-summary:before, .flyout-menu .icon-server-authentication:before, .flyout-menu .icon-issue:before, .flyout-menu .icon-zoom-in:before, .flyout-menu .icon-zoom-out:before, .flyout-menu .icon-passwd:before, .flyout-menu .icon-arrow-right:before, .flyout-menu .icon-test:before, .flyout-menu .icon-sticky:before, .flyout-menu .icon-email:before, .flyout-menu .icon-email-disabled:before, .flyout-menu .icon-email-add:before, .flyout-menu .icon-ok:before, .flyout-menu .icon-not-ok:before, .flyout-menu .icon-link-break:before, .flyout-menu .icon-list:before, .flyout-menu .icon-close:before, .flyout-menu .icon-settings:before, .flyout-menu .icon-roles:before, .flyout-menu .icon-issue-edit:before, .flyout-menu .icon-workflows:before, .flyout-menu .icon-custom-fields:before, .flyout-menu .icon-plugins:before, .flyout-menu .icon-news:before, .flyout-menu .icon-issue-closed:before, .flyout-menu .icon-issue-note:before, .flyout-menu .icon-changeset:before, .flyout-menu .icon-message:before, .flyout-menu .icon-reply:before, .flyout-menu .icon-wiki-page:before, .flyout-menu .icon-wiki-page:before, .flyout-menu .icon-document:before, .flyout-menu .icon-add-bullet:before, .flyout-menu .icon-shared:before, .flyout-menu .icon-actions:before, .flyout-menu .icon-expended:before, .flyout-menu .icon-collapsed:before, .flyout-menu .icon-bookmark:before, .flyout-menu .icon-bookmark-off:before, .flyout-menu .icon-sort-handle:before, .flyout-menu .icon-sorted-asc:before, .flyout-menu .icon-sorted-desc:before, .flyout-menu .icon-toggle-plus:before, .flyout-menu .icon-toggle-minus:before, .flyout-menu .icon-file:before, .flyout-menu .icon-clear-query:before, .flyout-menu .icon-import:before, .flyout-menu .icon-group:before {
   color: white !important; }
 
-.jstElements {
+div.jstElements {
   display: -webkit-inline-flex;
   display: inline-flex;
   -webkit-font-smoothing: antialiased;
@@ -1435,115 +1435,106 @@ input.autocomplete {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  font-size: 12px; }
-  .jstElements button {
+  font-size: 12px;
+  height: 28px; }
+  div.jstElements button {
     background-image: initial;
     background-color: white !important;
-    border-color: #c9c9c9 !important; }
-  .jstElements .jstb_strong:before {
+    border-color: #c9c9c9 !important;
+    padding: 2px 0px 1px 0px; }
+  div.jstElements .jstb_strong:before {
     /* fa-bold */
     font-family: 'Font Awesome 5 Solid';
     content: "\f032";
-    font-size: 14px; }
-  .jstElements .jstb_em:before {
+    font-size: 12px; }
+  div.jstElements .jstb_em:before {
     /* fa-italic */
     font-family: 'Font Awesome 5 Solid';
     content: "\f033";
-    font-size: 14px; }
-  .jstElements .jstb_ins:before {
+    font-size: 12px; }
+  div.jstElements .jstb_ins:before {
     /* fa-underline */
     font-family: 'Font Awesome 5 Solid';
     content: "\f0cd";
-    font-size: 14px; }
-  .jstElements .jstb_del:before {
+    font-size: 12px; }
+  div.jstElements .jstb_del:before {
     /* fa-strikethrough */
     font-family: 'Font Awesome 5 Solid';
     content: "\f0cc";
-    font-size: 14px; }
-  .jstElements .jstb_code {
-    padding: 1px; }
-    .jstElements .jstb_code:before {
-      content: "C";
-      font-size: 17px;
-      font-weight: 700; }
-  .jstElements .jstb_h1 {
-    padding: 1px; }
-    .jstElements .jstb_h1:before {
-      content: "H1";
-      font-size: 13px;
-      font-weight: 700; }
-  .jstElements .jstb_h2 {
-    padding: 1px; }
-    .jstElements .jstb_h2:before {
-      content: "H2";
-      font-size: 13px;
-      font-weight: 700; }
-  .jstElements .jstb_h3 {
-    padding: 1px; }
-    .jstElements .jstb_h3:before {
-      content: "H3";
-      font-size: 13px;
-      font-weight: 700; }
-  .jstElements .jstb_ul {
+    font-size: 12px; }
+  div.jstElements .jstb_code:before {
+    content: "C";
+    font-size: 15px;
+    font-weight: 700; }
+  div.jstElements .jstb_h1:before {
+    content: "H1";
+    font-size: 12px;
+    font-weight: 700; }
+  div.jstElements .jstb_h2:before {
+    content: "H2";
+    font-size: 12px;
+    font-weight: 700; }
+  div.jstElements .jstb_h3:before {
+    content: "H3";
+    font-size: 12px;
+    font-weight: 700; }
+  div.jstElements .jstb_ul {
     padding: 0px; }
-    .jstElements .jstb_ul:before {
+    div.jstElements .jstb_ul:before {
       /* fa-list-ul */
       font-family: 'Font Awesome 5 Solid';
       content: "\f0ca";
       font-size: 16px;
       position: 0px; }
-  .jstElements .jstb_ol {
+  div.jstElements .jstb_ol {
     padding: 0px; }
-    .jstElements .jstb_ol:before {
+    div.jstElements .jstb_ol:before {
       /* fa-list-ol */
       font-family: 'Font Awesome 5 Solid';
       content: "\f0cb";
       font-size: 16px; }
-  .jstElements .jstb_bq {
+  div.jstElements .jstb_bq {
     padding: 0px; }
-    .jstElements .jstb_bq:before {
+    div.jstElements .jstb_bq:before {
       /* fa-indent */
       font-family: 'Font Awesome 5 Solid';
       content: "\f03c";
-      font-size: 16px; }
-  .jstElements .jstb_unbq {
+      font-size: 14px; }
+  div.jstElements .jstb_unbq {
     padding: 0px; }
-    .jstElements .jstb_unbq:before {
+    div.jstElements .jstb_unbq:before {
       /* fa-outdent */
       font-family: 'Font Awesome 5 Solid';
       content: "\f03b";
-      font-size: 16px; }
-  .jstElements .jstb_pre {
-    padding-top: 2px;
-    padding-left: 1px; }
-    .jstElements .jstb_pre:before {
+      font-size: 14px; }
+  div.jstElements .jstb_pre {
+    padding: 0px 0px 3px 0px; }
+    div.jstElements .jstb_pre:before {
       content: "pre";
       font-size: 12px;
       font-weight: 700; }
-  .jstElements .jstb_precode {
-    padding-left: 2px; }
-    .jstElements .jstb_precode:before {
-      /* fa-code */
-      font-family: 'Font Awesome 5 Solid';
-      content: "\f121";
-      font-size: 14px; }
-  .jstElements .jstb_link:before {
+  div.jstElements .jstb_precode:before {
+    /* fa-code */
+    font-family: 'Font Awesome 5 Solid';
+    content: "\f121";
+    font-size: 12px; }
+  div.jstElements .jstb_link:before {
     /* fa-link */
     font-family: 'Font Awesome 5 Solid';
     content: "\f0c1";
-    font-size: 14px; }
-  .jstElements .jstb_img:before {
+    font-size: 12px; }
+  div.jstElements .jstb_img:before {
     /* fa-image */
     font-family: 'Font Awesome 5 Solid';
     content: "\f03e";
-    font-size: 14px; }
-  .jstElements .jstb_table:before {
+    font-size: 12px; }
+  div.jstElements .jstb_table:before {
     /* fa-image */
     font-family: 'Font Awesome 5 Solid';
     content: "\f0ce";
-    font-size: 14px; }
-  .jstElements .jstb_help:before {
+    font-size: 12px; }
+  div.jstElements .jstb_help:before {
     /* fa-question-circle */
     font-family: 'Font Awesome 5 Solid';
     content: "\f059";
-    font-size: 14px; }
+    font-size: 12px; }

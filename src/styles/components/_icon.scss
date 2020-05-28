@@ -6,8 +6,6 @@ a.atom:before { /* fa-atom */ font-family: 'Font Awesome 5 Solid'; content: "\f1
 
 .icon:before, .icon-only:before, #context-menu .icon-checked:before {
   color: #666;
-  -webkit-transition: color .2s ease-in;
-  transition: color .2s ease-in;
 }
 .icon:hover::before, .icon-only:hover::before, #context-menu .icon-checked:before {
   color: #333;

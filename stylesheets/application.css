@@ -714,8 +714,7 @@ a.atom:before {
   content: "\f143"; }
 
 .icon:before, .icon-only:before, #context-menu .icon-checked:before {
-  color: #666;
-  transition: color .2s ease-in; }
+  color: #666; }
 
 .icon:hover::before, .icon-only:hover::before, #context-menu .icon-checked:before {
   color: #333; }

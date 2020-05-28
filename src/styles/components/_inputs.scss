@@ -26,6 +26,7 @@ $checkbox-margin: 7px 0 7px 2px;
   input[type="text"],
   input[type="password"],
   input[type="date"],
+  input[type="file"],
   select,
   textarea {
     background-color: $color-input-bg;
@@ -49,11 +50,6 @@ $checkbox-margin: 7px 0 7px 2px;
     }
 
     &.filename {
-      box-shadow: none;
-    }
-
-    &[type="file"] {
-      border: none;
       box-shadow: none;
     }
   }

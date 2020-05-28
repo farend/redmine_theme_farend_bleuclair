@@ -223,10 +223,12 @@ table.list {
 #wrapper input[type="text"],
 #wrapper input[type="password"],
 #wrapper input[type="date"],
+#wrapper input[type="file"],
 #wrapper select,
 #wrapper textarea, .modal input[type="text"],
 .modal input[type="password"],
 .modal input[type="date"],
+.modal input[type="file"],
 .modal select,
 .modal textarea {
   background-color: #ffffff;
@@ -242,10 +244,12 @@ table.list {
   #wrapper input[type="text"]:hover,
   #wrapper input[type="password"]:hover,
   #wrapper input[type="date"]:hover,
+  #wrapper input[type="file"]:hover,
   #wrapper select:hover,
   #wrapper textarea:hover, .modal input[type="text"]:hover,
   .modal input[type="password"]:hover,
   .modal input[type="date"]:hover,
+  .modal input[type="file"]:hover,
   .modal select:hover,
   .modal textarea:hover {
     border-color: #ccc; }
@@ -254,6 +258,8 @@ table.list {
   #wrapper input[type="password"]:active,
   #wrapper input[type="date"]:focus,
   #wrapper input[type="date"]:active,
+  #wrapper input[type="file"]:focus,
+  #wrapper input[type="file"]:active,
   #wrapper select:focus,
   #wrapper select:active,
   #wrapper textarea:focus,
@@ -262,6 +268,8 @@ table.list {
   .modal input[type="password"]:active,
   .modal input[type="date"]:focus,
   .modal input[type="date"]:active,
+  .modal input[type="file"]:focus,
+  .modal input[type="file"]:active,
   .modal select:focus,
   .modal select:active,
   .modal textarea:focus,
@@ -270,23 +278,14 @@ table.list {
   #wrapper input[type="text"].filename,
   #wrapper input[type="password"].filename,
   #wrapper input[type="date"].filename,
+  #wrapper input[type="file"].filename,
   #wrapper select.filename,
   #wrapper textarea.filename, .modal input[type="text"].filename,
   .modal input[type="password"].filename,
   .modal input[type="date"].filename,
+  .modal input[type="file"].filename,
   .modal select.filename,
   .modal textarea.filename {
-    box-shadow: none; }
-  #wrapper input[type="text"][type="file"],
-  #wrapper input[type="password"][type="file"],
-  #wrapper input[type="date"][type="file"],
-  #wrapper select[type="file"],
-  #wrapper textarea[type="file"], .modal input[type="text"][type="file"],
-  .modal input[type="password"][type="file"],
-  .modal input[type="date"][type="file"],
-  .modal select[type="file"],
-  .modal textarea[type="file"] {
-    border: none;
     box-shadow: none; }
 
 #wrapper input[type="text"], .modal input[type="text"] {

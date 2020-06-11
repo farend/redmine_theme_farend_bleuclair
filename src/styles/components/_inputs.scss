@@ -1,5 +1,6 @@
 $input-padding: 4px 6px;
 $color-input-bg: #ffffff;
+$color-disabled-input-bg: #ebebe4;
 $color-input-text: #2b2f33;
 $color-input-border: #dfe8f1;
 $color-input-border-focus: #3da6ff;
@@ -51,6 +52,10 @@ $checkbox-margin: 7px 0 7px 2px;
 
     &.filename {
       box-shadow: none;
+    }
+
+    &:disabled {
+      background-color: $color-disabled-input-bg;
     }
   }
 

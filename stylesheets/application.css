@@ -287,6 +287,18 @@ table.list {
   .modal select.filename,
   .modal textarea.filename {
     box-shadow: none; }
+  #wrapper input[type="text"]:disabled,
+  #wrapper input[type="password"]:disabled,
+  #wrapper input[type="date"]:disabled,
+  #wrapper input[type="file"]:disabled,
+  #wrapper select:disabled,
+  #wrapper textarea:disabled, .modal input[type="text"]:disabled,
+  .modal input[type="password"]:disabled,
+  .modal input[type="date"]:disabled,
+  .modal input[type="file"]:disabled,
+  .modal select:disabled,
+  .modal textarea:disabled {
+    background-color: #ebebe4; }
 
 #wrapper input[type="text"], .modal input[type="text"] {
   font-family: "Osaka-Mono", "MS Gothic", sans-serif;

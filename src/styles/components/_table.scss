@@ -65,6 +65,9 @@ table.list {
         color: $color-closed;
         a { color: $color-closed; }
       }
+      &:hover {
+        background-color: #ffffdd;
+      }
     }
   }
   // Bottom align for column headings
@@ -91,10 +94,6 @@ table.list {
   // Account for multiple tbody instances
   > tbody + tbody {
     border-top: 2px solid $color-table-border;
-  }
-
-  .odd {
-    background-color: $color-odd-bg;
   }
 }
 

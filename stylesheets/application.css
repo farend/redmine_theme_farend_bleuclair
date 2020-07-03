@@ -199,6 +199,10 @@ table.list {
     table.list > tbody > tr.closed a,
     table.list > tfoot > tr.closed a {
       color: #777777; }
+  table.list > thead > tr:hover,
+  table.list > tbody > tr:hover,
+  table.list > tfoot > tr:hover {
+    background-color: #ffffdd; }
   table.list > thead > tr > th {
     color: #4b5056;
     font-weight: 700;
@@ -217,8 +221,6 @@ table.list {
     border-top: 0; }
   table.list > tbody + tbody {
     border-top: 2px solid #dfe8f1; }
-  table.list .odd {
-    background-color: #f9f9f9; }
 
 #wrapper input[type="text"],
 #wrapper input[type="password"],

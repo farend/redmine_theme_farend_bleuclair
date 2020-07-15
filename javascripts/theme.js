@@ -14,6 +14,11 @@ $(function(){
   $("a.help").attr("target","_blank");
   $("div#footer a[href^='https://www.redmine.org/']").attr("target","_blank");
 
+  if (($("a.help").text() == "ヘルプ" ? "ja" : $("html").attr("lang")) == "ja") {
+    /* When the language is Japanese, the link destination of help is Redmine.jp */
+    $("a.help").attr("href", "http://guide.redmine.jp/");
+  }
+
   $('a[href*="activity"][title*=":"]').each(function(_index, element){
     $(element).attr("data-absolute-date", element.title);
   });

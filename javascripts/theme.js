@@ -9,6 +9,11 @@ function setDiscontinuityClassToTabContent(id) {
 }
 
 $(function(){
+  /* Change to open external link in another tab */
+  $("a.external").attr("target","_blank");
+  $("a.help").attr("target","_blank");
+  $("div#footer a[href^='https://www.redmine.org/']").attr("target","_blank");
+
   $('a[href*="activity"][title*=":"]').each(function(_index, element){
     $(element).attr("data-absolute-date", element.title);
   });

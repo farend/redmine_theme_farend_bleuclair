@@ -1,4 +1,4 @@
-$overridden-selectors: '.icon-add', '.icon-edit', '.icon-copy', '.icon-del', '.icon-move', '.icon-save', '.icon-download', '.icon-cancel', '.icon-multiple', '.icon-folder', '.open', '.icon-folder', '.icon-package', '.icon-user', '.icon-project', '.icon-projects', '.icon-help', '.icon-attachment', '.icon-history', '.icon-time-entry', '.icon-time', '.icon-time-add', '.icon-stats', '.icon-warning', '.icon-error', '.icon-fav', '.icon-fav-off', '.icon-reload', '.icon-lock', '.icon-locked', '.icon-unlock', '.icon-checked', '.icon-comment', '.icon-comments', '.icon-summary', '.icon-server-authentication', '.icon-issue', '.icon-zoom-in', '.icon-zoom-out', '.icon-passwd', '.icon-arrow-right', '.icon-test', '.icon-sticky', '.icon-email', '.icon-email-disabled', '.icon-email-add', '.icon-ok', '.icon-not-ok', '.icon-link-break', '.icon-list', '.icon-close', '.icon-settings', '.icon-roles', '.icon-issue-edit', '.icon-workflows', '.icon-custom-fields', '.icon-plugins', '.icon-news', '.icon-issue-closed', '.icon-issue-note', '.icon-changeset', '.icon-message', '.icon-reply', '.icon-wiki-page', '.icon-wiki-page', '.icon-document', '.icon-add-bullet', '.icon-shared', '.icon-actions', '.icon-expended', '.icon-collapsed', '.icon-bookmark', '.icon-bookmark-off', '.icon-sort-handle', '.icon-sorted-asc', '.icon-sorted-desc', '.icon-toggle-plus', '.icon-toggle-minus', '.icon-file', '.icon-clear-query', '.icon-import', '.icon-group:not(.name)';
+$overridden-selectors: '.icon-add', '.icon-edit', '.icon-copy', '.icon-del', '.icon-move', '.icon-save', '.icon-download', '.icon-cancel', '.icon-multiple', '.icon-folder', '.open', '.icon-folder', '.icon-package', '.icon-user', '.icon-project', '.icon-projects', '.icon-help', '.icon-attachment', '.icon-history', '.icon-time-entry', '.icon-time', '.icon-time-add', '.icon-stats', '.icon-warning', '.icon-error', '.icon-fav', '.icon-fav-off', '.icon-reload', '.icon-lock', '.icon-locked', '.icon-unlock', '.icon-checked', '.icon-comment', '.icon-comments', '.icon-summary', '.icon-server-authentication', '.icon-issue', '.icon-zoom-in', '.icon-zoom-out', '.icon-passwd', '.icon-arrow-right', '.icon-test', '.icon-sticky', '.icon-email', '.icon-email-disabled', '.icon-email-add', '.icon-ok', '.icon-not-ok', '.icon-link-break', '.icon-list', '.icon-close', '.icon-settings', '.icon-roles', '.icon-issue-edit', '.icon-workflows', '.icon-custom-fields', '.icon-plugins', '.icon-news', '.icon-issue-closed', '.icon-issue-note', '.icon-changeset', '.icon-message', '.icon-reply', '.icon-wiki-page', '.icon-wiki-page', '.icon-document', '.icon-add-bullet', '.icon-shared', '.icon-actions', '.icon-expended', '.icon-collapsed', '.icon-bookmark', '.icon-bookmark-off', '.icon-sort-handle', '.icon-sorted-asc', '.icon-sorted-desc', '.icon-toggle-plus', '.icon-toggle-minus', '.icon-file', '.icon-clear-query', '.icon-import', '.icon-group:not(.name)', '.icon-bookmarked-project';
 
 // .atomアイコンは個別に置き換え
 a.atom { background: transparent; padding: 2px 0px 3px 16px; }
@@ -209,9 +209,26 @@ input.autocomplete {
   &:before { /* fa-users */ font-family: 'Font Awesome 5 Solid'; content: "\f0c0"; }
 }
 
-// my-projectのicon-userと文字の間に隙間を空ける
-.icon.my-project {
-  padding-left: 5px !important;
+// プロジェクト一覧では、a:beforeでなくa:afterにアイコンを表示
+body.controller-projects.action-index a.project, body.controller-projects.action-index span {
+  &:before {
+    content: "";
+  }
+  &.icon:after {
+    color: #666;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-size: 14px;
+  }
+  &.icon-bookmarked-project:after { /* fa-bookmark */ font-family: 'Font Awesome 5 Solid'; content: "\00a0\f02e"; }
+  &.icon.my-project:after { /* fa-user */ font-family: 'Font Awesome 5 Solid'; content: "\00a0\f007"; }
+  &.icon.my-project.icon-bookmarked-project:after {
+    font-family: 'Font Awesome 5 Solid'; content: "\00a0\f007\00a0\f02e";
+  }
 }
 
 // 拡大画面でのサイドバーの検索フォームのレイアウトを修正

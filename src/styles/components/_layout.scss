@@ -52,3 +52,50 @@ $color-main-bg:     #fafcfe;
 a:hover, a:active {
   outline: 1px solid transparent;
 }
+
+#sidebar { width: 19%; }
+#main.nosidebar #sidebar, #main.hide-sidebar #sidebar { display: block; margin-left: -19%; }
+#main.animate #sidebar { transition: margin-left 0.2s ease-in-out; }
+#main:not(.nosidebar):not(.hide-sidebar) #sidebar{ margin-left: 0px;}
+#content { padding: 6px 10px 10px 10px; z-index: 10; }
+#sidebar-switch-panel {
+  float: right;
+  left: 10px;
+  top: 2px;
+  width: 20px;
+  height: 25px;
+  position: relative;
+  padding: 2px;
+  margin-left: 5px;
+}
+#sidebar-switch-button {
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #DDDDDD;
+  border-left: 1px solid #DDDDDD;
+  border-top: 1px solid #DDDDDD;
+  display: block;
+  height: 100%;
+  padding: 13px 20px 15px 10px;
+  font-size: 0px;
+  &:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    margin-right: 3px;
+    font-size: 15px;
+    color: #666;
+  }
+}
+#main.nosidebar {
+  #sidebar-switch-button:before {
+    content: "\f053";
+    font-family: 'Font Awesome 5 Solid';
+  }
+}
+#main:not(.nosidebar) {
+  #sidebar-switch-button:before {
+    content: "\f054";
+    font-family: 'Font Awesome 5 Solid';
+  }
+}

@@ -31,6 +31,7 @@ $(function(){
   });
 });
 
+// Function based on https://www.redmine.org/issues/21808#note-27 patch.
 // collapsible sidebar jQuery plugin
 (function($) {
   // main container this is applied to

@@ -91,7 +91,7 @@ a:hover, a:active {
   float: right;
   left: 10px;
   top: 2px;
-  width: 20px;
+  width: 25px;
   height: 25px;
   position: relative;
   padding: 2px;
@@ -99,12 +99,13 @@ a:hover, a:active {
 
 #sidebar-switch-button {
   background-color: #EEEEEE;
-  border-bottom: 1px solid #DDDDDD;
-  border-left: 1px solid #DDDDDD;
-  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #bfbfbf;
+  border-left: 1px solid #bfbfbf;
+  border-top: 1px solid #bfbfbf;
+  border-radius: 20px 0px 0px 20px;
   display: block;
   height: 100%;
-  padding: 13px 20px 15px 10px;
+  padding: 13px 20px 13px 10px;
   font-size: 0px; }
   #sidebar-switch-button:before {
     display: inline-block;

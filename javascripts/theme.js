@@ -68,7 +68,6 @@ $(function(){
     }
   };
   var setupToggleButton = function(){
-    $('#content').prepend('<div id="sidebar-switch-panel" style="visibility: visible;"><a id="sidebar-switch-button" href="#"></a></div>')
     button = $('#sidebar-switch-button');
     button.click(function(e){
       main.addClass("animate");
@@ -104,6 +103,9 @@ $(function(){
 
 $(document).ready(function(){
   if (!$('#main').hasClass('nosidebar')) {
+    if ($('#sidebar-switch-panel').length == 0) {
+      $('#content').prepend('<div id="sidebar-switch-panel"><a id="sidebar-switch-button" href="#"></a></div>');
+    }
     $('#main').collapsibleSidebar();
   }
 });

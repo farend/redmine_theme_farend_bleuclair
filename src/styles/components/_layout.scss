@@ -87,15 +87,11 @@ a:hover, a:active {
     color: #666;
   }
 }
-#main.nosidebar {
-  #sidebar-switch-button:before {
-    content: "\f053";
-    font-family: 'Font Awesome 5 Solid';
-  }
+#main.hide-sidebar #sidebar-switch-button:before{
+  content: "\f053";
+  font-family: 'Font Awesome 5 Solid';
 }
-#main:not(.nosidebar) {
-  #sidebar-switch-button:before {
-    content: "\f054";
-    font-family: 'Font Awesome 5 Solid';
-  }
+#main:not(.hide-sidebar) #sidebar-switch-button:before {
+  content: "\f054";
+  font-family: 'Font Awesome 5 Solid';
 }

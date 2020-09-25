@@ -115,11 +115,11 @@ a:hover, a:active {
     font-size: 15px;
     color: #666; }
 
-#main.nosidebar #sidebar-switch-button:before {
+#main.hide-sidebar #sidebar-switch-button:before {
   content: "\f053";
   font-family: 'Font Awesome 5 Solid'; }
 
-#main:not(.nosidebar) #sidebar-switch-button:before {
+#main:not(.hide-sidebar) #sidebar-switch-button:before {
   content: "\f054";
   font-family: 'Font Awesome 5 Solid'; }
 

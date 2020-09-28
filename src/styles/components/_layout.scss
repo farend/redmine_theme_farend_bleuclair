@@ -53,10 +53,9 @@ a:hover, a:active {
   outline: 1px solid transparent;
 }
 
-#sidebar { width: 19%; }
-#main.nosidebar #sidebar, #main.hide-sidebar #sidebar { display: block; margin-left: -19%; }
+#sidebar { width: 19%; display: block; margin-left: -19%; }
 #main.animate #sidebar { transition: margin-left 0.2s ease-in-out; }
-#main:not(.nosidebar):not(.hide-sidebar) #sidebar{ margin-left: 0px;}
+#main.visible-sidebar #sidebar{ margin-left: 0px;}
 #content { padding: 6px 10px 10px 10px; z-index: 10; }
 #sidebar-switch-panel {
   float: right;
@@ -88,11 +87,11 @@ a:hover, a:active {
     color: #666;
   }
 }
-#main.hide-sidebar #sidebar-switch-button:before{
+#main:not(.visible-sidebar) #sidebar-switch-button:before{
   content: "\f053";
   font-family: 'Font Awesome 5 Solid';
 }
-#main:not(.hide-sidebar) #sidebar-switch-button:before {
+#main.visible-sidebar #sidebar-switch-button:before {
   content: "\f054";
   font-family: 'Font Awesome 5 Solid';
 }

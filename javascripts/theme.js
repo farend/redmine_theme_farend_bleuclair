@@ -61,17 +61,17 @@ $(function(){
     }
   };
   var applyState = function(){
-    if(main.hasClass('hide-sidebar')){
-      setState('hidden');
-    } else {
+    if(main.hasClass('visible-sidebar')){
       setState('visible');
+    } else {
+      setState('hidden');
     }
   };
   var setupToggleButton = function(){
     button = $('#sidebar-switch-button');
     button.click(function(e){
       main.addClass("animate");
-      main.toggleClass('hide-sidebar');
+      main.toggleClass('visible-sidebar');
       applyState();
       e.preventDefault();
       return false;
@@ -94,14 +94,14 @@ $(function(){
         }
       }
       var storedState = localStorage.getItem(localStorageKey);
-      main.toggleClass('hide-sidebar', storedState === 'hidden');
+      main.toggleClass('visible-sidebar', storedState === 'visible');
     }
     // draw the toggle button once the DOM is complete
     $(document).ready(setupToggleButton);
   };
 }(jQuery));
 
-$(document).ready(function(){
+window.addEventListener('DOMContentLoaded', function () {
   if (!$('#main').hasClass('nosidebar')) {
     if ($('#sidebar-switch-panel').length == 0) {
       $('#content').prepend('<div id="sidebar-switch-panel"><a id="sidebar-switch-button" href="#"></a></div>');

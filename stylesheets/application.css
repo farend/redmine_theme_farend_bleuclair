@@ -82,7 +82,7 @@ a:hover, a:active {
   margin-left: 0px; }
 
 #content {
-  padding: 6px 10px 10px 10px;
+  padding: 14px 14px 14px 14px;
   z-index: 10; }
 
 #sidebar-switch-panel {
@@ -104,7 +104,8 @@ a:hover, a:active {
   display: block;
   height: 100%;
   padding: 13px 20px 13px 10px;
-  font-size: 0px; }
+  font-size: 0px;
+  text-decoration: none; }
   #sidebar-switch-button:before {
     display: inline-block;
     font-style: normal;
@@ -1267,6 +1268,7 @@ a.atom:before {
   .icon-add:before, .icon-edit:before, .icon-copy:before, .icon-del:before, .icon-move:before, .icon-save:before, .icon-download:before, .icon-cancel:before, .icon-multiple:before, .icon-folder:before, .open:before, .icon-folder:before, .icon-package:before, .icon-user:before, .icon-project:before, .icon-projects:before, .icon-help:before, .icon-attachment:before, .icon-history:before, .icon-time-entry:before, .icon-time:before, .icon-time-add:before, .icon-stats:before, .icon-warning:before, .icon-error:before, .icon-fav:before, .icon-fav-off:before, .icon-reload:before, .icon-lock:before, .icon-locked:before, .icon-unlock:before, .icon-checked:before, .icon-comment:before, .icon-comments:before, .icon-summary:before, .icon-server-authentication:before, .icon-issue:before, .icon-zoom-in:before, .icon-zoom-out:before, .icon-passwd:before, .icon-arrow-right:before, .icon-test:before, .icon-sticky:before, .icon-email:before, .icon-email-disabled:before, .icon-email-add:before, .icon-ok:before, .icon-not-ok:before, .icon-link-break:before, .icon-list:before, .icon-close:before, .icon-settings:before, .icon-roles:before, .icon-issue-edit:before, .icon-workflows:before, .icon-custom-fields:before, .icon-plugins:before, .icon-news:before, .icon-issue-closed:before, .icon-issue-note:before, .icon-changeset:before, .icon-message:before, .icon-reply:before, .icon-wiki-page:before, .icon-wiki-page:before, .icon-document:before, .icon-add-bullet:before, .icon-shared:before, .icon-actions:before, .icon-expended:before, .icon-collapsed:before, .icon-bookmark:before, .icon-bookmark-off:before, .icon-sort-handle:before, .icon-sorted-asc:before, .icon-sorted-desc:before, .icon-toggle-plus:before, .icon-toggle-minus:before, .icon-file:before, .icon-clear-query:before, .icon-import:before, .icon-group:not(.name):before, .icon-bookmarked-project:before {
     padding-right: 3px; }
   .icon-add.icon-only, .icon-edit.icon-only, .icon-copy.icon-only, .icon-del.icon-only, .icon-move.icon-only, .icon-save.icon-only, .icon-download.icon-only, .icon-cancel.icon-only, .icon-multiple.icon-only, .icon-folder.icon-only, .open.icon-only, .icon-folder.icon-only, .icon-package.icon-only, .icon-user.icon-only, .icon-project.icon-only, .icon-projects.icon-only, .icon-help.icon-only, .icon-attachment.icon-only, .icon-history.icon-only, .icon-time-entry.icon-only, .icon-time.icon-only, .icon-time-add.icon-only, .icon-stats.icon-only, .icon-warning.icon-only, .icon-error.icon-only, .icon-fav.icon-only, .icon-fav-off.icon-only, .icon-reload.icon-only, .icon-lock.icon-only, .icon-locked.icon-only, .icon-unlock.icon-only, .icon-checked.icon-only, .icon-comment.icon-only, .icon-comments.icon-only, .icon-summary.icon-only, .icon-server-authentication.icon-only, .icon-issue.icon-only, .icon-zoom-in.icon-only, .icon-zoom-out.icon-only, .icon-passwd.icon-only, .icon-arrow-right.icon-only, .icon-test.icon-only, .icon-sticky.icon-only, .icon-email.icon-only, .icon-email-disabled.icon-only, .icon-email-add.icon-only, .icon-ok.icon-only, .icon-not-ok.icon-only, .icon-link-break.icon-only, .icon-list.icon-only, .icon-close.icon-only, .icon-settings.icon-only, .icon-roles.icon-only, .icon-issue-edit.icon-only, .icon-workflows.icon-only, .icon-custom-fields.icon-only, .icon-plugins.icon-only, .icon-news.icon-only, .icon-issue-closed.icon-only, .icon-issue-note.icon-only, .icon-changeset.icon-only, .icon-message.icon-only, .icon-reply.icon-only, .icon-wiki-page.icon-only, .icon-wiki-page.icon-only, .icon-document.icon-only, .icon-add-bullet.icon-only, .icon-shared.icon-only, .icon-actions.icon-only, .icon-expended.icon-only, .icon-collapsed.icon-only, .icon-bookmark.icon-only, .icon-bookmark-off.icon-only, .icon-sort-handle.icon-only, .icon-sorted-asc.icon-only, .icon-sorted-desc.icon-only, .icon-toggle-plus.icon-only, .icon-toggle-minus.icon-only, .icon-file.icon-only, .icon-clear-query.icon-only, .icon-import.icon-only, .icon-group:not(.name).icon-only, .icon-bookmarked-project.icon-only {
+    text-decoration: none;
     background-position: initial;
     background-repeat: initial;
     display: inline-block;

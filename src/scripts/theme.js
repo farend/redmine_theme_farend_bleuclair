@@ -95,6 +95,8 @@ $(function(){
       }
       var storedState = localStorage.getItem(localStorageKey);
       main.toggleClass('visible-sidebar', (storedState === 'visible' || !storedState));
+    } else {
+      main.toggleClass('visible-sidebar', true);
     }
     // draw the toggle button once the DOM is complete
     $(document).ready(setupToggleButton);

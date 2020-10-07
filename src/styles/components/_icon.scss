@@ -151,6 +151,7 @@ a.atom:before { /* fa-atom */ font-family: 'Font Awesome 5 Solid'; content: "\f1
     padding-right: 3px;
   }
   &.icon-only {
+    text-decoration: none;
     background-position: initial;
     background-repeat: initial;
     display: inline-block;

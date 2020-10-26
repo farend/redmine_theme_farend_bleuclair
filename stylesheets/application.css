@@ -992,9 +992,8 @@ a.atom:before {
 
 .icon-email-disabled:before {
   /* fa-envelope */
-  font-family: 'Font Awesome 5 Regular';
-  content: "\f0e0";
-  color: grey; }
+  font-family: 'Font Awesome 5 Solid';
+  content: "\f0e0"; }
 
 .icon-email-add:before {
   /* fa-envelope */

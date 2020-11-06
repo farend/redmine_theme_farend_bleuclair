@@ -81,8 +81,12 @@ a:hover, a:active {
 #main.visible-sidebar #sidebar {
   margin-left: 0px; }
 
-#main:not(.visible-sidebar) #sidebar a:before {
+#main:not(.visible-sidebar) #sidebar a.icon-only:before {
   font-size: 0px; }
+
+#main.visible-sidebar #sidebar a.icon-only:before {
+  font-size: 14px;
+  transition-delay: 0.2s; }
 
 #content {
   padding: 14px 14px 14px 14px; }

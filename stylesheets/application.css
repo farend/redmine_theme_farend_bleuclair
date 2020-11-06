@@ -81,9 +81,11 @@ a:hover, a:active {
 #main.visible-sidebar #sidebar {
   margin-left: 0px; }
 
+#main:not(.visible-sidebar) #sidebar a:before {
+  font-size: 0px; }
+
 #content {
-  padding: 14px 14px 14px 14px;
-  z-index: 10; }
+  padding: 14px 14px 14px 14px; }
 
 #sidebar-switch-panel {
   float: right;

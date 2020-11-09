@@ -53,12 +53,9 @@ a:hover, a:active {
   outline: 1px solid transparent;
 }
 
-// サイドバーの折りたたみ
-#sidebar { width: 19%; display: block; margin-left: -19%; }
-#main.animate #sidebar { transition: margin-left 0.2s ease-in-out; }
-#main.visible-sidebar #sidebar{ margin-left: 0px;}
-#main:not(.visible-sidebar) #sidebar a.icon-only:before { font-size: 0px;}
-#main.visible-sidebar #sidebar a.icon-only:before { font-size: 14px; transition-delay: 0.2s;}
+// Collapse sidebar
+#sidebar { width: 19%; display: none; }
+#main.visible-sidebar #sidebar{ display: block; }
 #content { padding: 14px 14px 14px 14px; }
 #sidebar-switch-panel {
   float: right;

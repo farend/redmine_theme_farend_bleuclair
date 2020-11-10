@@ -1,2 +1,2 @@
-src/node_modules/
 /sftp-config.json
+node_modules

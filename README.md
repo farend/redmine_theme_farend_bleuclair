@@ -49,13 +49,12 @@ Redmineの管理画面で新しいテーマを利用する設定を行います�
 
 ## Development
 
-* Docker、docker-composeを利用
-* 下のようにすると、変更を監視し、新しく変更を加えて保存する度に反映されるようになる(scssをcssに変換)
-
 ```bash
-$ cd /your/path/redmine/public/themes/bleuclair
-$ docker-compose up
-$ # 終わったらctr + c, command + cで止める
+$ cd redmine/public/themes/beuclair
+$ npm install
+$ npm run start:dev
+$ # debug
+$ npm run build
 ```
 
 ## LICENSE
@@ -65,11 +64,11 @@ https://github.com/farend/redmine_theme_farend_bleuclair/blob/master/LICENSE
 
 ---
 
-Web fonts in [/webfonts](webfonts) uses the following library:  
+Web fonts in [webfonts](src/webfonts) uses the following library:  
 Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com  
 License - https://fontawesome.com/license/free (Fonts: SIL OFL 1.1 License)
 
-The icon [/images/search.svg](images/search.svg) uses svg files from the following library:  
+The icon [search.svg](src/images/search.svg) uses svg files from the following library:  
 Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com  
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0 License)
 

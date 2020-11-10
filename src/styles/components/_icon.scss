@@ -1,8 +1,12 @@
+@function unicode($str){
+    @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+}
+
 $overridden-selectors: '.icon-add', '.icon-edit', '.icon-copy', '.icon-del', '.icon-move', '.icon-save', '.icon-download', '.icon-cancel', '.icon-multiple', '.icon-folder', '.open', '.icon-folder', '.icon-package', '.icon-user', '.icon-project', '.icon-projects', '.icon-help', '.icon-attachment', '.icon-history', '.icon-time-entry', '.icon-time', '.icon-time-add', '.icon-stats', '.icon-warning', '.icon-error', '.icon-fav', '.icon-fav-off', '.icon-reload', '.icon-lock', '.icon-locked', '.icon-unlock', '.icon-checked', '.icon-comment', '.icon-comments', '.icon-summary', '.icon-server-authentication', '.icon-issue', '.icon-zoom-in', '.icon-zoom-out', '.icon-passwd', '.icon-arrow-right', '.icon-test', '.icon-sticky', '.icon-email', '.icon-email-disabled', '.icon-email-add', '.icon-ok', '.icon-not-ok', '.icon-link-break', '.icon-list', '.icon-close', '.icon-settings', '.icon-roles', '.icon-issue-edit', '.icon-workflows', '.icon-custom-fields', '.icon-plugins', '.icon-news', '.icon-issue-closed', '.icon-issue-note', '.icon-changeset', '.icon-message', '.icon-reply', '.icon-wiki-page', '.icon-wiki-page', '.icon-document', '.icon-add-bullet', '.icon-shared', '.icon-actions', '.icon-expended', '.icon-collapsed', '.icon-bookmark', '.icon-bookmark-off', '.icon-sort-handle', '.icon-sorted-asc', '.icon-sorted-desc', '.icon-toggle-plus', '.icon-toggle-minus', '.icon-file', '.icon-clear-query', '.icon-import', '.icon-group:not(.name)', '.icon-bookmarked-project';
 
 // .atomアイコンは個別に置き換え
 a.atom { background: transparent; padding: 2px 0px 3px 16px; }
-a.atom:before { /* fa-atom */ font-family: 'Font Awesome 5 Solid'; content: "\f143"; }
+a.atom:before { /* fa-atom */ font-family: 'Font Awesome 5 Solid'; content: unicode("f143"); }
 
 .icon:before, .icon-only:before, #context-menu .icon-checked:before {
   color: #666;
@@ -21,127 +25,127 @@ a.atom:before { /* fa-atom */ font-family: 'Font Awesome 5 Solid'; content: "\f1
   padding-right: 5px;
 }
 
-.icon-add:before { /* fa-plus-circle */ font-family: 'Font Awesome 5 Solid'; content: "\f055";}
-.icon-edit:before { /* fa-pencil */ font-family: 'Font Awesome 5 Solid'; content: "\f303"; }
-.icon-copy:before { /* fa-clone */ font-family: 'Font Awesome 5 Regular'; content: "\f0c5"; }
-.icon-del:before { /* fa-trash */ font-family: 'Font Awesome 5 Regular'; content: "\f2ed"; }
-.icon-move:before { /* fa-share */ font-family: 'Font Awesome 5 Solid'; content: "\f064"; }
-.icon-save:before { /* fa-floppy */ font-family: 'Font Awesome 5 Regular'; content: "\f0c7"; }
-.icon-download:before { /* fa-download */ font-family: 'Font Awesome 5 Solid'; content: "\f019"; }
-.icon-cancel:before { /* fa-reply */ font-family: 'Font Awesome 5 Solid'; content: "\f3e5"; }
-.icon-multiple:before { /* fa-sync-alt */ font-family: 'Font Awesome 5 Solid'; content: "\f2f1"; }
-.icon-folder:before { /* fa-folder */ font-family: 'Font Awesome 5 Regular'; content: "\f07b"; }
-.open .icon-folder:before { /* fa-folder */ font-family: 'Font Awesome 5 Regular'; content: "\f07c"; }
-.icon-package:before { /* fa-cube */ font-family: 'Font Awesome 5 Solid'; content: "\f1b2"; }
-.icon-user:before { /* fa-user */ font-family: 'Font Awesome 5 Solid'; content: "\f007"; }
-.icon-project:before, .icon-projects:before { /* fa-cubes */ font-family: 'Font Awesome 5 Solid'; content: "\f1b3"; }
-.icon-help:before { /* fa-info-circle */ font-family: 'Font Awesome 5 Solid'; content: "\f05a"; }
-.icon-attachment:before  { /* fa-paperclip */ font-family: 'Font Awesome 5 Solid'; content: "\f0c6"; }
-.icon-history:before  { /* fa-history */ font-family: 'Font Awesome 5 Solid'; content: "\f1da"; }
-.icon-time-entry:before, .icon-time:before { /* fa-clock */ font-family: 'Font Awesome 5 Regular'; content: "\f017"; }
-.icon-time-add:before  { /* fa-clock */ font-family: 'Font Awesome 5 Regular'; content: "\f017"; }
-.icon-stats:before  {  /* fa-bar-chart */ font-family: 'Font Awesome 5 Regular'; content: "\f080"; }
-.icon-warning:before { /* fa-warning */ font-family: 'Font Awesome 5 Solid'; content: "\f071"; color: #A6750C; }
-.icon-error:before { /* fa-warning */ font-family: 'Font Awesome 5 Solid'; content: "\f071"; color: #EC0B19; }
+.icon-add:before { /* fa-plus-circle */ font-family: 'Font Awesome 5 Solid'; content: unicode("f055");}
+.icon-edit:before { /* fa-pencil */ font-family: 'Font Awesome 5 Solid'; content: unicode("f303"); }
+.icon-copy:before { /* fa-clone */ font-family: 'Font Awesome 5 Regular'; content: unicode("f0c5"); }
+.icon-del:before { /* fa-trash */ font-family: 'Font Awesome 5 Regular'; content: unicode("f2ed"); }
+.icon-move:before { /* fa-share */ font-family: 'Font Awesome 5 Solid'; content: unicode("f064"); }
+.icon-save:before { /* fa-floppy */ font-family: 'Font Awesome 5 Regular'; content: unicode("f0c7"); }
+.icon-download:before { /* fa-download */ font-family: 'Font Awesome 5 Solid'; content: unicode("f019"); }
+.icon-cancel:before { /* fa-reply */ font-family: 'Font Awesome 5 Solid'; content: unicode("f3e5"); }
+.icon-multiple:before { /* fa-sync-alt */ font-family: 'Font Awesome 5 Solid'; content: unicode("f2f1"); }
+.icon-folder:before { /* fa-folder */ font-family: 'Font Awesome 5 Regular'; content: unicode("f07b"); }
+.open .icon-folder:before { /* fa-folder */ font-family: 'Font Awesome 5 Regular'; content: unicode("f07c"); }
+.icon-package:before { /* fa-cube */ font-family: 'Font Awesome 5 Solid'; content: unicode("f1b2"); }
+.icon-user:before { /* fa-user */ font-family: 'Font Awesome 5 Solid'; content: unicode("f007"); }
+.icon-project:before, .icon-projects:before { /* fa-cubes */ font-family: 'Font Awesome 5 Solid'; content: unicode("f1b3"); }
+.icon-help:before { /* fa-info-circle */ font-family: 'Font Awesome 5 Solid'; content: unicode("f05a"); }
+.icon-attachment:before  { /* fa-paperclip */ font-family: 'Font Awesome 5 Solid'; content: unicode("f0c6"); }
+.icon-history:before  { /* fa-history */ font-family: 'Font Awesome 5 Solid'; content: unicode("f1da"); }
+.icon-time-entry:before, .icon-time:before { /* fa-clock */ font-family: 'Font Awesome 5 Regular'; content: unicode("f017"); }
+.icon-time-add:before  { /* fa-clock */ font-family: 'Font Awesome 5 Regular'; content: unicode("f017"); }
+.icon-stats:before  {  /* fa-bar-chart */ font-family: 'Font Awesome 5 Regular'; content: unicode("f080"); }
+.icon-warning:before { /* fa-warning */ font-family: 'Font Awesome 5 Solid'; content: unicode("f071"); color: #A6750C; }
+.icon-error:before { /* fa-warning */ font-family: 'Font Awesome 5 Solid'; content: unicode("f071"); color: #EC0B19; }
 .icon-fav {
   &:before  {
     /* fa-star */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f005";
+    content: unicode("f005");
     color: #ffc400;
   }
   &:hover:before {
     color: darken(#ffc400, 10%);
   }
 }
-.icon-fav-off:before  {  /* fa-star */ font-family: 'Font Awesome 5 Regular'; content: "\f005"; }
-.icon-reload:before  { /* fa-refresh */ font-family: 'Font Awesome 5 Solid'; content: "\f021"; }
-.icon-lock:before, .icon-locked:before  { /* fa-lock */ font-family: 'Font Awesome 5 Solid'; content: "\f023"; }
-.icon-unlock:before  { /* fa-unlock */ font-family: 'Font Awesome 5 Solid'; content: "\f09c"; }
+.icon-fav-off:before  {  /* fa-star */ font-family: 'Font Awesome 5 Regular'; content: unicode("f005"); }
+.icon-reload:before  { /* fa-refresh */ font-family: 'Font Awesome 5 Solid'; content: unicode("f021"); }
+.icon-lock:before, .icon-locked:before  { /* fa-lock */ font-family: 'Font Awesome 5 Solid'; content: unicode("f023"); }
+.icon-unlock:before  { /* fa-unlock */ font-family: 'Font Awesome 5 Solid'; content: unicode("f09c"); }
 .icon-checked {
   &:before  {
     /* fa-check */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f00c";
+    content: unicode("f00c");
     color: #55AC4F;
   }
   &:hover:before {
     color: darken(#55AC4F, 10%);
   }
 }
-.icon-comment:before, .icon-comments:before  { /* fa-comment */ font-family: 'Font Awesome 5 Regular'; content: "\f075"; }
-.icon-summary:before  { /* fa-table */  font-family: 'Font Awesome 5 Solid'; content: "\f0ce"; }
-.icon-server-authentication:before {  /* fa-key */ font-family: 'Font Awesome 5 Solid'; content: "\f084"; }
-.icon-issue:before { /* fa-sticky-note */ font-family: 'Font Awesome 5 Regular'; content: "\f249"; }
-.icon-zoom-in:before { /* fa-search-plus */ font-family: 'Font Awesome 5 Solid'; content: "\f00e"; }
-.icon-zoom-out:before { /* fa-search-minus */ font-family: 'Font Awesome 5 Solid'; content: "\f010"; }
-.icon-passwd:before { /* fa-key */ font-family: 'Font Awesome 5 Solid'; content: "\f084"; }
-.icon-arrow-right:before, .icon-test:before, .icon-sticky:before { /* fa-arrow-right */ font-family: 'Font Awesome 5 Solid'; content: "\f061"; }
-.icon-email:before { /* fa-envelope */ font-family: 'Font Awesome 5 Regular'; content: "\f0e0"; }
-.icon-email-disabled:before { /* fa-envelope */ font-family: 'Font Awesome 5 Solid'; content: "\f0e0"; }
-.icon-email-add:before { /* fa-envelope */ font-family: 'Font Awesome 5 Regular'; content: "\f0e0"; }
-.icon-ok:before { /* fa-check */ font-family: 'Font Awesome 5 Solid'; content: "\f00c"; color: #55AC4F; }
-.icon-not-ok:before { /* fa-close */ font-family: 'Font Awesome 5 Solid'; content: "\f00d"; color: #EC0B19; }
-.icon-link-break:before { /* fa-unlink */ font-family: 'Font Awesome 5 Solid'; content: "\f127"; }
-.icon-list:before { /* fa-list-ul */ font-family: 'Font Awesome 5 Solid'; content: "\f0ca"; }
-.icon-close:before { /* fa-close */ font-family: 'Font Awesome 5 Solid'; content: "\f00d"; }
-.icon-settings:before { /* fa-cog */ font-family: 'Font Awesome 5 Solid'; content: "\f013"; }
-.icon-roles:before { /* fa-eye */ font-family: 'Font Awesome 5 Solid'; content: "\f06e"; }
-.icon-issue-edit:before { /* fa-pencil-square */ font-family: 'Font Awesome 5 Solid'; content: "\f044"; }
-.icon-workflows:before { /* fa-cogs */ font-family: 'Font Awesome 5 Solid'; content: "\f085"; }
-.icon-custom-fields:before { /* fa-file-alt */ font-family: 'Font Awesome 5 Regular'; content: "\f15c"; }
-.icon-plugins:before { /* fa-puzzle-piece */ font-family: 'Font Awesome 5 Solid'; content: "\f12e"; }
-.icon-news:before { /* fa-newspaper */   font-family: 'Font Awesome 5 Regular'; content: "\f1ea"; }
-.icon-issue-closed:before { /* fa-check-square */ font-family: 'Font Awesome 5 Regular'; content: "\f14a"; }
-.icon-issue-note:before {/* fa-comment */ font-family: 'Font Awesome 5 Regular'; content: "\f075"; }
-.icon-changeset:before { /* fa-code */   font-family: 'Font Awesome 5 Solid'; content: "\f121"; }
-.icon-message:before {/* fa-comment */ font-family: 'Font Awesome 5 Regular'; content: "\f075"; }
-.icon-reply:before { /* fa-comments */ font-family: 'Font Awesome 5 Regular'; content: "\f086"; }
-.icon-wiki-page:before { /* fa-book */ font-family: 'Font Awesome 5 Solid'; content: "\f02d"; }
-.icon-document:before { /* fa-file  */ font-family: 'Font Awesome 5 Regular'; content: "\f15b"; }
-.icon-add-bullet:before {  /* fa-plus-circle */ font-family: 'Font Awesome 5 Solid'; content: "\f055";}
-.icon-shared:before { /* fa-link */ font-family: 'Font Awesome 5 Solid'; content: "\f0c1"; }
-.icon-actions:before { /* fa-ellipsis-h */ font-family: 'Font Awesome 5 Solid'; content: "\f141"; }
-.icon-expended:before { /* fa-angle-down */ font-family: 'Font Awesome 5 Solid'; content: "\f107"; }
-.icon-collapsed:before { /* fa-angle-right */ font-family: 'Font Awesome 5 Solid'; content: "\f105"; }
+.icon-comment:before, .icon-comments:before  { /* fa-comment */ font-family: 'Font Awesome 5 Regular'; content: unicode("f075"); }
+.icon-summary:before  { /* fa-table */  font-family: 'Font Awesome 5 Solid'; content: unicode("f0ce"); }
+.icon-server-authentication:before {  /* fa-key */ font-family: 'Font Awesome 5 Solid'; content: unicode("f084"); }
+.icon-issue:before { /* fa-sticky-note */ font-family: 'Font Awesome 5 Regular'; content: unicode("f249"); }
+.icon-zoom-in:before { /* fa-search-plus */ font-family: 'Font Awesome 5 Solid'; content: unicode("f00e"); }
+.icon-zoom-out:before { /* fa-search-minus */ font-family: 'Font Awesome 5 Solid'; content: unicode("f010"); }
+.icon-passwd:before { /* fa-key */ font-family: 'Font Awesome 5 Solid'; content: unicode("f084"); }
+.icon-arrow-right:before, .icon-test:before, .icon-sticky:before { /* fa-arrow-right */ font-family: 'Font Awesome 5 Solid'; content: unicode("f061"); }
+.icon-email:before { /* fa-envelope */ font-family: 'Font Awesome 5 Regular'; content: unicode("f0e0"); }
+.icon-email-disabled:before { /* fa-envelope */ font-family: 'Font Awesome 5 Solid'; content: unicode("f0e0"); }
+.icon-email-add:before { /* fa-envelope */ font-family: 'Font Awesome 5 Regular'; content: unicode("f0e0"); }
+.icon-ok:before { /* fa-check */ font-family: 'Font Awesome 5 Solid'; content: unicode("f00c"); color: #55AC4F; }
+.icon-not-ok:before { /* fa-close */ font-family: 'Font Awesome 5 Solid'; content: unicode("f00d"); color: #EC0B19; }
+.icon-link-break:before { /* fa-unlink */ font-family: 'Font Awesome 5 Solid'; content: unicode("f127"); }
+.icon-list:before { /* fa-list-ul */ font-family: 'Font Awesome 5 Solid'; content: unicode("f0ca"); }
+.icon-close:before { /* fa-close */ font-family: 'Font Awesome 5 Solid'; content: unicode("f00d"); }
+.icon-settings:before { /* fa-cog */ font-family: 'Font Awesome 5 Solid'; content: unicode("f013"); }
+.icon-roles:before { /* fa-eye */ font-family: 'Font Awesome 5 Solid'; content: unicode("f06e"); }
+.icon-issue-edit:before { /* fa-pencil-square */ font-family: 'Font Awesome 5 Solid'; content: unicode("f044"); }
+.icon-workflows:before { /* fa-cogs */ font-family: 'Font Awesome 5 Solid'; content: unicode("f085"); }
+.icon-custom-fields:before { /* fa-file-alt */ font-family: 'Font Awesome 5 Regular'; content: unicode("f15c"); }
+.icon-plugins:before { /* fa-puzzle-piece */ font-family: 'Font Awesome 5 Solid'; content: unicode("f12e"); }
+.icon-news:before { /* fa-newspaper */   font-family: 'Font Awesome 5 Regular'; content: unicode("f1ea"); }
+.icon-issue-closed:before { /* fa-check-square */ font-family: 'Font Awesome 5 Regular'; content: unicode("f14a"); }
+.icon-issue-note:before {/* fa-comment */ font-family: 'Font Awesome 5 Regular'; content: unicode("f075"); }
+.icon-changeset:before { /* fa-code */   font-family: 'Font Awesome 5 Solid'; content: unicode("f121"); }
+.icon-message:before {/* fa-comment */ font-family: 'Font Awesome 5 Regular'; content: unicode("f075"); }
+.icon-reply:before { /* fa-comments */ font-family: 'Font Awesome 5 Regular'; content: unicode("f086"); }
+.icon-wiki-page:before { /* fa-book */ font-family: 'Font Awesome 5 Solid'; content: unicode("f02d"); }
+.icon-document:before { /* fa-file  */ font-family: 'Font Awesome 5 Regular'; content: unicode("f15b"); }
+.icon-add-bullet:before {  /* fa-plus-circle */ font-family: 'Font Awesome 5 Solid'; content: unicode("f055");}
+.icon-shared:before { /* fa-link */ font-family: 'Font Awesome 5 Solid'; content: unicode("f0c1"); }
+.icon-actions:before { /* fa-ellipsis-h */ font-family: 'Font Awesome 5 Solid'; content: unicode("f141"); }
+.icon-expended:before { /* fa-angle-down */ font-family: 'Font Awesome 5 Solid'; content: unicode("f107"); }
+.icon-collapsed:before { /* fa-angle-right */ font-family: 'Font Awesome 5 Solid'; content: unicode("f105"); }
 .icon-bookmark {
   &:before {
     /* fa-bookmark */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f02e";
+    content: unicode("f02e");
     color: #557cff;
   }
   &:hover:before {
     color: darken(#557cff, 20%);
   }
 }
-.icon-bookmark-off:before { /* fa-bookmark */ font-family: 'Font Awesome 5 Regular'; content: "\f02e"; }
-.icon-sort-handle:before { /* fa-bookmark */ font-family: 'Font Awesome 5 Solid'; content: "\f338"; }
-.icon-sorted-asc:before { /* fa-angle-down */ font-family: 'Font Awesome 5 Solid'; content: "\f107"; }
-.icon-sorted-desc:before { /* fa-angle-up */ font-family: 'Font Awesome 5 Solid'; content: "\f106"; }
-.icon-toggle-plus:before { /* fa-plus-square */ font-family: 'Font Awesome 5 Regular'; content: "\f0fe"; }
-.icon-toggle-minus:before { /* fa-minus-square */ font-family: 'Font Awesome 5 Regular'; content: "\f146"; }
-.icon-clear-query:before { /* fa-times-circle */ font-family: 'Font Awesome 5 Solid'; content: "\f057"; }
-.icon-import:before { /* fa-file-import */ font-family: 'Font Awesome 5 Solid'; content: "\f56f"; }
+.icon-bookmark-off:before { /* fa-bookmark */ font-family: 'Font Awesome 5 Regular'; content: unicode("f02e"); }
+.icon-sort-handle:before { /* fa-bookmark */ font-family: 'Font Awesome 5 Solid'; content: unicode("f338"); }
+.icon-sorted-asc:before { /* fa-angle-down */ font-family: 'Font Awesome 5 Solid'; content: unicode("f107"); }
+.icon-sorted-desc:before { /* fa-angle-up */ font-family: 'Font Awesome 5 Solid'; content: unicode("f106"); }
+.icon-toggle-plus:before { /* fa-plus-square */ font-family: 'Font Awesome 5 Regular'; content: unicode("f0fe"); }
+.icon-toggle-minus:before { /* fa-minus-square */ font-family: 'Font Awesome 5 Regular'; content: unicode("f146"); }
+.icon-clear-query:before { /* fa-times-circle */ font-family: 'Font Awesome 5 Solid'; content: unicode("f057"); }
+.icon-import:before { /* fa-file-import */ font-family: 'Font Awesome 5 Solid'; content: unicode("f56f"); }
 
-.icon-file:before { /* fa-file */ font-family: 'Font Awesome 5 Regular'; content: "\f15b"; }
-.icon-file.text-plain:before { /* fa-file */ font-family: 'Font Awesome 5 Regular'; content: "\f15b"; }
-.icon-file.text-x-c:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.text-x-csharp:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.text-x-java:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.text-x-javascript:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.text-x-php:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.text-x-ruby:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.text-xml:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.text-css:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.text-html:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: "\f1c9"; }
-.icon-file.image-gif:before { /* fa-file-image */ font-family: 'Font Awesome 5 Regular'; content: "\f1c5"; }
-.icon-file.image-jpeg:before { /* fa-file-image */ font-family: 'Font Awesome 5 Regular'; content: "\f1c5"; }
-.icon-file.image-png:before { /* fa-file-image */ font-family: 'Font Awesome 5 Regular'; content: "\f1c5"; }
-.icon-file.image-tiff:before { /* fa-file-image */ font-family: 'Font Awesome 5 Regular'; content: "\f1c5"; }
-.icon-file.application-pdf:before { /* fa-file-pdf */ font-family: 'Font Awesome 5 Regular'; content: "\f1c1"; }
-.icon-file.application-zip:before { /* fa-file-archive */ font-family: 'Font Awesome 5 Regular'; content: "\f1c6"; }
-.icon-file.application-x-gzip:before { /* fa-file-archive */ font-family: 'Font Awesome 5 Regular'; content: "\f1c6"; }
+.icon-file:before { /* fa-file */ font-family: 'Font Awesome 5 Regular'; content: unicode("f15b"); }
+.icon-file.text-plain:before { /* fa-file */ font-family: 'Font Awesome 5 Regular'; content: unicode("f15b"); }
+.icon-file.text-x-c:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.text-x-csharp:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.text-x-java:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.text-x-javascript:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.text-x-php:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.text-x-ruby:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.text-xml:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.text-css:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.text-html:before { /* fa-file-code */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c9"); }
+.icon-file.image-gif:before { /* fa-file-image */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c5"); }
+.icon-file.image-jpeg:before { /* fa-file-image */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c5"); }
+.icon-file.image-png:before { /* fa-file-image */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c5"); }
+.icon-file.image-tiff:before { /* fa-file-image */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c5"); }
+.icon-file.application-pdf:before { /* fa-file-pdf */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c1"); }
+.icon-file.application-zip:before { /* fa-file-archive */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c6"); }
+.icon-file.application-x-gzip:before { /* fa-file-archive */ font-family: 'Font Awesome 5 Regular'; content: unicode("f1c6"); }
 
 #{$overridden-selectors} {
   background-image: none !important;
@@ -168,7 +172,7 @@ a.atom:before { /* fa-atom */ font-family: 'Font Awesome 5 Solid'; content: "\f1
 
 // autocompleteのinput field内のサーチアイコンをsvgアイコンに置き換え
 input.autocomplete {
-  background: #fff url(../images/search.svg) no-repeat 2px 50%;
+  background: #fff url('../images/search.svg') no-repeat 2px 50%;
   background-size: 12px 12px;
   background-position: 5px center;
 }
@@ -207,7 +211,7 @@ input.autocomplete {
 .members.box .icon-group, #admin-menu .icon-group {
   background-image: none;
 
-  &:before { /* fa-users */ font-family: 'Font Awesome 5 Solid'; content: "\f0c0"; }
+  &:before { /* fa-users */ font-family: 'Font Awesome 5 Solid'; content: unicode("f0c0"); }
 }
 
 // プロジェクト一覧では、a:beforeでなくa:afterにアイコンを表示
@@ -225,10 +229,10 @@ body.controller-projects.action-index a.project, body.controller-projects.action
     text-rendering: auto;
     font-size: 14px;
   }
-  &.icon-bookmarked-project:after { /* fa-bookmark */ font-family: 'Font Awesome 5 Solid'; content: "\00a0\f02e"; }
-  &.icon.my-project:after { /* fa-user */ font-family: 'Font Awesome 5 Solid'; content: "\00a0\f007"; }
+  &.icon-bookmarked-project:after { /* fa-bookmark */ font-family: 'Font Awesome 5 Solid'; content: unicode("00a0 f02e"); }
+  &.icon.my-project:after { /* fa-user */ font-family: 'Font Awesome 5 Solid'; content: unicode("00a0 f007"); }
   &.icon.my-project.icon-bookmarked-project:after {
-    font-family: 'Font Awesome 5 Solid'; content: "\00a0\f007\00a0\f02e";
+    font-family: 'Font Awesome 5 Solid'; content: unicode("00a0 f007 00a0 f02e");
   }
 }
 

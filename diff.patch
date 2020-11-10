@@ -1,0 +1,25 @@
+diff --git a/javascripts/theme.js b/javascripts/theme.js
+index 497614c..91b0ff1 100644
+--- a/javascripts/theme.js
++++ b/javascripts/theme.js
+@@ -104,10 +104,15 @@ $(function(){
+ }(jQuery));
+ 
+ window.addEventListener('DOMContentLoaded', function () {
+-  if (!$('#main').hasClass('nosidebar')) {
+-    if ($('#sidebar-switch-panel').length == 0) {
+-      $('#content').prepend('<div id="sidebar-switch-panel"><a id="sidebar-switch-button" href="#"></a></div>');
++  var userAgent = window.navigator.userAgent.toLowerCase();
++  if(userAgent.match(/(msie|MSIE)/) || userAgent.match(/(T|t)rident/)){
++    $('#main').toggleClass('visible-sidebar', true);
++  } else {
++    if (!$('#main').hasClass('nosidebar')) {
++      if ($('#sidebar-switch-panel').length == 0) {
++        $('#content').prepend('<div id="sidebar-switch-panel"><a id="sidebar-switch-button" href="#"></a></div>');
++      }
++      $('#main').collapsibleSidebar();
+     }
+-    $('#main').collapsibleSidebar();
+   }
+ });
+\ No newline at end of file

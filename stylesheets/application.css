@@ -77,6 +77,10 @@ a:hover, a:active {
 #main.visible-sidebar #sidebar {
   display: block; }
 
+@media screen and (max-width: 899px) {
+  #main.visible-sidebar #sidebar, #main.visible-sidebar #sidebar-switch-panel {
+    display: none; } }
+
 #content {
   padding: 14px 14px 14px 14px; }
 

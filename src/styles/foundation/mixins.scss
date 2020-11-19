@@ -1,0 +1,14 @@
+@mixin fontAwesome($code, $font-type: Regular) {
+  font-family: 'Font Awesome 5 ' + $font-type;
+  content: unquote("\"")+unquote(str-insert($code, "\\", 1))+unquote("\"");
+}
+
+@mixin ColoredIconInBeforeOfElement($code, $font-type, $color) {
+  &:before {
+    @include fontAwesome($code, $font-type);
+    color: $color;
+  }
+  &:hover:before {
+    color: darken($color, 10%);
+  }
+}

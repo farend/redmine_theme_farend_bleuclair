@@ -1,7 +1,0 @@
-  # rm -rf src/node_modules; sudo docker-compose up
-  nodejs:
-    image: node:13
-    volumes:
-      - ./:/theme
-    working_dir: /theme/src
-    command: bash -c "npm install --no-optional && npm link gulp && gulp watch"

@@ -56,6 +56,12 @@ a:hover, a:active {
 // Collapse sidebar
 #sidebar { width: 19%; display: none; }
 #main.visible-sidebar #sidebar{ display: block; }
+@media screen and (max-width: 899px) {
+  #main.visible-sidebar {
+    #sidebar, #sidebar-switch-panel { display: none; }
+  }
+}
+
 #content { padding: 14px 14px 14px 14px; }
 #sidebar-switch-panel {
   float: right;
@@ -89,10 +95,10 @@ a:hover, a:active {
   }
 }
 #main:not(.visible-sidebar) #sidebar-switch-button:before{
-  content: "\f053";
+  content: unicode("f053");
   font-family: 'Font Awesome 5 Solid';
 }
 #main.visible-sidebar #sidebar-switch-button:before {
-  content: "\f054";
+  content: unicode("f054");
   font-family: 'Font Awesome 5 Solid';
 }

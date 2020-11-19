@@ -18,27 +18,27 @@ div.jstElements {
   .jstb_strong:before {
     /* fa-bold */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f032";
+    content: unicode("f032");
     font-size: 12px;
   }
   .jstb_em:before {
     /* fa-italic */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f033";
+    content: unicode("f033");
     font-size: 12px;
   }
   .jstb_ins {
     &:before {
       /* fa-underline */
       font-family: 'Font Awesome 5 Solid';
-      content: "\f0cd";
+      content: unicode("f0cd");
       font-size: 12px;
     }
   }
   .jstb_del:before {
     /* fa-strikethrough */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f0cc";
+    content: unicode("f0cc");
     font-size: 12px;
   }
   .jstb_code {
@@ -74,7 +74,7 @@ div.jstElements {
     &:before {
       /* fa-list-ul */
       font-family: 'Font Awesome 5 Solid';
-      content: "\f0ca";
+      content: unicode("f0ca");
       font-size: 16px;
       position: 0px;
     }
@@ -84,7 +84,7 @@ div.jstElements {
     &:before {
       /* fa-list-ol */
       font-family: 'Font Awesome 5 Solid';
-      content: "\f0cb";
+      content: unicode("f0cb");
       font-size: 16px;
     }
   }
@@ -93,7 +93,7 @@ div.jstElements {
     &:before {
       /* fa-indent */
       font-family: 'Font Awesome 5 Solid';
-      content: "\f03c";
+      content: unicode("f03c");
       font-size: 14px;
     }
   }
@@ -102,7 +102,7 @@ div.jstElements {
     &:before {
       /* fa-outdent */
       font-family: 'Font Awesome 5 Solid';
-      content: "\f03b";
+      content: unicode("f03b");
       font-size: 14px;
     }
   }
@@ -118,32 +118,32 @@ div.jstElements {
     &:before {
       /* fa-code */
       font-family: 'Font Awesome 5 Solid';
-      content: "\f121";
+      content: unicode("f121");
       font-size: 12px;
     }
   }
   .jstb_link:before {
     /* fa-link */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f0c1";
+    content: unicode("f0c1");
     font-size: 12px;
   }
   .jstb_img:before {
     /* fa-image */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f03e";
+    content: unicode("f03e");
     font-size: 12px;
   }
   .jstb_table:before {
     /* fa-image */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f0ce";
+    content: unicode("f0ce");
     font-size: 12px;
   }
   .jstb_help:before {
     /* fa-question-circle */
     font-family: 'Font Awesome 5 Solid';
-    content: "\f059";
+    content: unicode("f059");
     font-size: 12px;
   }
 }

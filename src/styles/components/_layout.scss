@@ -1,6 +1,7 @@
 $color-top-menu-bg: #223342;
 $color-main-bg:     #fafcfe;
-
+$color-border-sidebar-switch-button: #bfbfbf;
+$color-bg-sidebar-switch-button: #eeeeee;
 
 #top-menu {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
@@ -40,7 +41,7 @@ $color-main-bg:     #fafcfe;
   box-sizing: border-box;
   font-size: 0.9em;
 
-  h3 { color: #333; }
+  h3 { color: $default-heading-font-color; }
 }
 
 .icon {
@@ -74,10 +75,10 @@ a:hover, a:active {
   margin-left: 5px;
 }
 #sidebar-switch-button {
-  background-color: #EEEEEE;
-  border-bottom: 1px solid #bfbfbf;
-  border-left: 1px solid #bfbfbf;
-  border-top: 1px solid #bfbfbf;
+  background-color: $color-bg-sidebar-switch-button;
+  border-bottom: 1px solid $color-border-sidebar-switch-button;
+  border-left: 1px solid $color-border-sidebar-switch-button;
+  border-top: 1px solid $color-border-sidebar-switch-button;
   border-radius: 10px 0px 0px 10px;
   display: block;
   height: 100%;
@@ -95,10 +96,8 @@ a:hover, a:active {
   }
 }
 #main:not(.visible-sidebar) #sidebar-switch-button:before{
-  content: unicode("f053");
-  font-family: 'Font Awesome 5 Solid';
+  @include fontAwesome('f053', 'Solid');
 }
 #main.visible-sidebar #sidebar-switch-button:before {
-  content: unicode("f054");
-  font-family: 'Font Awesome 5 Solid';
+  @include fontAwesome('f054', 'Solid');
 }

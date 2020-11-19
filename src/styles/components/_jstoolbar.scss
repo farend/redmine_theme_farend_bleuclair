@@ -17,28 +17,24 @@ div.jstElements {
 
   .jstb_strong:before {
     /* fa-bold */
-    font-family: 'Font Awesome 5 Solid';
-    content: unicode("f032");
+    @include fontAwesome('f032', 'Solid');
     font-size: 12px;
   }
   .jstb_em:before {
     /* fa-italic */
-    font-family: 'Font Awesome 5 Solid';
-    content: unicode("f033");
+    @include fontAwesome('f033', 'Solid');
     font-size: 12px;
   }
   .jstb_ins {
     &:before {
       /* fa-underline */
-      font-family: 'Font Awesome 5 Solid';
-      content: unicode("f0cd");
+      @include fontAwesome('f0cd', 'Solid');
       font-size: 12px;
     }
   }
   .jstb_del:before {
     /* fa-strikethrough */
-    font-family: 'Font Awesome 5 Solid';
-    content: unicode("f0cc");
+    @include fontAwesome('f0cc', 'Solid');
     font-size: 12px;
   }
   .jstb_code {
@@ -73,8 +69,7 @@ div.jstElements {
     padding: 0px;
     &:before {
       /* fa-list-ul */
-      font-family: 'Font Awesome 5 Solid';
-      content: unicode("f0ca");
+      @include fontAwesome('f0ca', 'Solid');
       font-size: 16px;
       position: 0px;
     }
@@ -83,8 +78,7 @@ div.jstElements {
     padding: 0px;
     &:before {
       /* fa-list-ol */
-      font-family: 'Font Awesome 5 Solid';
-      content: unicode("f0cb");
+      @include fontAwesome('f0cb', 'Solid');
       font-size: 16px;
     }
   }
@@ -92,8 +86,7 @@ div.jstElements {
     padding: 0px;
     &:before {
       /* fa-indent */
-      font-family: 'Font Awesome 5 Solid';
-      content: unicode("f03c");
+      @include fontAwesome('f03c', 'Solid');
       font-size: 14px;
     }
   }
@@ -101,8 +94,7 @@ div.jstElements {
     padding: 0px;
     &:before {
       /* fa-outdent */
-      font-family: 'Font Awesome 5 Solid';
-      content: unicode("f03b");
+      @include fontAwesome('f03b', 'Solid');
       font-size: 14px;
     }
   }
@@ -117,33 +109,28 @@ div.jstElements {
   .jstb_precode {
     &:before {
       /* fa-code */
-      font-family: 'Font Awesome 5 Solid';
-      content: unicode("f121");
+      @include fontAwesome('f121', 'Solid');
       font-size: 12px;
     }
   }
   .jstb_link:before {
     /* fa-link */
-    font-family: 'Font Awesome 5 Solid';
-    content: unicode("f0c1");
+    @include fontAwesome('f0c1', 'Solid');
     font-size: 12px;
   }
   .jstb_img:before {
     /* fa-image */
-    font-family: 'Font Awesome 5 Solid';
-    content: unicode("f03e");
+    @include fontAwesome('f03e', 'Solid');
     font-size: 12px;
   }
   .jstb_table:before {
     /* fa-image */
-    font-family: 'Font Awesome 5 Solid';
-    content: unicode("f0ce");
+    @include fontAwesome('f0ce', 'Solid');
     font-size: 12px;
   }
   .jstb_help:before {
     /* fa-question-circle */
-    font-family: 'Font Awesome 5 Solid';
-    content: unicode("f059");
+    @include fontAwesome('f059', 'Solid');
     font-size: 12px;
   }
 }

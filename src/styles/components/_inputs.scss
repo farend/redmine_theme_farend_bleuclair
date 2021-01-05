@@ -205,13 +205,10 @@ $checkbox-margin: 7px 2px 7px 0px;
     box-shadow: none;
   }
 
-  .previous.page, .next.page {
-    border: 1px solid white;
-    background: $color-submit-bg;
+  .pagination ul.pages li.page {
+    border: 1px solid $color-button-border;
+    background: $color-button-bg;
     box-shadow: none;
-    a {
-      color: $color-submit-text;
-    }
     &:hover, &:active {
       a { color: $color-button-hover-text; }
       border-color: $color-button-hover-border;
@@ -221,6 +218,9 @@ $checkbox-margin: 7px 2px 7px 0px;
       outline: 0;
       box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
     }
+  }
+  .pagination ul.pages li.previous, .pagination ul.pages li.next {
+    background: $color-button-bg;
   }
 }
 

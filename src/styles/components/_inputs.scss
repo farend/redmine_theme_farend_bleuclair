@@ -204,6 +204,24 @@ $checkbox-margin: 7px 2px 7px 0px;
     margin: $checkbox-margin;
     box-shadow: none;
   }
+
+  .previous.page, .next.page {
+    border: 1px solid white;
+    background: $color-submit-bg;
+    box-shadow: none;
+    a {
+      color: $color-submit-text;
+    }
+    &:hover, &:active {
+      a { color: $color-button-hover-text; }
+      border-color: $color-button-hover-border;
+      background-color: $color-button-hover-bg;
+    }
+    &:active {
+      outline: 0;
+      box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    }
+  }
 }
 
 form .attributes {

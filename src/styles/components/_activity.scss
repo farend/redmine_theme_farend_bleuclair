@@ -1,3 +1,12 @@
 div#activity dt .time { color: #444; }
 div#activity dt.me .time { border-color: #666; }
 div#activity dd span.description, #search-results dd span.description { color: #444; }
+
+div#activity h3 {
+  position: relative;
+  margin: $note-title-margin;
+  border: none;
+  background-color: $color-note-title-bg;
+  padding: $note-title-padding;
+  border-radius: 4px;
+}

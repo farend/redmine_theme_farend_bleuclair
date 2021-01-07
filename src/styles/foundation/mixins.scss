@@ -12,3 +12,8 @@
     color: darken($color, 10%);
   }
 }
+
+@mixin MultipleCodefontAwesome($codes, $font-type: Regular) {
+  font-family: 'Font Awesome 5 ' + $font-type;
+  content: unquote("\"")+unquote(str-insert($code, "\\", 1))+unquote("\"");
+}

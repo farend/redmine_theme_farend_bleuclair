@@ -1,6 +1,6 @@
 // forum(board)
 
-.controller-repositories.action-revision {
+.controller-repositories.action-revision, .controller-repositories.action-diff {
   #content > div.message {
     border-radius: 3px;
     background-color: $color-history-bg;
@@ -54,6 +54,13 @@
     background-color: #fff;
     margin-bottom: 20px;
     padding: 30px 20px 5px 20px;
+    border-radius: 3px;
+    border: 1px solid #dfe8f1;
+  }
+
+  #related-issues {
+    background-color: #fff;
+    padding: 20px;
     border-radius: 3px;
     border: 1px solid #dfe8f1;
   }

@@ -65,22 +65,11 @@
     }
   }
 
-  #edit-news + p {
-    background-color: $color-note-title-bg;
-    padding: $note-title-padding;
-    span.author {
-      font-size: 0.9em;
-      font-weight: bold;
-    }
-    a[href*="activity"][data-absolute-date*=":"] {
-      box-shadow: none;
-      padding: 0;
-    }
-  }
 
-  #edit-news + p + div.wiki {
+  #edit-news + p + div.wiki, h2 + p + div.wiki {
+    position: relative;
     background-color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 20px;
     border-radius: 3px;
     border: 1px solid #dfe8f1;

@@ -1,7 +1,12 @@
-.box, .mypage-box {
+.box, .mypage-box, .controller-wiki.action-show .wiki.wiki-page {
   background-color: #fff;
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 3px;
   border: 1px solid #dfe8f1;
+}
+
+.controller-wiki.action-show .wiki.wiki-page {
+  margin-top: 25px;
+  margin-bottom: 10px;
 }

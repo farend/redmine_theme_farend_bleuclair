@@ -195,10 +195,10 @@ body.controller-projects.action-index a.project, body.controller-projects.action
     text-rendering: auto;
     font-size: 14px;
   }
-  &.icon-bookmarked-project:after { /* fa-bookmark */ @include fontAwesome('00a0 f02e', 'Solid'); }
-  &.icon.my-project:after { /* fa-user */ @include fontAwesome('00a0 f007', 'Solid'); }
+  &.icon-bookmarked-project:after { /* fa-bookmark */ @include fontAwesome('00a0 \\f02e', 'Solid'); }
+  &.icon.my-project:after { /* fa-user */ @include fontAwesome('00a0 \\f007', 'Solid'); }
   &.icon.my-project.icon-bookmarked-project:after {
-    @include fontAwesome('00a0 f007 00a0 f02e', 'Solid');
+    @include fontAwesome('00a0 \\f007 \\00a0 \\f02e', 'Solid');
   }
 }
 

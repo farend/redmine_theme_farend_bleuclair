@@ -101,3 +101,7 @@ a:hover, a:active {
 #main.visible-sidebar #sidebar-switch-button:before {
   @include fontAwesome('f054', 'Solid');
 }
+// To prevent it from overlapping the sidebar
+table.list.plugins {
+  margin-top: 10px;
+}

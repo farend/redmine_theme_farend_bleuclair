@@ -14,6 +14,12 @@ function setDiscontinuityClassToTabContent(id) {
   }
 }
 
+$(document).ajaxSuccess(function () {
+  // Put the title in the before content without breaking the tooltip (For issues/show time_entries and changesets tabs)
+  $('body.controller-issues.action-show a[href*="activity"][title*=":"]:not([data-absolute-date*=":"])').each(function (_index, element) {
+    $(element).attr('data-absolute-date', element.title);
+  });
+});
 $(function () {
   /* Change to open external link in another tab */
   $("a.external").attr("target", "_blank");
@@ -23,7 +29,8 @@ $(function () {
   if (($("a.help").text() == "ヘルプ" ? "ja" : $("html").attr("lang")) == "ja") {
     /* When the language is Japanese, the link destination of help is Redmine.jp */
     $("a.help").attr("href", "http://guide.redmine.jp/");
-  }
+  } // Put the title in the before content without breaking the tooltip
+
 
   $('a[href*="activity"][title*=":"]').each(function (_index, element) {
     $(element).attr("data-absolute-date", element.title);

@@ -29,7 +29,8 @@ $checkbox-margin: 7px 2px 7px 0px;
   input[type="date"],
   input[type="file"],
   select,
-  textarea {
+  textarea,
+  .select2-container--default .select2-selection--single {
     background-color: $color-input-bg;
     padding: $input-padding;
     color: $color-input-text;
@@ -42,7 +43,7 @@ $checkbox-margin: 7px 2px 7px 0px;
     line-height: 1.3;
 
     &:hover {
-      border-color: #ccc;
+      border: 1px solid darken($color-input-border, 10%);
     }
 
     &:focus,
@@ -60,7 +61,6 @@ $checkbox-margin: 7px 2px 7px 0px;
   }
 
   // テキストボックスで等幅フォントを使用
-
   input[type="text"] {
     font-family: "Osaka-Mono", "MS Gothic", sans-serif;
     font-size: 100%;
@@ -105,6 +105,18 @@ $checkbox-margin: 7px 2px 7px 0px;
     &[multiple="multiple"] {
       background: white;
       padding-right: 5px;
+    }
+  }
+
+  .select2-container--default .select2-selection--single {
+    padding: 0px 2px;
+    height: 24px;
+    background-image: url('../images/arrow.svg');
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    .select2-selection__arrow {
+      display: none;
     }
   }
 
@@ -171,5 +183,44 @@ form .attributes {
 
   .check_box_group label {
     width: 100%;
+  }
+}
+
+.select2-container.select2-container--default {
+  .select2-dropdown {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .5);
+    border: none;
+  }
+  .select2-results__option {
+    &:before {
+      content: ' ';
+      display: inline-block;
+      line-height: 1em;
+      width: 1em;
+      height: 1em;
+      margin-right: 4px;
+      font-weight: bold;
+    }
+  }
+  .select2-results__option[aria-selected=true] {
+    background-color: #fff;
+    &:before {
+      content: "\2713 ";
+    }
+  }
+  .select2-results__option--highlighted[aria-selected] {
+    background-color: #759FC2;
+    color: #fff;
+  }
+
+  input.select2-search__field {
+    background: #fff url('../images/search.svg') no-repeat 2px 50%;
+    background-size: 12px 12px;
+    background-position: 5px;
+    padding-left: 20px;
+    &:focus {
+      outline: none;
+      border-color: $color-input-border-focus;
+    }
   }
 }

@@ -118,6 +118,19 @@ $checkbox-margin: 7px 2px 7px 0px;
     .select2-selection__arrow {
       display: none;
     }
+    .select2-selection__rendered {
+      padding: 1.5px 2px;
+      font-family: Arial;
+      font-size: 13px;
+      color: #2b2f33;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+  .select2-container--default.select2-container--disabled .select2-selection--single {
+    cursor: not-allowed;
+    color: graytext;
+    background-color: #ebebe4 !important;
   }
 
   .tabular label {
@@ -191,7 +204,7 @@ form .attributes {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .5);
     border: none;
   }
-  .select2-results__option {
+  li.select2-results__option[role="option"] {
     &:before {
       content: ' ';
       display: inline-block;
@@ -202,13 +215,12 @@ form .attributes {
       font-weight: bold;
     }
   }
-  .select2-results__option[aria-selected=true] {
-    background-color: #fff;
+  li.select2-results__option[role="option"][aria-selected=true] {
     &:before {
       content: "\2713 ";
     }
   }
-  .select2-results__option--highlighted[aria-selected] {
+  li.select2-results__option--highlighted[role="option"][aria-selected] {
     background-color: #759FC2;
     color: #fff;
   }

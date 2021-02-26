@@ -29,8 +29,7 @@ $checkbox-margin: 7px 2px 7px 0px;
   input[type="date"],
   input[type="file"],
   select,
-  textarea,
-  .select2-container--default .select2-selection--single {
+  textarea {
     background-color: $color-input-bg;
     padding: $input-padding;
     color: $color-input-text;
@@ -59,7 +58,48 @@ $checkbox-margin: 7px 2px 7px 0px;
       background-color: $color-disabled-input-bg;
     }
   }
+  .select2-container--default .select2-selection--single {
+    color: $color-input-text;
+    border: 1px solid $color-input-border;
+    box-shadow: inset 1px 1px 3px #f6f6f6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    line-height: 1.3;
+    height: 24px;
+    padding: 0px 25px 0px 0px;
+    .select2-selection__arrow {
+      // Hide original arrow icon
+      b {
+        display: none;
+      }
+      background-image: url('../images/arrow.svg');
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-position: 0px;
+    }
+    .select2-selection__rendered {
+      padding: 1px 2px;
+      font-family: Arial;
+      font-size: 13px;
+      color: #2b2f33;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    &:hover {
+      border: 1px solid darken($color-input-border, 10%);
+    }
 
+    &:focus,
+    &:active {
+      border-color: $color-input-border-focus !important;
+    }
+  }
+  .select2-container--default.select2-container--disabled .select2-selection--single {
+    cursor: not-allowed;
+    color: graytext;
+    background-color: #ebebe4 !important;
+  }
   // テキストボックスで等幅フォントを使用
   input[type="text"] {
     font-family: "Osaka-Mono", "MS Gothic", sans-serif;
@@ -106,31 +146,6 @@ $checkbox-margin: 7px 2px 7px 0px;
       background: white;
       padding-right: 5px;
     }
-  }
-
-  .select2-container--default .select2-selection--single {
-    padding: 0px 2px;
-    height: 24px;
-    background-image: url('../images/arrow.svg');
-    background-size: 10px;
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
-    .select2-selection__arrow {
-      display: none;
-    }
-    .select2-selection__rendered {
-      padding: 1.5px 2px;
-      font-family: Arial;
-      font-size: 13px;
-      color: #2b2f33;
-      line-height: 1.5;
-      font-weight: 400;
-    }
-  }
-  .select2-container--default.select2-container--disabled .select2-selection--single {
-    cursor: not-allowed;
-    color: graytext;
-    background-color: #ebebe4 !important;
   }
 
   .tabular label {

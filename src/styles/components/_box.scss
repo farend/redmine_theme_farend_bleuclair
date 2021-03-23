@@ -1,4 +1,6 @@
-.box, .mypage-box, .controller-wiki.action-show .wiki.wiki-page {
+.box, .mypage-box,
+.controller-wiki.action-show .wiki.wiki-page,
+.controller-attachments.action-show .filecontent.wiki {
   background-color: #fff;
   margin-bottom: 30px;
   padding: 20px;

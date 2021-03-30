@@ -1,4 +1,4 @@
-$overridden-selectors: '.icon-add', '.icon-edit', '.icon-copy', '.icon-del', '.icon-move', '.icon-save', '.icon-download', '.icon-cancel', '.icon-multiple', '.icon-folder', '.open', '.icon-folder', '.icon-package', '.icon-user', '.icon-project', '.icon-projects', '.icon-help', '.icon-attachment', '.icon-history', '.icon-time-entry', '.icon-time', '.icon-time-add', '.icon-stats', '.icon-warning', '.icon-error', '.icon-fav', '.icon-fav-off', '.icon-reload', '.icon-lock', '.icon-locked', '.icon-unlock', '.icon-checked', '.icon-comment', '.icon-comments', '.icon-summary', '.icon-server-authentication', '.icon-issue', '.icon-zoom-in', '.icon-zoom-out', '.icon-passwd', '.icon-arrow-right', '.icon-test', '.icon-sticky', '.icon-email', '.icon-email-disabled', '.icon-email-add', '.icon-ok', '.icon-not-ok', '.icon-link-break', '.icon-list', '.icon-close', '.icon-settings', '.icon-roles', '.icon-issue-edit', '.icon-workflows', '.icon-custom-fields', '.icon-plugins', '.icon-news', '.icon-issue-closed', '.icon-issue-note', '.icon-changeset', '.icon-message', '.icon-reply', '.icon-wiki-page', '.icon-wiki-page', '.icon-document', '.icon-add-bullet', '.icon-shared', '.icon-actions', '.icon-expended', '.icon-collapsed', '.icon-bookmark', '.icon-bookmark-off', '.icon-sort-handle', '.icon-sorted-asc', '.icon-sorted-desc', '.icon-toggle-plus', '.icon-toggle-minus', '.icon-file', '.icon-clear-query', '.icon-import', '.icon-group:not(.name)', '.icon-bookmarked-project';
+$overridden-selectors: '.icon-add', '.icon-edit', '.icon-copy', '.icon-del', '.icon-move', '.icon-save', '.icon-download', '.icon-cancel', '.icon-multiple', '.icon-folder', '.open', '.icon-folder', '.icon-package', '.icon-user', '.icon-project', '.icon-projects', '.icon-help', '.icon-attachment', '.icon-history', '.icon-time-entry', '.icon-time', '.icon-time-add', '.icon-stats', '.icon-warning', '.icon-error', '.icon-fav', '.icon-fav-off', '.icon-reload', '.icon-lock', '.icon-locked', '.icon-unlock', '.icon-checked', '.icon-comment', '.icon-comments', '.icon-summary', '.icon-server-authentication', '.icon-issue', '.icon-zoom-in', '.icon-zoom-out', '.icon-passwd', '.icon-arrow-right', '.icon-test', '.icon-sticky', '.icon-email', '.icon-email-disabled', '.icon-email-add', '.icon-ok', '.icon-not-ok', '.icon-link-break', '.icon-list', '.icon-close', '.icon-settings', '.icon-roles', '.icon-issue-edit', '.icon-workflows', '.icon-custom-fields', '.icon-plugins', '.icon-news', '.icon-issue-closed', '.icon-issue-note', '.icon-changeset', '.icon-message', '.icon-reply', '.icon-wiki-page', '.icon-wiki-page', '.icon-document', '.icon-add-bullet', '.icon-shared', '.icon-actions', '.icon-expended', '.icon-collapsed', '.icon-bookmark', '.icon-bookmark-off', '.icon-sort-handle', '.icon-sorted-asc', '.icon-sorted-desc', '.icon-toggle-plus', '.icon-toggle-minus', '.icon-file', '.icon-clear-query', '.icon-import', '.icon-group:not(.name)', '.icon-bookmarked-project', '.icon-copy-link';
 
 // .atomアイコンは個別に置き換え
 a.atom { background: transparent; padding: 2px 0px 3px 16px; }
@@ -24,6 +24,7 @@ a.atom:before { /* fa-atom */ @include fontAwesome('f143', 'Solid'); }
 .icon-add:before { /* fa-plus-circle */ @include fontAwesome('f055', 'Solid');}
 .icon-edit:before { /* fa-pencil */ @include fontAwesome('f303', 'Solid'); }
 .icon-copy:before { /* fa-clone */ @include fontAwesome('f0c5'); }
+.icon-copy-link:before { /* fa-clipboard */ @include fontAwesome('f328') }
 .icon-del:before { /* fa-trash */ @include fontAwesome('f2ed'); }
 .icon-move:before { /* fa-share */ @include fontAwesome('f064', 'Solid'); }
 .icon-save:before { /* fa-floppy */ @include fontAwesome('f0c7'); }
@@ -200,6 +201,7 @@ body.controller-projects.action-index a.project, body.controller-projects.action
   &.icon.my-project.icon-bookmarked-project:after {
     @include fontAwesome('00a0 \\f007 \\00a0 \\f02e', 'Solid');
   }
+
 }
 
 // 拡大画面でのサイドバーの検索フォームのレイアウトを修正

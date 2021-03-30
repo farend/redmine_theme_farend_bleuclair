@@ -109,3 +109,9 @@ a:hover, a:active {
 table.list.plugins {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 899px) {
+  #content>.contextual>a, #content>.contextual .drdn, p.buttons a {
+    background: #ffffff;
+  }
+}

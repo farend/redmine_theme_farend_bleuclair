@@ -1,5 +1,6 @@
 $input-padding: 4px 6px;
 $color-input-bg: #ffffff;
+$color-disabled-input-bg: #ebebe4;
 $color-input-text: #2b2f33;
 $color-input-border: #dfe8f1;
 $color-input-border-focus: #3da6ff;
@@ -19,13 +20,14 @@ $color-button-hover-border: #bfc8d1;
 $color-button-hover-bg: #f3f3f9;
 
 $checkbox-size: 16px;
-$checkbox-margin: 7px 0 7px 2px;
+$checkbox-margin: 7px 2px 7px 0px;
 
 
 #wrapper, .modal {
   input[type="text"],
   input[type="password"],
   input[type="date"],
+  input[type="file"],
   select,
   textarea {
     background-color: $color-input-bg;
@@ -52,9 +54,8 @@ $checkbox-margin: 7px 0 7px 2px;
       box-shadow: none;
     }
 
-    &[type="file"] {
-      border: none;
-      box-shadow: none;
+    &:disabled {
+      background-color: $color-disabled-input-bg;
     }
   }
 

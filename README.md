@@ -46,13 +46,12 @@ Redmineの管理画面で新しいテーマを利用する設定を行います�
 
 ## Development
 
-* Docker、docker-composeを利用
-* 下のようにすると、変更を監視し、新しく変更を加えて保存する度に反映されるようになる(scssをcssに変換)
-
 ```bash
-$ cd /your/path/redmine/public/themes/bleuclair
-$ docker-compose up
-$ # 終わったらctr + c, command + cで止める
+$ cd redmine/public/themes/beuclair
+$ npm install
+$ npm run start:dev
+$ # debug
+$ npm run build
 ```
 
 ## LICENSE
@@ -60,6 +59,7 @@ $ # 終わったらctr + c, command + cで止める
 GNU GPL v2  
 https://github.com/farend/redmine_theme_farend_bleuclair/blob/master/LICENSE
 
+---
 ## 著作者
 
 [ファーエンドテクノロジー株式会社](https://www.farend.co.jp/)

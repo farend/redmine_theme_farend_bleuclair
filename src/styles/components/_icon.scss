@@ -119,7 +119,9 @@ a.atom:before { /* fa-atom */ @include fontAwesome('f143', 'Solid'); }
   padding-left: 0px !important;
 
   &:before {
-    padding-right: 3px;
+    padding-right: 2px;
+    width: 17px;
+    text-align: center;
   }
   &.icon-only {
     text-decoration: none;

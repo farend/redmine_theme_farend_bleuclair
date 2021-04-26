@@ -4,10 +4,9 @@
 .controller-wiki.action-index.pages-hierarchy,
 #activity,
 #roadmap article,
-article.news-article,
-#comments,
-.wiki.wiki-page,
-li.root
+.controller-news.action-index article.news-article,
+.controller-news.action-show #comments,
+.controller-projects.action-index li.root
  {
   background-color: #fff;
   margin-bottom: 20px;
@@ -28,11 +27,7 @@ li.root
   }
 }
 
-.wiki.wiki-page {
-  margin-top: 30px
-}
-
-article.news-article {
+.controller-news.action-index article.news-article {
   margin-bottom: 10px;
 }
 

@@ -1,0 +1,8 @@
+div.wiki {
+  h1, h2, h3, h4 {
+    font-weight: bold;
+  }
+  ul.toc {
+    background-color: $color-issue-bg;
+  }
+}

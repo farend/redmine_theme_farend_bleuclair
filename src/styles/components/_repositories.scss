@@ -1,0 +1,67 @@
+// forum(board)
+
+.controller-repositories.action-revision, .controller-repositories.action-diff {
+  #content > div.message {
+    border-radius: 3px;
+    background-color: $color-history-bg;
+    border: 1px solid $color-history-border;
+    padding: $histry-padding;
+  }
+
+  .details {
+    // By changing the position of the h4 element, it looks like it is inside the box
+    // TODO: Correct if the HTML structure of Redmine changes
+    h4 {
+      top: 40px;
+      left: 35px;
+      position: relative;
+      margin: $note-title-margin;
+      margin-right: 40px;
+      border: none;
+      font-weight: bold;
+      background-color: $color-note-title-bg;
+      padding: $note-title-padding;
+      font-size: 0.9em;
+      border-radius: 4px;
+
+      a[href*="activity"][data-absolute-date*=":"] {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 6px solid $color-note-title-bg;
+      }
+
+      .gravatar {
+        position: absolute;
+        left: -35px;
+        top: 4px;
+        z-index: 5;
+        margin-left: 0;
+      }
+    }
+  }
+  .wiki.changeset-comments {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 30px 20px 5px 20px;
+    border-radius: 3px;
+    border: 1px solid #dfe8f1;
+  }
+
+  #related-issues {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid #dfe8f1;
+  }
+}

@@ -1,0 +1,15 @@
+.controller-documents.action-index #content {
+  h3 {
+    position: relative;
+    margin: $note-title-margin;
+    border: none;
+    font-weight: bold;
+    background-color: $color-note-title-bg;
+    padding: $note-title-padding;
+    border-radius: 4px;
+  }
+  h4 { margin-left: 20px; }
+  h4 + p, div.wiki:not(.wiki-preview) p {
+    margin-left: 20px;
+  }
+}

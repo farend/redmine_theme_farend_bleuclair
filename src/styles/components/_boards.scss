@@ -5,6 +5,15 @@
   background-color: $color-history-bg;
   border: 1px solid $color-history-border;
   padding: $histry-padding;
+
+  & > p {
+    background-color: $color-note-title-bg;
+    padding: $note-title-padding;
+    a[href*="activity"][data-absolute-date*=":"] {
+      box-shadow: none;
+      padding: 0;
+    }
+  }
 }
 
 #replies {

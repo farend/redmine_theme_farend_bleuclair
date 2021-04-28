@@ -1,8 +1,15 @@
 .box, .mypage-box,
 .controller-wiki.action-show .wiki.wiki-page,
-.controller-attachments.action-show .filecontent.wiki {
+.controller-attachments.action-show .filecontent.wiki,
+.controller-wiki.action-index.pages-hierarchy,
+#activity,
+#roadmap article,
+.controller-news.action-index article.news-article,
+.controller-news.action-show #comments,
+.controller-projects.action-index li.root
+ {
   background-color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 20px;
   border-radius: 3px;
   border: 1px solid #dfe8f1;
@@ -11,4 +18,19 @@
 .controller-wiki.action-show .wiki.wiki-page {
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+#activity {
+  padding: 0px;
+  h3 {
+    top: 10px;
+  }
+}
+
+.controller-news.action-index article.news-article {
+  margin-bottom: 10px;
+}
+
+.gantt-table {
+  background-color: #fff;
 }

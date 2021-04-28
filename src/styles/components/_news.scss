@@ -1,0 +1,77 @@
+.controller-news.action-show {
+  #content > div.message {
+    border-radius: 3px;
+    background-color: $color-history-bg;
+    border: 1px solid $color-history-border;
+    padding: $histry-padding;
+  }
+
+  #comments {
+    background-color: $color-history-bg;
+    border-radius: 0px 0px 3px 3px;
+    border: 1px solid $color-history-border;
+    padding-top: $histry-padding;
+    padding-left: 10px;
+
+    .wiki {
+      padding-left: 32px;
+    }
+    .contextual {
+      padding-right: 10px;
+      padding-top: 5px;
+
+      a {
+        position: relative;
+        z-index: 5;
+        padding-bottom: 5px;
+      }
+    }
+
+    .contextual + h4 {
+      left: 20px;
+      position: relative;
+      margin: $note-title-margin;
+      border: none;
+      font-weight: bold;
+      background-color: $color-note-title-bg;
+      padding: $note-title-padding;
+      font-size: 0.9em;
+      border-radius: 4px;
+
+      a[href*="activity"][data-absolute-date*=":"] {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 6px solid $color-note-title-bg;
+      }
+
+      .gravatar {
+        position: absolute;
+        left: -35px;
+        top: 4px;
+        z-index: 5;
+        margin-left: 0;
+      }
+    }
+  }
+
+
+  #edit-news + p + div.wiki, h2 + p + div.wiki {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid #dfe8f1;
+  }
+}

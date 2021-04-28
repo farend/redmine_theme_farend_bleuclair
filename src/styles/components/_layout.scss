@@ -1,7 +1,6 @@
 $color-top-menu-bg: #223342;
 $color-main-bg:     #fafcfe;
 $color-border-sidebar-switch-button: #bfbfbf;
-$color-bg-sidebar-switch-button: #eeeeee;
 
 #top-menu {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
@@ -55,7 +54,7 @@ a:hover, a:active {
 }
 
 // Collapse sidebar
-#sidebar { width: 19%; display: none; }
+#sidebar { width: 19%; display: none; background-color: $color-header-bg;}
 #main.visible-sidebar #sidebar{ display: block; }
 @media screen and (max-width: 899px) {
   #main.visible-sidebar {
@@ -75,7 +74,7 @@ a:hover, a:active {
   margin-left: 5px;
 }
 #sidebar-switch-button {
-  background-color: $color-bg-sidebar-switch-button;
+  background-color: $color-header-bg;
   border-bottom: 1px solid $color-border-sidebar-switch-button;
   border-left: 1px solid $color-border-sidebar-switch-button;
   border-top: 1px solid $color-border-sidebar-switch-button;

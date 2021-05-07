@@ -15,6 +15,15 @@ Redmine用のカスタムテーマです。
 
 ## 画面サンプル
 
+### Redmine4.2用以降 :new:
+
+Redmine4.2対応のBleuclairからアイコンをアイコンフォントで置き換え、サイドバー折りたたみ機能の追加などの変更あり
+
+- チケット一覧画面
+<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues-4.2.png" /></kbd>
+
+### Redmine4.1用以前
+
 - チケット一覧画面
 <kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues.png" /></kbd>
 - チケット表示画面

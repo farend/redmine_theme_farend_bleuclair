@@ -89,5 +89,8 @@ table.list {
   > tbody + tbody {
     border-top: 2px solid $color-table-border;
   }
-}
 
+  td.attachments {
+    padding-bottom: 5px;
+  }
+}

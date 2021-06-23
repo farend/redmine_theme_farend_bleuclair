@@ -52,7 +52,7 @@ $(function () {
   // this will later be expanded using the current controller and action to
   // allow for different sidebar states for different pages
 
-  var localStorageKey = 'redmine-sidebar-state'; // true if local storage is available
+  var localStorageKey; // true if local storage is available
 
   var canUseLocalStorage = function () {
     try {
@@ -103,10 +103,12 @@ $(function () {
 
       if (bodyClass) {
         try {
-          localStorageKey += '-' + bodyClass.split(/\s+/).filter(function (s) {
+          localStorageKey = 'redmine-sidebar-state-' + bodyClass.split(/\s+/).filter(function (s) {
             return s.match(/(action|controller)-.*/);
           }).sort().join('-');
-        } catch (e) {// in case of error (probably IE8), continue with the unmodified key
+        } catch (e) {
+          // in case of error (probably IE8), continue with the default key.
+          localStorageKey = 'redmine-sidebar-state';
         }
       }
 
@@ -127,7 +129,13 @@ window.addEventListener('DOMContentLoaded', function () {
       $('#content').prepend('<div id="sidebar-switch-panel"><a id="sidebar-switch-button" href="#"></a></div>');
     }
 
-    $('#main').collapsibleSidebar();
+    try {
+      $('#main').collapsibleSidebar();
+    } catch (e) {
+      $('#main').toggleClass('visible-sidebar', true);
+      $('div#sidebar-switch-panel').remove();
+      console.error(e);
+    }
   }
 });
 

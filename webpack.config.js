@@ -9,6 +9,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
+  target: ['web', 'es5'],
   entry: './src/index.js',
   devtool: 'source-map',
   output: {

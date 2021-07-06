@@ -187,6 +187,7 @@ input.autocomplete {
 body.controller-projects.action-index a.project, body.controller-projects.action-index span {
   &:before {
     content: "";
+    width: 0px;
   }
   &.icon:after {
     color: $icon-color;

@@ -41,7 +41,8 @@ module.exports = {
             // CSSスタイルシートをjsファイルに埋め込む 
             loader: 'css-loader',
             options: {
-              sourceMap: true
+              sourceMap: true,
+              url: false
             },
           },
           {
@@ -63,25 +64,6 @@ module.exports = {
             },
           },
         ],
-      },
-      {
-        // src/images以下のSVGファイルをDataURL形式でCSS内に埋め込み
-        test: /\.(svg)$/i,
-        include: path.resolve(__dirname, 'src/images'), 
-        use: [{ loader: 'url-loader' }]
-      },
-      {
-        // src/webfonts以下のファイルを../stylesheets/webfontsに出力し、パスを管理
-        test: /\.(ttf|eot|woff|woff2|svg)$/,
-        include: path.resolve(__dirname, 'src/webfonts'), 
-        use: [{
-            loader: 'file-loader',
-            options: {
-                name: "[name].[ext]",
-                outputPath: '../stylesheets/webfonts',
-                publicPath: '../stylesheets/webfonts',
-            }
-        }]
       },
     ],
   },

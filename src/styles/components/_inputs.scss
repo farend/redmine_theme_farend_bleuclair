@@ -73,7 +73,7 @@ $checkbox-margin: 7px 2px 7px 0px;
       b {
         display: none;
       }
-      background-image: url('../images/arrow.svg');
+      background-image: url('images/arrow.svg');
       background-size: 10px;
       background-repeat: no-repeat;
       background-position: 0px;
@@ -116,7 +116,7 @@ $checkbox-margin: 7px 2px 7px 0px;
   select {
     height: auto;
     appearance: none;
-    background-image: url('../images/arrow.svg');
+    background-image: url('images/arrow.svg');
     background-size: 10px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
@@ -259,7 +259,7 @@ form .attributes {
   }
 
   input.select2-search__field {
-    background: #fff url('../images/search.svg') no-repeat 2px 50%;
+    background: #fff url('images/search.svg') no-repeat 2px 50%;
     background-size: 12px 12px;
     background-position: 5px;
     padding-left: 20px;

@@ -14,6 +14,10 @@ The position and color scheme of the menu are close to the default theme, so eve
 
 Bleuclair theme is used as standard for [RedMica - the future Redmine you can get today](https://www.farend.co.jp/products/redmica/) (RedMica is yet another distribution of Redmine)
 
+## Compatibility
+
+* Tested and working in Redmine 4.0.7-stable with Debian 10
+
 ## Demo
 
 ### For Redmine 4.2 or later :new:

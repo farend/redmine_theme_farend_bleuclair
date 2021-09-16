@@ -216,6 +216,10 @@ div#issue-changesets {
       .jstElements, .jstEditor, .wiki, p, input[type='checkbox'] {
         margin-left: 32px;
       }
+      textarea.wiki-edit {
+        margin-left: 32px;
+        width: 95%;
+      }
     }
     .wiki {
       margin-left: 32px;

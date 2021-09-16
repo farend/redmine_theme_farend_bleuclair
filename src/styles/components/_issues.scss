@@ -224,6 +224,10 @@ div#issue-changesets {
       .jstBlock, input, div[id^="template_journal"] {
         margin-left: 32px;
       }
+      textarea.wiki-edit {
+        margin-left: 32px;
+        width: 95%;
+      }
     }
     .wiki:not(.wiki-preview) {
       margin-left: 32px;

@@ -82,6 +82,14 @@ div.jstElements {
       font-size: 16px;
     }
   }
+  .jstb_tl {
+    padding: 0px;
+    &:before {
+      /* fa-list-check */
+      @include fontAwesome('f0ae', 'Solid');
+      font-size: 16px;
+    }
+  }
   .jstb_bq {
     padding: 0px;
     &:before {

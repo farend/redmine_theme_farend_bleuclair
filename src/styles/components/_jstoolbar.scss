@@ -141,4 +141,12 @@ div.jstElements {
     @include fontAwesome('f059', 'Solid');
     font-size: 12px;
   }
+  .jstb_macros {
+    padding: 0px;
+    &:before {
+      /* fa-puzzle-piece */
+      @include fontAwesome('f12e', 'Solid');
+      font-size: 14px;
+    }
+  }
 }

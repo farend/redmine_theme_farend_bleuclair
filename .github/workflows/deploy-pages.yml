@@ -22,14 +22,16 @@ jobs:
           cache: 'npm'
 
       - name: install deps
+        working-directory: ./storybook
         run: npm install
 
       - name: Build Storybook
+        working-directory: ./storybook
         run: npm run build-storybook
 
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: storybook-static
+          path: storybook/storybook-static
 
   # Deploy job
   deploy:

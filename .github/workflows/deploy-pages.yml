@@ -26,6 +26,9 @@ jobs:
         run: npm install
 
       - name: Build Storybook
+        env:
+          GH_PAGES: true
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
         working-directory: ./storybook
         run: npm run build-storybook
 

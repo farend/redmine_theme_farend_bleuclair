@@ -31,9 +31,9 @@ module.exports = {
         loader: 'string-replace-loader',
         options: {
           multiple: [
-            { search: '"/attachments/', replace: `"/${process.env.REPOSITORY_NAME}/attachments/` },
-            { search: '"/javascripts/', replace: `"/${process.env.REPOSITORY_NAME}/javascripts/` },
-            { search: '"/images/', replace: `"/${process.env.REPOSITORY_NAME}/images/` },
+            { search: '"\/attachments\/', replace: `"/${process.env.REPOSITORY_NAME}/attachments/`, flags: 'g' },
+            { search: '"\/javascripts\/', replace: `"/${process.env.REPOSITORY_NAME}/javascripts/`, flags: 'g' },
+            { search: '"\/images\/', replace: `"/${process.env.REPOSITORY_NAME}/images/`, flags: 'g' },
           ]
         },
       });

@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feature/storybook
   workflow_dispatch:
 
 jobs:

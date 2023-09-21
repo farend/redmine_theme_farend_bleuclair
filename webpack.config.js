@@ -73,6 +73,15 @@ module.exports = {
   ],
   optimization: {
     // CSSを最小化
-    minimizer: [new CssMinimizerPlugin({})],
+    minimizer: [new CssMinimizerPlugin({
+      minimizerOptions: {
+        preset: [
+          "default",
+          {
+            colormin: { exclude: true },
+          },
+        ],
+      },
+    })],
   }
 }

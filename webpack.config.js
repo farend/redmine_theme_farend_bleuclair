@@ -6,7 +6,7 @@
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   target: ['web', 'es5'],
@@ -73,6 +73,15 @@ module.exports = {
   ],
   optimization: {
     // CSSを最小化
-    minimizer: [new OptimizeCSSAssetsPlugin({})],
+    minimizer: [new CssMinimizerPlugin({
+      minimizerOptions: {
+        preset: [
+          "default",
+          {
+            colormin: { exclude: true },
+          },
+        ],
+      },
+    })],
   }
 }

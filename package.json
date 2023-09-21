@@ -1,6 +1,6 @@
 {
   "name": "bleuclair",
-  "version": "1.0.0",
+  "version": "0.4.4",
   "description": "| :warning: | 利用しているRedmineのバージョンによってインストール方法が違います。インストール方法をご確認ください。 | | --- | --- |",
   "main": "webpack.config.js",
   "scripts": {
@@ -20,22 +20,22 @@
   },
   "homepage": "https://github.com/farend/redmine_theme_farend_bleuclair#readme",
   "devDependencies": {
-    "@babel/core": "^7.19.3",
-    "@babel/preset-env": "^7.19.3",
-    "autoprefixer": "^10.4.12",
-    "babel-loader": "^8.2.5",
-    "css-loader": "^6.7.1",
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
+    "autoprefixer": "^10.4.15",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
     "is-svg": ">=5.0.0",
-    "mini-css-extract-plugin": "^2.6.1",
-    "node-sass": "^7.0.3",
-    "optimize-css-assets-webpack-plugin": "^6.0.1",
-    "postcss-loader": "^7.0.1",
-    "sass": "^1.55.0",
-    "sass-loader": "^13.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.67.0",
+    "sass-loader": "^13.3",
     "url-loader": "^4.1.1",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
     "y18n": ">=5.0.8"
   }
 }

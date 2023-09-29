@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode=production",
     "start": "webpack --watch --mode=production",
-    "start:dev": "webpack --watch --mode=development"
+    "start:dev": "webpack --watch --mode=development",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "file-loader": "^6.2.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "is-svg": ">=5.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.3",
@@ -37,10 +38,5 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "y18n": ">=5.0.8"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run build && git add stylesheets/theme.css stylesheets/theme.css.map"
-    }
   }
 }

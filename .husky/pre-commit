@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # npm test
-npm run build && git add stylesheets/theme.css stylesheets/theme.css.map
+npm run build && git add stylesheets/theme.css stylesheets/theme.css.map javascripts/theme.js javascripts/theme.js.map

@@ -28,7 +28,6 @@
     "file-loader": "^6.2.0",
     "is-svg": ">=5.0.0",
     "mini-css-extract-plugin": "^2.7.6",
-    "node-sass": "^9.0.0",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "postcss-loader": "^7.3.3",
     "sass": "^1.67.0",

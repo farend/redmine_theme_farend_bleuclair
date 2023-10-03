@@ -1,78 +1,82 @@
-// Output先:
-// bleuclair/src/scripts以下はbleuclair/javascripts/theme.jsに
-// bleuclair/src/styles以下はbleuclair/stylesheets/theme.cssに
-// bleuclair/src/images以下はbleuclair/stylesheets/theme.cssの内部にDataURL形式で埋め込み
-// bleuclair/src/webfonts以下はbleuclair/stylesheets/webfontsに
+/*
+ * Output configuration:
+ *
+ * JavaScript files in src/scripts will be compiled to the following directory:
+ *   javascripts/theme.js
+ *
+ * CSS files in src/styles will be compiled to the following directory:
+ *   stylesheets/theme.css
+ */
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
+// Define output directories
+const scriptsOutputDir = 'javascripts';
+const stylesOutputDir = 'stylesheets';
+
+// Define rules for compiling JavaScript
+const jsRule = {
+  test: /\.js$/,
+  exclude: /node_modules/,
+  use: {
+    loader: 'babel-loader',
+    options: {
+      presets: ['@babel/preset-env']
+    }
+  }
+};
+
+// Define rules for compiling SCSS
+const scssRule = {
+  test: [/\.scss$/],
+  use: [
+    MiniCssExtractPlugin.loader,
+    {
+      loader: 'css-loader',
+      options: {
+        sourceMap: true,
+        url: false
+      },
+    },
+    {
+      loader: "postcss-loader",
+      options: {
+        postcssOptions: {
+          plugins: [
+            ["autoprefixer", { grid: true }],
+          ],
+        },
+      }
+    },
+    {
+      loader: 'sass-loader',
+      options: {
+        sourceMap: true
+      },
+    },
+  ],
+};
 
 module.exports = {
   target: ['web', 'es5'],
   entry: './src/index.js',
   devtool: 'source-map',
   output: {
-    // bleuclair.js output destination
-    path: path.resolve(__dirname, 'javascripts'),
+    path: path.resolve(__dirname, scriptsOutputDir),
     filename: 'theme.js'
   },
   module: {
     rules: [
-      // Compile JavaScript
-      {
-        test: /\.js$/, 
-        exclude: /node_modules/,
-        // ES2015以降の新しい構文をES5の構文に変換
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      },
-      // Compile Scss
-      {
-        test: [/\.scss$/],
-        use: [
-          // jsからスタイル部分を別ファイルとして出力('../stylesheets/theme.css')
-          MiniCssExtractPlugin.loader,
-          {
-            // CSSスタイルシートをjsファイルに埋め込む 
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              url: false
-            },
-          },
-          {
-            // ベンダープレフィックスを自動で付与
-            loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                plugins: [
-                  ["autoprefixer", { grid: true }],
-                ],
-              },
-            }
-          },
-          {
-            // ScssファイルをCSSに変換
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            },
-          },
-        ],
-      },
+      jsRule,
+      scssRule,
     ],
   },
   plugins:[
-    // CSS output destination
-    new MiniCssExtractPlugin({ filename: '../stylesheets/theme.css' }),
+    new MiniCssExtractPlugin({ filename: `../${stylesOutputDir}/theme.css` }),
   ],
   optimization: {
-    // CSSを最小化
     minimizer: [new CssMinimizerPlugin({
       minimizerOptions: {
         preset: [

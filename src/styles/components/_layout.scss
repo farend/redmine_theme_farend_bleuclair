@@ -95,10 +95,10 @@ a:hover, a:active {
   }
 }
 #main:not(.visible-sidebar) #sidebar-switch-button:before{
-  @include fontAwesome('f053', 'Solid');
+  @include fontAwesome('f053', 'Solid'); // fa-chevron-left
 }
 #main.visible-sidebar #sidebar-switch-button:before {
-  @include fontAwesome('f054', 'Solid');
+  @include fontAwesome('f054', 'Solid'); // fa-chevron-right
 }
 @media print {
   #main.visible-sidebar #sidebar, #sidebar-switch-panel { display:none; }

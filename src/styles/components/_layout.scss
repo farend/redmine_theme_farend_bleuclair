@@ -94,14 +94,16 @@ a:hover, a:active {
     color: #666;
   }
 }
-#main:not(.visible-sidebar) #sidebar-switch-button:before{
-  @include fontAwesome('f053', 'Solid'); // fa-chevron-left
+#main:not(.visible-sidebar) #sidebar-switch-button:before {
+  content: "\f053";  /* fa-chevron-left */
+  font-family: $fa-font-family;
 }
 #main.visible-sidebar #sidebar-switch-button:before {
-  @include fontAwesome('f054', 'Solid'); // fa-chevron-right
+  content: "\f054";  /* fa-chevron-right */
+  font-family: $fa-font-family;
 }
 @media print {
-  #main.visible-sidebar #sidebar, #sidebar-switch-panel { display:none; }
+  #main.visible-sidebar #sidebar, #sidebar-switch-panel { display: none; }
 }
 
 // To prevent it from overlapping the sidebar

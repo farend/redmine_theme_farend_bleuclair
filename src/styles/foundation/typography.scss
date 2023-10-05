@@ -1,0 +1,18 @@
+// typography.scss
+
+// Import FontAwesome
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '~@fortawesome/fontawesome-free/css/solid.css';
+
+// Font Variables
+$fa-font-family: 'Font Awesome 6 Free Solid';
+$jstb-font-family: 'Open Sans', sans-serif;
+
+// Font Awsome 6 Free Solid
+@font-face {
+  font-family: 'Font Awesome 6 Free Solid';
+  font-style: normal;
+  font-weight: 900;
+  src: url("~@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"),
+       url("~@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype");
+}

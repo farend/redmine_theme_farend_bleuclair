@@ -1,7 +1,6 @@
 div.jstElements {
   display: inline-flex;
   -webkit-font-smoothing: antialiased;
-  display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -10,143 +9,62 @@ div.jstElements {
 
   button {
     background-image: initial;
-    background-color: white !important;
-    border-color: #c9c9c9 !important;
-    padding: 2px 0px 1px 0px;
+    background-color: $white !important;
+    border-color: $gray-300 !important;
+    padding: 2px 0 1px 0;
   }
 
-  .jstb_strong:before {
-    /* fa-bold */
-    @include fontAwesome('f032', 'Solid');
-    font-size: 12px;
+  button::before {
+    font-family: $fa-font-family;
   }
-  .jstb_em:before {
-    /* fa-italic */
-    @include fontAwesome('f033', 'Solid');
-    font-size: 12px;
+
+  .jstb_strong:before { content: "\f032"; /* fa-bold */ }
+  .jstb_em:before { content: "\f033"; /* fa-italic */ }
+  .jstb_ins:before { content: "\f0cd"; /* fa-underline */ }
+  .jstb_del:before { content: "\f0cc"; /* fa-strikethrough */ }
+
+  .jstb_code:before {
+    content: "C";
+    font-family: $jstb-font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
   }
-  .jstb_ins {
-    &:before {
-      /* fa-underline */
-      @include fontAwesome('f0cd', 'Solid');
-      font-size: 12px;
-    }
+
+  .jstb_h1:before {
+    content: "H1";
+    font-family: $jstb-font-family;
+    font-weight: 700;
   }
-  .jstb_del:before {
-    /* fa-strikethrough */
-    @include fontAwesome('f0cc', 'Solid');
-    font-size: 12px;
+
+  .jstb_h2:before {
+    content: "H2";
+    font-family: $jstb-font-family;
+    font-weight: 700;
   }
-  .jstb_code {
-    &:before {
-      content: "C";
-      font-size: 15px;
-      font-weight: 700;
-    }
+
+  .jstb_h3:before {
+    content: "H3";
+    font-family: $jstb-font-family;
+    font-weight: 700;
   }
-  .jstb_h1 {
-    &:before {
-      content: "H1";
-      font-size: 12px;
-      font-weight: 700;
-    }
+
+  .jstb_ul:before { content: "\f0ca"; /* fa-list-ul */ }
+  .jstb_ol:before { content: "\f0cb"; /* fa-list-ol */ }
+  .jstb_tl:before { content: "\f0ae"; /* fa-list-check */ }
+  .jstb_bq:before { content: "\f03c"; /* fa-indent */ }
+  .jstb_unbq:before { content: "\f03b"; /* fa-outdent */ }
+
+  .jstb_pre:before {
+    content: "pre";
+    font-family: $jstb-font-family;
+    font-weight: 700;
+    vertical-align: middle;
   }
-  .jstb_h2 {
-    &:before {
-      content: "H2";
-      font-size: 12px;
-      font-weight: 700;
-    }
-  }
-  .jstb_h3 {
-    &:before {
-      content: "H3";
-      font-size: 12px;
-      font-weight: 700;
-    }
-  }
-  .jstb_ul {
-    padding: 0px;
-    &:before {
-      /* fa-list-ul */
-      @include fontAwesome('f0ca', 'Solid');
-      font-size: 16px;
-      position: 0px;
-    }
-  }
-  .jstb_ol {
-    padding: 0px;
-    &:before {
-      /* fa-list-ol */
-      @include fontAwesome('f0cb', 'Solid');
-      font-size: 16px;
-    }
-  }
-  .jstb_tl {
-    padding: 0px;
-    &:before {
-      /* fa-list-check */
-      @include fontAwesome('f0ae', 'Solid');
-      font-size: 16px;
-    }
-  }
-  .jstb_bq {
-    padding: 0px;
-    &:before {
-      /* fa-indent */
-      @include fontAwesome('f03c', 'Solid');
-      font-size: 14px;
-    }
-  }
-  .jstb_unbq {
-    padding: 0px;
-    &:before {
-      /* fa-outdent */
-      @include fontAwesome('f03b', 'Solid');
-      font-size: 14px;
-    }
-  }
-  .jstb_pre {
-    padding: 0px 0px 3px 0px;
-    &:before {
-      content: "pre";
-      font-size: 12px;
-      font-weight: 700;
-    }
-  }
-  .jstb_precode {
-    &:before {
-      /* fa-code */
-      @include fontAwesome('f121', 'Solid');
-      font-size: 12px;
-    }
-  }
-  .jstb_link:before {
-    /* fa-link */
-    @include fontAwesome('f0c1', 'Solid');
-    font-size: 12px;
-  }
-  .jstb_img:before {
-    /* fa-image */
-    @include fontAwesome('f03e', 'Solid');
-    font-size: 12px;
-  }
-  .jstb_table:before {
-    /* fa-image */
-    @include fontAwesome('f0ce', 'Solid');
-    font-size: 12px;
-  }
-  .jstb_help:before {
-    /* fa-question-circle */
-    @include fontAwesome('f059', 'Solid');
-    font-size: 12px;
-  }
-  .jstb_macros {
-    padding: 0px;
-    &:before {
-      /* fa-puzzle-piece */
-      @include fontAwesome('f12e', 'Solid');
-      font-size: 14px;
-    }
-  }
-}
+
+  .jstb_precode:before { content: "\f121"; /* fa-code */ }
+  .jstb_link:before { content: "\f0c1"; /* fa-link */ }
+  .jstb_img:before { content: "\f03e"; /* fa-image */ }
+  .jstb_table:before { content: "\f0ce"; /* fa-table */ }
+  .jstb_help:before { content: "\f059"; /* fa-circle-question */ }
+  .jstb_macros:before { content: "\f12e"; /* fa-puzzle-piece */ }}

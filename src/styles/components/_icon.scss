@@ -1,9 +1,28 @@
-$overridden-selectors: '.icon-add', '.icon-edit', '.icon-copy', '.icon-del', '.icon-move', '.icon-save', '.icon-download', '.icon-cancel', '.icon-multiple', '.icon-folder', '.open:not(.dmsf-expander)', '.icon-folder', '.icon-package', '.icon-user', '.icon-project', '.icon-projects', '.icon-help', '.icon-attachment', '.icon-history', '.icon-time-entry', '.icon-time', '.icon-time-add', '.icon-stats', '.icon-warning', '.icon-error', '.icon-fav', '.icon-fav-off', '.icon-reload', '.icon-lock', '.icon-locked', '.icon-unlock', '.icon-checked', '.icon-comment', '.icon-comments', '.icon-summary', '.icon-server-authentication', '.icon-issue', '.icon-zoom-in', '.icon-zoom-out', '.icon-passwd', '.icon-arrow-right', '.icon-test', '.icon-sticky', '.icon-email', '.icon-email-disabled', '.icon-email-add', '.icon-ok', '.icon-not-ok', '.icon-link-break', '.icon-list', '.icon-close', '.icon-settings', '.icon-roles', '.icon-issue-edit', '.icon-workflows', '.icon-custom-fields', '.icon-plugins', '.icon-news', '.icon-issue-closed', '.icon-issue-note', '.icon-changeset', '.icon-message', '.icon-reply', '.icon-wiki-page', '.icon-wiki-page', '.icon-document', '.icon-add-bullet', '.icon-shared', '.icon-actions', '.icon-expanded',
-'.icon-expended', '.icon-sidebar', '.icon-collapsed', '.icon-bookmark', '.icon-bookmark-off', '.icon-sort-handle', '.icon-sorted-asc', '.icon-sorted-desc', '.icon-toggle-plus', '.icon-toggle-minus', '.icon-file', '.icon-clear-query', '.icon-import', '.icon-group:not(.name):not(.group)', '.icon-bookmarked-project', '.icon-copy-link';
+$overridden-selectors: (
+  '.icon-actions', '.icon-add', '.icon-add-bullet', '.icon-arrow-right', '.icon-attachment',
+  '.icon-bookmark', '.icon-bookmark-off', '.icon-bookmarked-project', '.icon-cancel',
+  '.icon-changeset', '.icon-checked', '.icon-clear-query', '.icon-close', '.icon-collapse',
+  '.icon-collapsed', '.icon-comment', '.icon-comments', '.icon-copy', '.icon-copy-link',
+  '.icon-custom-fields', '.icon-del', '.icon-document', '.icon-download', '.icon-edit',
+  '.icon-email', '.icon-email-add', '.icon-email-disabled', '.icon-error', '.icon-expanded',
+  '.icon-expended', '.icon-export', '.icon-fav', '.icon-fav-off', '.icon-file', '.icon-folder',
+  '.icon-group:not(.name):not(.group)', '.icon-help', '.icon-history', '.icon-icon-issue',
+  '.icon-icon-issue-closed', '.icon-icon-issue-note', '.icon-icon-message', '.icon-icon-reply',
+  '.icon-icon-test', '.icon-icon-wiki-page', '.icon-import', '.icon-issue', '.icon-issue-closed',
+  '.icon-issue-edit', '.icon-issue-note', '.icon-link-break', '.icon-list', '.icon-lock',
+  '.icon-locked', '.icon-macro', '.icon-macros', '.icon-message', '.icon-move',
+  '.icon-news', '.icon-not-ok', '.icon-ok', '.icon-open:not(.dmsf-expander)',
+  '.icon-package', '.icon-passwd', '.icon-plugins', '.icon-project', '.icon-projects',
+  '.icon-reload', '.icon-reply', '.icon-roles', '.icon-save', '.icon-server-authentication',
+  '.icon-settings', '.icon-shared', '.icon-sidebar', '.icon-sort-handle', '.icon-sorted-asc',
+  '.icon-sorted-desc', '.icon-sticky', '.icon-summary', '.icon-time', '.icon-time-add',
+  '.icon-time-entry', '.icon-toggle-minus', '.icon-toggle-plus', '.icon-unlock',
+  '.icon-user', '.icon-warning', '.icon-workflows', '.icon-zoom-in', '.icon-zoom-out'
+);
 
 // .atomアイコンは個別に置き換え
 a.atom { background: transparent; padding: 2px 0px 3px 16px; }
-a.atom:before { /* fa-atom */ @include fontAwesome('f143', 'Solid'); }
+a.atom:before { content: "\f143"; /* fa-atom */ }
 
 .icon:before, .icon-only:before, #context-menu .icon-checked:before {
   color: $icon-color;
@@ -15,6 +34,7 @@ a.atom:before { /* fa-atom */ @include fontAwesome('f143', 'Solid'); }
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
+  font-family: $fa-font-family;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -22,102 +42,109 @@ a.atom:before { /* fa-atom */ @include fontAwesome('f143', 'Solid'); }
   padding-right: 5px;
 }
 
-.icon-add:before { /* fa-circle-plus */ @include fontAwesome('f055', 'Solid');}
-.icon-edit:before { /* fa-pencil */ @include fontAwesome('f303', 'Solid'); }
-.icon-copy:before { /* fa-clone */ @include fontAwesome('f0c5'); }
-.icon-copy-link:before { /* fa-clipboard */ @include fontAwesome('f328') }
-.icon-del:before { /* fa-trash */ @include fontAwesome('f2ed'); }
-.icon-move:before { /* fa-share */ @include fontAwesome('f064', 'Solid'); }
-.icon-save:before { /* fa-floppy */ @include fontAwesome('f0c7'); }
-.icon-download:before { /* fa-download */ @include fontAwesome('f019', 'Solid'); }
-.icon-cancel:before { /* fa-reply */ @include fontAwesome('f3e5', 'Solid'); }
-.icon-multiple:before { /* fa-sync-alt */ @include fontAwesome('f2f1', 'Solid'); }
-.icon-folder:before { /* fa-folder */ @include fontAwesome('f07b'); }
-.open .icon-folder:before { /* fa-folder */ @include fontAwesome('f07c'); }
-.icon-package:before { /* fa-cube */ @include fontAwesome('f1b2', 'Solid'); }
-.icon-user:before { /* fa-user */ @include fontAwesome('f007', 'Solid'); }
-.icon-project:before, .icon-projects:before { /* fa-cubes */ @include fontAwesome('f1b3', 'Solid'); }
-.icon-help:before { /* fa-info-circle */ @include fontAwesome('f05a', 'Solid'); }
-.icon-attachment:before  { /* fa-paperclip */ @include fontAwesome('f0c6', 'Solid'); }
-.icon-history:before  { /* fa-history */ @include fontAwesome('f1da', 'Solid'); }
-.icon-time-entry:before, .icon-time:before { /* fa-clock */ @include fontAwesome('f017'); }
-.icon-time-add:before  { /* fa-clock */ @include fontAwesome('f017'); }
-.icon-stats:before  {  /* fa-bar-chart */ @include fontAwesome('f080'); }
-.icon-warning { /* fa-warning */ @include ColoredIconInBeforeOfElement('f071', 'Solid', $color-warning-icon); }
-.icon-error { /* fa-warning */ @include ColoredIconInBeforeOfElement('f071', 'Solid', $color-error-icon); }
-.icon-fav { /* fa-star */ @include ColoredIconInBeforeOfElement('f005', 'Solid', $color-star-icon); }
-.icon-fav-off:before  {  /* fa-star */ @include fontAwesome('f005'); }
-.icon-reload:before  { /* fa-refresh */ @include fontAwesome('f021', 'Solid'); }
-.icon-lock:before, .icon-locked:before  { /* fa-lock */ @include fontAwesome('f023', 'Solid'); }
-.icon-unlock:before  { /* fa-unlock */ @include fontAwesome('f09c', 'Solid'); }
-.icon-checked { /* fa-check */ @include ColoredIconInBeforeOfElement('f00c', 'Solid', $color-success-icon); }
-.icon-comment:before, .icon-comments:before  { /* fa-comment */ @include fontAwesome('f075'); }
-.icon-summary:before  { /* fa-table */  @include fontAwesome('f0ce', 'Solid'); }
-.icon-server-authentication:before {  /* fa-key */ @include fontAwesome('f084', 'Solid'); }
-.icon-issue:before { /* fa-sticky-note */ @include fontAwesome('f249'); }
-.icon-zoom-in:before { /* fa-search-plus */ @include fontAwesome('f00e', 'Solid'); }
-.icon-zoom-out:before { /* fa-search-minus */ @include fontAwesome('f010', 'Solid'); }
-.icon-passwd:before { /* fa-key */ @include fontAwesome('f084', 'Solid'); }
-.icon-arrow-right:before, .icon-test:before, .icon-sticky:before { /* fa-arrow-right */ @include fontAwesome('f061', 'Solid'); }
-.icon-email:before { /* fa-envelope */ @include fontAwesome('f0e0'); }
-.icon-email-disabled:before { /* fa-envelope */ @include fontAwesome('f0e0', 'Solid'); }
-.icon-email-add:before { /* fa-envelope */ @include fontAwesome('f0e0'); }
-.icon-ok { /* fa-check */ @include ColoredIconInBeforeOfElement('f00c', 'Solid', $color-success-icon); }
-.icon-not-ok { /* fa-close */ @include ColoredIconInBeforeOfElement('f00d', 'Solid', $color-error-icon); }
-.icon-link-break:before { /* fa-unlink */ @include fontAwesome('f127', 'Solid'); }
-.icon-list:before { /* fa-list-ul */ @include fontAwesome('f0ca', 'Solid'); }
-.icon-close:before { /* fa-close */ @include fontAwesome('f00d', 'Solid'); }
-.icon-settings:before { /* fa-cog */ @include fontAwesome('f013', 'Solid'); }
-.icon-roles:before { /* fa-eye */ @include fontAwesome('f06e', 'Solid'); }
-.icon-issue-edit:before { /* fa-pencil-square */ @include fontAwesome('f044', 'Solid'); }
-.icon-workflows:before { /* fa-cogs */ @include fontAwesome('f085', 'Solid'); }
-.icon-custom-fields:before { /* fa-file-alt */ @include fontAwesome('f15c'); }
-.icon-plugins:before { /* fa-puzzle-piece */ @include fontAwesome('f12e', 'Solid'); }
-.icon-news:before { /* fa-newspaper */   @include fontAwesome('f1ea'); }
-.icon-issue-closed:before { /* fa-check-square */ @include fontAwesome('f14a'); }
-.icon-issue-note:before {/* fa-comment */ @include fontAwesome('f075'); }
-.icon-changeset:before { /* fa-code */   @include fontAwesome('f121', 'Solid'); }
-.icon-message:before {/* fa-comment */ @include fontAwesome('f075'); }
-.icon-reply:before { /* fa-comments */ @include fontAwesome('f086'); }
-.icon-wiki-page:before { /* fa-book */ @include fontAwesome('f02d', 'Solid'); }
-.icon-document:before { /* fa-file  */ @include fontAwesome('f15b'); }
-.icon-add-bullet:before {  /* fa-plus-circle */ @include fontAwesome('f055', 'Solid');}
-.icon-shared:before { /* fa-link */ @include fontAwesome('f0c1', 'Solid'); }
-.icon-actions:before { /* fa-ellipsis-h */ @include fontAwesome('f141', 'Solid'); }
+.icon-add:before { content: "\f055"; /* fa-circle-plus */ }
+.icon-edit:before { content: "\f303"; /* fa-pencil */ }
+.icon-copy:before { content: "\f0c5"; /* fa-clone */ }
+.icon-copy-link:before { content: "\f328"; /* fa-clipboard */ }
+.icon-del:before { content: "\f2ed"; /* fa-trash */ }
+.icon-move:before { content: "\f064"; /* fa-share */ }
+.icon-save:before { content: "\f0c7"; /* fa-floppy */ }
+.icon-download:before { content: "\f019"; /* fa-download */ }
+.icon-cancel:before { content: "\f3e5"; /* fa-reply */ }
+.icon-multiple:before { content: "\f2f1"; /* fa-sync-alt */ }
+.icon-folder:before { content: "\f07b"; /* fa-folder */ }
+.open .icon-folder:before { content: "\f07c"; /* fa-folder */ }
+.icon-package:before { content: "\f1b2"; /* fa-cube */ }
+.icon-user:before { content: "\f007"; /* fa-user */ }
+.icon-project:before, .icon-projects:before { content: "\f1b3"; /* fa-cubes */ }
+.icon-help:before { content: "\f05a"; /* fa-info-circle */ }
+.icon-attachment:before  { content: "\f0c6"; /* fa-paperclip */ }
+.icon-history:before  { content: "\f1da"; /* fa-history */ }
+.icon-time-entry:before, .icon-time:before { content: "\f017"; /* fa-clock */ }
+.icon-time-add:before  { content: "\f017"; /* fa-clock */ }
+.icon-stats:before  { content: "\f080";  /* fa-bar-chart */ }
+.icon-warning:before { content: "\f071"; /* fa-warning */ color: $color-warning-icon; }
+  .icon-warning:hover:before { color: darken($color-warning-icon, 10%); }
+.icon-error:before { content: "\f071"; /* fa-warning */ color: $color-error-icon; }
+  .icon-error:hover:before { color: darken($color-error-icon, 10%); }
+.icon-fav:before { content: "\f005"; /* fa-star */ color: $color-star-icon; }
+  .icon-fav:hover:before { color: darken($color-star-icon, 10%); }
+.icon-fav-off:before  { content: "\f005";  /* fa-star */ }
+.icon-reload:before  { content: "\f021"; /* fa-refresh */ }
+.icon-lock:before, .icon-locked:before  { content: "\f023"; /* fa-lock */ }
+.icon-unlock:before  { content: "\f09c"; /* fa-unlock */ }
+.icon-checked:before { content: "\f00c"; /* fa-check */ color: $color-success-icon; }
+  .icon-checked:hover:before { color: darken($color-success-icon, 10%); }
+.icon-comment:before, .icon-comments:before  { content: "\f075"; /* fa-comment */ }
+.icon-summary:before  { content: "\f0ce"; /* fa-table */  }
+.icon-server-authentication:before { content: "\f084";  /* fa-key */ }
+.icon-issue:before { content: "\f249"; /* fa-sticky-note */ }
+.icon-zoom-in:before { content: "\f00e"; /* fa-search-plus */ }
+.icon-zoom-out:before { content: "\f010"; /* fa-search-minus */ }
+.icon-passwd:before { content: "\f084"; /* fa-key */ }
+.icon-arrow-right:before, .icon-test:before, .icon-sticky:before { content: "\f061"; /* fa-arrow-right */ }
+.icon-email:before { content: "\f0e0"; /* fa-envelope */ }
+.icon-email-disabled:before { content: "\f0e0"; /* fa-envelope */ }
+.icon-email-add:before { content: "\f0e0"; /* fa-envelope */ }
+.icon-ok:before { content: "\f00c"; /* fa-check */ color: $color-success-icon; }
+  .icon-ok:hover:before { color: darken($color-success-icon, 10%); }
+.icon-not-ok:before { content: "\f00d"; /* fa-close */ color: $color-error-icon; }
+  .icon-not-ok:hover:before { color: darken($color-error-icon, 10%); }
+.icon-link-break:before { content: "\f127"; /* fa-unlink */ }
+.icon-list:before { content: "\f0ca"; /* fa-list-ul */ }
+.icon-close:before { content: "\f00d"; /* fa-close */ }
+.icon-settings:before { content: "\f013"; /* fa-cog */ }
+.icon-roles:before { content: "\f06e"; /* fa-eye */ }
+.icon-issue-edit:before { content: "\f044"; /* fa-pencil-square */ }
+.icon-workflows:before { content: "\f085"; /* fa-cogs */ }
+.icon-custom-fields:before { content: "\f15c"; /* fa-file-alt */ }
+.icon-plugins:before { content: "\f12e"; /* fa-puzzle-piece */ }
+.icon-news:before { content: "\f1ea"; /* fa-newspaper */   }
+.icon-issue-closed:before { content: "\f14a"; /* fa-check-square */ }
+.icon-issue-note:before { content: "\f075"; /* fa-comment */ }
+.icon-changeset:before { content: "\f121"; /* fa-code */   }
+.icon-message:before { content: "\f075"; /* fa-comment */ }
+.icon-reply:before { content: "\f086"; /* fa-comments */ }
+.icon-wiki-page:before { content: "\f02d"; /* fa-book */ }
+.icon-document:before { content: "\f15b"; /* fa-file  */ }
+.icon-add-bullet:before { content: "\f055";  /* fa-plus-circle */ }
+.icon-shared:before { content: "\f0c1"; /* fa-link */ }
+.icon-actions:before { content: "\f141"; /* fa-ellipsis-h */ }
+
 /* Support https: //redmine.org/issues/36149 */
-.icon-expanded:before { /* fa-angle-down */ @include fontAwesome('f107', 'Solid'); }
-.icon-expended:before { /* fa-angle-down */ @include fontAwesome('f107', 'Solid'); }
-.icon-sidebar:before { /* fa-left-right */ @include fontAwesome('f337', 'Solid'); }
+.icon-expanded:before { content: "\f107"; /* fa-angle-down */ }
+.icon-expended:before { content: "\f107"; /* fa-angle-down */ }
+.icon-sidebar:before { content: "\f337"; /* fa-left-right */ }
+.icon-collapsed:before { content: "\f105"; /* fa-angle-right */ }
+.icon-bookmark:before { content: "\f02e"; /* fa-bookmark */ color: $color-bookmark-icon; }
+  .icon-bookmark:hover:before { color: darken($color-bookmark-icon, 10%); }
+.icon-bookmark-off:before { content: "\f02e"; /* fa-bookmark */ }
+.icon-sort-handle:before { content: "\f338"; /* fa-bookmark */ }
+.icon-sorted-asc:before { content: "\f107"; /* fa-angle-down */ }
+.icon-sorted-desc:before { content: "\f106"; /* fa-angle-up */ }
+.icon-toggle-plus:before { content: "\f0fe"; /* fa-plus-square */ }
+.icon-toggle-minus:before { content: "\f146"; /* fa-minus-square */ }
+.icon-clear-query:before { content: "\f057"; /* fa-times-circle */ }
+.icon-import:before { content: "\f56f"; /* fa-file-import */ }
 
-.icon-collapsed:before { /* fa-angle-right */ @include fontAwesome('f105', 'Solid'); }
-.icon-bookmark { /* fa-bookmark */ @include ColoredIconInBeforeOfElement('f02e', 'Solid', $color-bookmark-icon); }
-.icon-bookmark-off:before { /* fa-bookmark */ @include fontAwesome('f02e'); }
-.icon-sort-handle:before { /* fa-bookmark */ @include fontAwesome('f338', 'Solid'); }
-.icon-sorted-asc:before { /* fa-angle-down */ @include fontAwesome('f107', 'Solid'); }
-.icon-sorted-desc:before { /* fa-angle-up */ @include fontAwesome('f106', 'Solid'); }
-.icon-toggle-plus:before { /* fa-plus-square */ @include fontAwesome('f0fe'); }
-.icon-toggle-minus:before { /* fa-minus-square */ @include fontAwesome('f146'); }
-.icon-clear-query:before { /* fa-times-circle */ @include fontAwesome('f057', 'Solid'); }
-.icon-import:before { /* fa-file-import */ @include fontAwesome('f56f', 'Solid'); }
-
-.icon-file:before { /* fa-file */ @include fontAwesome('f15b'); }
-.icon-file.text-plain:before { /* fa-file */ @include fontAwesome('f15b'); }
-.icon-file.text-x-c:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.text-x-csharp:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.text-x-java:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.text-x-javascript:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.text-x-php:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.text-x-ruby:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.text-xml:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.text-css:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.text-html:before { /* fa-file-code */ @include fontAwesome('f1c9'); }
-.icon-file.image-gif:before { /* fa-file-image */ @include fontAwesome('f1c5'); }
-.icon-file.image-jpeg:before { /* fa-file-image */ @include fontAwesome('f1c5'); }
-.icon-file.image-png:before { /* fa-file-image */ @include fontAwesome('f1c5'); }
-.icon-file.image-tiff:before { /* fa-file-image */ @include fontAwesome('f1c5'); }
-.icon-file.application-pdf:before { /* fa-file-pdf */ @include fontAwesome('f1c1'); }
-.icon-file.application-zip:before { /* fa-file-archive */ @include fontAwesome('f1c6'); }
-.icon-file.application-x-gzip:before { /* fa-file-archive */ @include fontAwesome('f1c6'); }
+.icon-file:before { content: "\f15b"; /* fa-file */ }
+.icon-file.text-plain:before { content: "\f15b"; /* fa-file */ }
+.icon-file.text-x-c:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.text-x-csharp:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.text-x-java:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.text-x-javascript:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.text-x-php:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.text-x-ruby:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.text-xml:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.text-css:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.text-html:before { content: "\f1c9"; /* fa-file-code */ }
+.icon-file.image-gif:before { content: "\f1c5"; /* fa-file-image */ }
+.icon-file.image-jpeg:before { content: "\f1c5"; /* fa-file-image */ }
+.icon-file.image-png:before { content: "\f1c5"; /* fa-file-image */ }
+.icon-file.image-tiff:before { content: "\f1c5"; /* fa-file-image */ }
+.icon-file.application-pdf:before { content: "\f1c1"; /* fa-file-pdf */ }
+.icon-file.application-zip:before { content: "\f1c6"; /* fa-file-archive */ }
+.icon-file.application-x-gzip:before { content: "\f1c6"; /* fa-file-archive */ }
 
 #{$overridden-selectors} {
   background-image: none !important;
@@ -184,8 +211,7 @@ input.autocomplete {
 // $overridden-selectorsも.icon-group:not(.name)というように.nameがついている要素はiconを置き換えないという扱いにしている
 .members.box h3.icon-group, #admin-menu .icon-group {
   background-image: none;
-
-  &:before { /* fa-users */ @include fontAwesome('f0c0', 'Solid'); }
+  &:before { content: "\f0c0"; /* fa-users */ }
 }
 
 // プロジェクト一覧では、a:beforeでなくa:afterにアイコンを表示
@@ -204,11 +230,10 @@ body.controller-projects.action-index a.project, body.controller-projects.action
     text-rendering: auto;
     font-size: 14px;
   }
-  &.icon-bookmarked-project:after { /* fa-bookmark */ @include fontAwesome('00a0 \\f02e', 'Solid'); }
-  &.icon.my-project:after { /* fa-user */ @include fontAwesome('00a0 \\f007', 'Solid'); }
-  &.icon.my-project.icon-bookmarked-project:after {
-    @include fontAwesome('00a0 \\f007 \\00a0 \\f02e', 'Solid');
-  }
+  // \00a0: This is the Unicode code point for a non-breaking space. It's being used here as a separator between icons.
+  &.icon-bookmarked-project:after { content: "\00a0\f02e"; /* fa-bookmark */ }
+  &.icon.my-project:after { content: "\00a0\f007"; /* fa-user */ }
+  &.icon.my-project.icon-bookmarked-project:after { content: "\00a0\f007\00a0\f02e"; /* fa-user and fa-bookmark */ }
 
 }
 

@@ -16,3 +16,15 @@ $jstb-font-family: 'Open Sans', sans-serif;
   src: url("~@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"),
        url("~@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype");
 }
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font-family-sans-serif);
+  color: #222;
+}
+
+html[lang="ja"] body {
+  font-family: var(--font-family-japanese);
+  font-style: normal;
+}

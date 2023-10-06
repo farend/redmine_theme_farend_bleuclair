@@ -6,7 +6,7 @@ $overridden-selectors: (
   '.icon-custom-fields', '.icon-del', '.icon-document', '.icon-download', '.icon-edit',
   '.icon-email', '.icon-email-add', '.icon-email-disabled', '.icon-error', '.icon-expanded',
   '.icon-expended', '.icon-export', '.icon-fav', '.icon-fav-off', '.icon-file', '.icon-folder',
-  '.icon-group:not(.name):not(.group)', '.icon-help', '.icon-history', '.icon-icon-issue',
+  '.icon-help', '.icon-history', '.icon-icon-issue', '.icon-wiki-page',
   '.icon-icon-issue-closed', '.icon-icon-issue-note', '.icon-icon-message', '.icon-icon-reply',
   '.icon-icon-test', '.icon-icon-wiki-page', '.icon-import', '.icon-issue', '.icon-issue-closed',
   '.icon-issue-edit', '.icon-issue-note', '.icon-link-break', '.icon-list', '.icon-lock',
@@ -17,7 +17,9 @@ $overridden-selectors: (
   '.icon-settings', '.icon-shared', '.icon-sidebar', '.icon-sort-handle', '.icon-sorted-asc',
   '.icon-sorted-desc', '.icon-sticky', '.icon-summary', '.icon-time', '.icon-time-add',
   '.icon-time-entry', '.icon-toggle-minus', '.icon-toggle-plus', '.icon-unlock',
-  '.icon-user', '.icon-warning', '.icon-workflows', '.icon-zoom-in', '.icon-zoom-out'
+  '.icon-user', '.icon-warning', '.icon-workflows', '.icon-zoom-in', '.icon-zoom-out',
+  // '.icon-group:not(.name):not(.group)', // -> todo: check if this is still necessary
+  '.icon-group', '.icon-groupanonymous', '.icon-groupnonmember'
 );
 
 // .atomアイコンは個別に置き換え
@@ -127,6 +129,10 @@ a.atom:before { content: "\f143"; /* fa-atom */ }
 .icon-clear-query:before { content: "\f057"; /* fa-times-circle */ }
 .icon-import:before { content: "\f56f"; /* fa-file-import */ }
 
+.icon-group:before { content: "\f500"; /* fa-user-group */ }
+.icon-groupanonymous:before { content: "\f500"; /* fa-user-group */ }
+.icon-groupnonmember:before { content: "\f500"; /* fa-user-group */ }
+
 .icon-file:before { content: "\f15b"; /* fa-file */ }
 .icon-file.text-plain:before { content: "\f15b"; /* fa-file */ }
 .icon-file.text-x-c:before { content: "\f1c9"; /* fa-file-code */ }
@@ -205,14 +211,15 @@ input.autocomplete {
 .context-menu-selection .icon:before {
   color: white;
 }
+// TODO: check if this still applies
 // 一部のgroupアイコンはimgタグのsrcとして直接埋め込まれており置換が難しい
 // .members.boxと#admin-menuのアイコンのみはメニューのアイコンと言うことでFont Awesomeに置き換え、
 // それ以外はグループのアバターという扱いでそのままにしておく(Gravatarと同じような扱い)
 // $overridden-selectorsも.icon-group:not(.name)というように.nameがついている要素はiconを置き換えないという扱いにしている
-.members.box h3.icon-group, #admin-menu .icon-group {
-  background-image: none;
-  &:before { content: "\f0c0"; /* fa-users */ }
-}
+// .members.box h3.icon-group, #admin-menu .icon-group {
+//   background-image: none;
+//   &:before { content: "\f0c0"; /* fa-users */ }
+// }
 
 // プロジェクト一覧では、a:beforeでなくa:afterにアイコンを表示
 body.controller-projects.action-index a.project, body.controller-projects.action-index span {

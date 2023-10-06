@@ -22,32 +22,11 @@ div.jstElements {
   .jstb_em:before { content: "\f033"; /* fa-italic */ }
   .jstb_ins:before { content: "\f0cd"; /* fa-underline */ }
   .jstb_del:before { content: "\f0cc"; /* fa-strikethrough */ }
+  .jstb_code:before { content: "\43"; /* fa-c */ }
 
-  .jstb_code:before {
-    content: "C";
-    font-family: $jstb-font-family;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .jstb_h1:before {
-    content: "H1";
-    font-family: $jstb-font-family;
-    font-weight: 700;
-  }
-
-  .jstb_h2:before {
-    content: "H2";
-    font-family: $jstb-font-family;
-    font-weight: 700;
-  }
-
-  .jstb_h3:before {
-    content: "H3";
-    font-family: $jstb-font-family;
-    font-weight: 700;
-  }
+  .jstb_h1:before { content: "\f1dc"; /* fa-heading */ }
+  .jstb_h2:before { content: "\f1dc"; /* fa-heading */ font-size: .7857em; }
+  .jstb_h3:before { content: "\f1dc"; /* fa-heading */ font-size: .6429em; }
 
   .jstb_ul:before { content: "\f0ca"; /* fa-list-ul */ }
   .jstb_ol:before { content: "\f0cb"; /* fa-list-ol */ }
@@ -55,14 +34,8 @@ div.jstElements {
   .jstb_bq:before { content: "\f03c"; /* fa-indent */ }
   .jstb_unbq:before { content: "\f03b"; /* fa-outdent */ }
 
-  .jstb_pre:before {
-    content: "pre";
-    font-family: $jstb-font-family;
-    font-weight: 700;
-    vertical-align: middle;
-  }
-
-  .jstb_precode:before { content: "\f121"; /* fa-code */ }
+  .jstb_pre:before { content: "\f121"; /* fa-code */ }
+  .jstb_precode:before { content: "\f591"; /* fa-highlighter */ }
   .jstb_link:before { content: "\f0c1"; /* fa-link */ }
   .jstb_img:before { content: "\f03e"; /* fa-image */ }
   .jstb_table:before { content: "\f0ce"; /* fa-table */ }

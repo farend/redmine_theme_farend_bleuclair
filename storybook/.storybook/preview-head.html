@@ -1,0 +1,25 @@
+<script src="./javascripts/jquery-3.6.1-ui-1.13.2-ujs-6.1.7.js"></script>
+
+<script src="./javascripts/tribute-5.1.3.min.js"></script>
+<script src="./javascripts/tablesort-5.2.1.min.js"></script>
+<script src="./javascripts/tablesort-5.2.1.number.min.js"></script>
+
+<script src="./javascripts/application.js"></script>
+<script src="./javascripts/responsive.js"></script>
+
+<script src="./javascripts/jstoolbar/jstoolbar.js"></script>
+<script src="./javascripts/jstoolbar/common_mark.js"></script>
+<script src="./javascripts/jstoolbar/lang/jstoolbar-ja.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    $.ready();
+
+    $('a').on('click', function (e) {
+      e.preventDefault();
+    })
+
+    $('form').on('submit', function (e) {
+      e.preventDefault();
+    })
+  })
+</script>

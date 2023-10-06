@@ -16,7 +16,7 @@ Bleuclair theme is used as standard for [RedMica - the future Redmine you can ge
 
 ## Demo
 
-Storybook: https://farend.github.io/redmine_theme_farend_bleuclair
+Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook)): https://farend.github.io/redmine_theme_farend_bleuclair
 
 ### For Redmine 4.2 or later :new:
 

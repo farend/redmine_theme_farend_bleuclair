@@ -1,5 +1,10 @@
+// Import FontAwesome
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '~@fortawesome/fontawesome-free/css/regular.css';
+@import '~@fortawesome/fontawesome-free/css/solid.css';
+
 @mixin fontAwesome($code, $font-type: Regular) {
-  font-family: 'Font Awesome 5 ' + $font-type;
+  font-family: 'Font Awesome 6 Free ' + $font-type;
   content: unquote("\"")+unquote(str-insert($code, "\\", 1))+unquote("\"");
 }
 

@@ -9,3 +9,8 @@ div.wiki {
     border-radius: 4px;
   }
 }
+
+/* Fix an issue where the default line-height is 1.5em, which breaks the layout. */
+.box div.wiki-preview {
+  line-height: 1.5;
+}

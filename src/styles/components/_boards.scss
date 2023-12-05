@@ -116,7 +116,7 @@
     }
 
     // #change-n               #note-n
-    &:target .contextual + h4, div:target .contextual + h4 {
+    &:target h4.note-header, div:target h4.note-header {
       background: $color-target-bg;
 
       &:before {

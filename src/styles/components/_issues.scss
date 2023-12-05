@@ -170,7 +170,7 @@ div#update .jstTabs.tabs li a {
       }
 
       // #tab-content-changesets内のh4要素のみ.contextualと隣接していないため個別の書き方をしている
-      .contextual + h4, &.changeset > h4:first-child {
+      h4.note-header {
         left: 20px;
         position: relative;
         margin: $note-title-margin;
@@ -243,7 +243,7 @@ div#update .jstTabs.tabs li a {
 
       form .jstBlock, form input, div[id^="template_journal"],
       .wiki:not(.wiki-preview),
-      &.time_entry p, &.changeset > p {
+      &.time_entry p, &.changeset .note > p {
         margin-left: 32px;
       }
     }

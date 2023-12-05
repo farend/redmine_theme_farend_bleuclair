@@ -6,7 +6,7 @@
 
 function setDiscontinuityClassToTabContent(id) {
   if ($('#' + id).hasClass('selected')) {
-    if (id === 'tab-notes' || id === 'tab-properties') {
+    if (id === 'tab-notes' || id === 'tab-properties' || id === 'tab-changesets') {
       $('div#tab-content-history').addClass('discontinuity');
     } else {
       $('div#tab-content-history').removeClass('discontinuity');

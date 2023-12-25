@@ -9,12 +9,14 @@ $color-validation-error-input-border: #bb0000;
 $color-submit-text: #ffffff;
 $color-submit-border: #34495e;
 $color-submit-bg: #34495e;
+$color-submit-disabled-bg: #95a5a6;
 $color-submit-hover-border: #3f5872;
 $color-submit-hover-bg: #3f5872;
 
 $color-button-text: #555a60;
 $color-button-border: #dfe8f1;
 $color-button-bg: #fefeff;
+$color-button-disabled-bg: #95a5a6;
 $color-button-hover-text: #2b2f33;
 $color-button-hover-border: #bfc8d1;
 $color-button-hover-bg: #f3f3f9;
@@ -178,6 +180,10 @@ $checkbox-margin: 7px 2px 7px 0px;
       outline: 0;
       box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
     }
+    &:disabled {
+      background-color: $color-submit-disabled-bg;
+      cursor: not-allowed;
+    }
   }
 
   input[type="button"] {
@@ -195,6 +201,10 @@ $checkbox-margin: 7px 2px 7px 0px;
     &:active {
       outline: 0;
       box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    }
+    &:disabled {
+      background-color: $color-button-disabled-bg;
+      cursor: not-allowed;
     }
   }
 

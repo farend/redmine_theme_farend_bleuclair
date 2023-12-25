@@ -15,12 +15,10 @@ Redmine用のカスタムテーマです。
 
 ## 画面サンプル
 
+Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook)): https://farend.github.io/redmine_theme_farend_bleuclair
+
 - チケット一覧画面
-<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues.png" /></kbd>
-- チケット表示画面
-<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issue.png" /></kbd>
-- チケット表示画面の履歴
-<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/notes.png" /></kbd>
+<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues-4.2.png" /></kbd>
 
 ## インストール方法
 
@@ -42,12 +40,17 @@ $ git clone -b redmine4.0 https://github.com/farend/redmine_theme_farend_bleucla
 
 - Redmine4.1.nの場合
 ```bash
-$ git clone -b redmine4.1  https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone -b redmine4.1 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
 - Redmine4.2.nの場合
 ```bash
-$ git clone -b redmine4.2  https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone -b redmine4.2 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+```
+
+- Redmine5.0.n以降の場合
+```bash
+$ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
 **Gitが利用できない環境の場合:**

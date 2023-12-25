@@ -18,21 +18,8 @@ Bleuclair theme is used as standard for [RedMica - the future Redmine you can ge
 
 Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook)): https://farend.github.io/redmine_theme_farend_bleuclair
 
-### For Redmine 4.2 or later :new:
-
-From Bleuclair compatible with Redmine 4.2, changes such as replacing the icon with an icon font and adding the folding feature of the sidebar have been added.
-
 - Issue list
 <kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues-4.2.png" /></kbd>
-
-### Before for Redmine 4.1
-
-- Issue list
-<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues.png" /></kbd>
-- Issue view
-<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issue.png" /></kbd>
-- Issue histories
-<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/notes.png" /></kbd>
 
 ## Install
 
@@ -54,12 +41,17 @@ $ git clone -b redmine4.0 https://github.com/farend/redmine_theme_farend_bleucla
 
 - For Redmine 4.1
 ```bash
-$ git clone -b redmine4.1  https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone -b redmine4.1 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
-- For Redmine 4.2 or later
+- For Redmine 4.2
 ```bash
-$ git clone -b redmine4.2  https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone -b redmine4.2 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+```
+
+- For Redmine 5.0 or later
+```bash
+$ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
 **In an environment where Git is not available:**

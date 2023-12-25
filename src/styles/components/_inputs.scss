@@ -156,7 +156,7 @@ $checkbox-margin: 7px 2px 7px 0px;
     &.error {
       color: $color-validation-error-input-border !important;
     }
-    &.error + * {
+    &.error + *:not(#issue_description_and_toolbar), &.error + span#issue_description_and_toolbar div.jstBlock {
       border: 1px solid $color-validation-error-input-border !important;
     }
   }

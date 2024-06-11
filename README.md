@@ -49,9 +49,14 @@ $ git clone -b redmine4.1 https://github.com/farend/redmine_theme_farend_bleucla
 $ git clone -b redmine4.2 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
-- For Redmine 5.0 or later
+- For Redmine 5.0, Redmine 5.1
 ```bash
 $ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+```
+
+- For RedMica 3.0, Redmine trunk
+```bash
+$ git clone -b support-propshaft https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
 ```
 
 **In an environment where Git is not available:**

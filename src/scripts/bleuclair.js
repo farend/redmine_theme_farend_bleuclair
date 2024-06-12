@@ -23,7 +23,7 @@ $(function(){
 
   if (($("a.help").text() == "ヘルプ" ? "ja" : $("html").attr("lang")) == "ja") {
     /* When the language is Japanese, the link destination of help is Redmine.jp */
-    $("a.help").attr("href", "http://guide.redmine.jp/");
+    $("a.help").attr("href", "https://redmine.jp/guide/");
   }
 
   // Put the title in the before content without breaking the tooltip

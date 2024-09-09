@@ -43,11 +43,6 @@ $color-border-sidebar-switch-button: #ddd;
   h3 { color: $default-heading-font-color; }
 }
 
-.icon {
-  padding-bottom: 2px;
-  padding-top: 2px;
-}
-
 // Fix a problem that underlines is broken in chrome
 a:hover, a:active {
   outline: 1px solid transparent;
@@ -94,12 +89,7 @@ a:hover, a:active {
     color: #666;
   }
 }
-#main:not(.visible-sidebar) #sidebar-switch-button:before{
-  @include fontAwesome('f053', 'Solid'); // fa-chevron-left
-}
-#main.visible-sidebar #sidebar-switch-button:before {
-  @include fontAwesome('f054', 'Solid'); // fa-chevron-right
-}
+
 @media print {
   #main.visible-sidebar #sidebar, #sidebar-switch-panel { display:none; }
 }

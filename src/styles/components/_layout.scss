@@ -90,6 +90,23 @@ a:hover, a:active {
   }
 }
 
+
+#main #sidebar-switch-button .sidebar-switch-arrow {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-top: 8px;
+  border-top: 2px solid gray;
+  border-right: 2px solid gray;
+}
+#main:not(.visible-sidebar) #sidebar-switch-button .sidebar-switch-arrow {
+  margin-left: 4px;
+  transform: rotate(-135deg);
+}
+#main.visible-sidebar #sidebar-switch-button .sidebar-switch-arrow {
+  transform: rotate(45deg);
+}
+
 @media print {
   #main.visible-sidebar #sidebar, #sidebar-switch-panel { display:none; }
 }

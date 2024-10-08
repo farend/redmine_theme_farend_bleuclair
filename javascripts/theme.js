@@ -116,7 +116,7 @@ $(function () {
 window.addEventListener('DOMContentLoaded', function () {
   if (!$('#main').hasClass('nosidebar')) {
     if ($('#sidebar-switch-panel').length == 0) {
-      $('#content').prepend('<div id="sidebar-switch-panel"><a id="sidebar-switch-button" href="#"></a></div>');
+      $('#content').prepend('<div id="sidebar-switch-panel"><a id="sidebar-switch-button" href="#"><span class="sidebar-switch-arrow"></span></a></div>');
     }
     try {
       $('#main').collapsibleSidebar();

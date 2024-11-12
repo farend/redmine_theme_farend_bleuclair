@@ -54,7 +54,7 @@ $ git clone -b redmine4.2 https://github.com/farend/redmine_theme_farend_bleucla
 $ git clone -b redmine5.1 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
-- For RedMica 6.0, Redmine trunk
+- For Redmine 6.0, Redmine trunk
 ```bash
 $ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
 ```

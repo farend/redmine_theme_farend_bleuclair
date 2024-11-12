@@ -7,19 +7,3 @@ body {
 html[lang="ja"] body {
   font-family: Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Sans", "MS PGothic", Verdana, system-ui, sans-serif;
 }
-
-@font-face {
-  font-family: 'Font Awesome 6 Free Solid';
-  font-style: normal;
-  font-weight: 900;
-  src: url("~@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"),
-       url("~@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Font Awesome 6 Free Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: url("~@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"),
-       url("~@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype");
-}

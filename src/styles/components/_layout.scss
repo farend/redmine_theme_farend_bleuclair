@@ -1,6 +1,5 @@
 $color-top-menu-bg: #223342;
 $color-main-bg:     #fafcfe;
-$color-border-sidebar-switch-button: #ddd;
 
 #top-menu {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
@@ -34,79 +33,20 @@ $color-border-sidebar-switch-button: #ddd;
 }
 
 #sidebar {
-  padding-left: 17px;
-  padding-right: 17px;
-  width: 19%;
-  box-sizing: border-box;
-  font-size: 0.9em;
+  background-color: $color-header-bg;
 
   h3 { color: $default-heading-font-color; }
 }
 
-.icon {
-  padding-bottom: 2px;
-  padding-top: 2px;
+#sidebar-switch-button {
+  &:hover {
+      background-color: darken($color-header-bg, 10%);
+  }
 }
 
 // Fix a problem that underlines is broken in chrome
 a:hover, a:active {
   outline: 1px solid transparent;
-}
-
-// Collapse sidebar
-#sidebar { width: 19%; display: none; background-color: $color-header-bg;}
-#main.visible-sidebar #sidebar{ display: block; }
-@media screen and (max-width: 899px) {
-  #main.visible-sidebar {
-    #sidebar, #sidebar-switch-panel { display: none; }
-  }
-}
-
-#content { padding: 14px 14px 14px 14px; }
-#sidebar-switch-panel {
-  float: right;
-  left: 10px;
-  top: 2px;
-  width: 20px;
-  height: 25px;
-  position: relative;
-  padding: 2px;
-  margin-left: 5px;
-}
-#sidebar-switch-button {
-  background-color: $color-header-bg;
-  border-bottom: 1px solid $color-border-sidebar-switch-button;
-  border-left: 1px solid $color-border-sidebar-switch-button;
-  border-top: 1px solid $color-border-sidebar-switch-button;
-  border-radius: 10px 0px 0px 10px;
-  display: block;
-  height: 100%;
-  padding: 9px 20px 9px 5px;
-  font-size: 0px;
-  text-decoration: none;
-  &:before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    margin-right: 3px;
-    font-size: 15px;
-    color: #666;
-  }
-}
-#main:not(.visible-sidebar) #sidebar-switch-button:before{
-  @include fontAwesome('f053', 'Solid'); // fa-chevron-left
-}
-#main.visible-sidebar #sidebar-switch-button:before {
-  @include fontAwesome('f054', 'Solid'); // fa-chevron-right
-}
-@media print {
-  #main.visible-sidebar #sidebar, #sidebar-switch-panel { display:none; }
-}
-
-// To prevent it from overlapping the sidebar
-table.list.plugins {
-  margin-top: 10px;
 }
 
 @media screen and (max-width: 899px) {

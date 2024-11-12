@@ -63,15 +63,6 @@ const scssRule = {
   ],
 };
 
-// Define rules for copying fonts
-const fontRule = {
-  test: /\.(woff2|ttf|woff)$/i,
-  type: 'asset/resource',
-  generator: {
-    filename: 'webfonts/[name][ext]',
-  },
-};
-
 // Define rules for handling images
 const imageRule = {
   test: /\.(png|jpe?g|gif)$/i,  // Exclude svg from this rule
@@ -108,7 +99,6 @@ module.exports = {
     rules: [
       jsRule,
       scssRule,
-      fontRule,
       imageRule,
       svgRule,
     ],

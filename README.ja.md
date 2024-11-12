@@ -18,7 +18,7 @@ Redmine用のカスタムテーマです。
 Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook)): https://farend.github.io/redmine_theme_farend_bleuclair
 
 - チケット一覧画面
-<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues-4.2.png" /></kbd>
+<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues-6.0.png" /></kbd>
 
 ## インストール方法
 

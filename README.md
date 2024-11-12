@@ -19,7 +19,7 @@ Bleuclair theme is used as standard for [RedMica - the future Redmine you can ge
 Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook)): https://farend.github.io/redmine_theme_farend_bleuclair
 
 - Issue list
-<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues-4.2.png" /></kbd>
+<kbd><img src="https://github.com/farend/redmine_theme_farend_bleuclair/blob/images/issues-6.0.png" /></kbd>
 
 ## Install
 

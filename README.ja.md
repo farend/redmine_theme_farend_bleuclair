@@ -50,12 +50,12 @@ $ git clone -b redmine4.2 https://github.com/farend/redmine_theme_farend_bleucla
 
 - Redmine5.0.n、Redmine5.1.nの場合
 ```bash
-$ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone -b redmine5.1 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
 
-- RedMica 3.0、Redmine trunkの場合 ※ インストールディレクトリが変わります
+- Redmine6以降、Redmine trunkの場合 ※ インストールディレクトリが変わります
 ```bash
-$ git clone -b support-propshaft https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
+$ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
 ```
 
 **Gitが利用できない環境の場合:**

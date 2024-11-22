@@ -1,4 +1,4 @@
-$input-padding: 4px 6px 4px 20px;;
+$input-padding: 4px 6px;
 $color-input-bg: #ffffff;
 $color-disabled-input-bg: #ebebe4;
 $color-input-text: #2b2f33;
@@ -54,6 +54,7 @@ $checkbox-margin: 7px 2px 7px 0px;
 
     &.filename {
       box-shadow: none;
+      padding-left: 20px;
     }
 
     &:disabled {

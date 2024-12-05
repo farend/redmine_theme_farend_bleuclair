@@ -56,7 +56,7 @@ $ git clone -b redmine5.1 https://github.com/farend/redmine_theme_farend_bleucla
 - Redmine6以降、Redmine trunkの場合 ※ インストールディレクトリが変わります
 ```bash
 $ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
-$ # その後Railsサーバーを再起動する
+$ # Redmineを再起動してください
 ```
 
 **Gitが利用できない環境の場合:**

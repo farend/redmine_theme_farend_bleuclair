@@ -57,7 +57,7 @@ $ git clone -b redmine5.1 https://github.com/farend/redmine_theme_farend_bleucla
 - For Redmine 6.0, Redmine trunk
 ```bash
 $ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
-$ # Restart Redmine
+$ # Restart Redmine or run `rake assets:precompile`
 ```
 
 **In an environment where Git is not available:**

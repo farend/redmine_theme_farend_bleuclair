@@ -31,7 +31,7 @@ jobs:
         working-directory: ./storybook
         run: npm run build-storybook
 
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: storybook/storybook-static
 

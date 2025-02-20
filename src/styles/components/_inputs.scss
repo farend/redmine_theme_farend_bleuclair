@@ -222,6 +222,17 @@ $checkbox-margin: 7px 2px 7px 0px;
   }
 }
 
+// Override text box font-family when lang is "ja" and not using proportional setting
+html[lang="ja"] body:not(.textarea-proportional) {
+  input[type="text"] {
+    font-family: "Osaka-Mono", "MS Gothic", monospace;
+  }
+
+  textarea.wiki-edit {
+    font-family: "Osaka-Mono", "MS Gothic", monospace;
+  }
+}
+
 form .attributes {
   select { width: 85%; }
 

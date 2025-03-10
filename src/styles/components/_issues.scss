@@ -178,7 +178,6 @@ div#update .jstTabs.tabs li a {
         font-weight: bold;
         background-color: $color-note-title-bg;
         padding: $note-title-padding;
-        font-size: 0.9em;
         border-radius: 4px;
 
         a[href*="activity"][data-absolute-date*=":"] {
@@ -218,8 +217,8 @@ div#update .jstTabs.tabs li a {
 
       .details {
         list-style: none;
-        font-size: 0.9em;
         line-height: 1.5;
+        font-size: 0.9em;
         margin-bottom: 1em;
         padding-left: 46px;
 

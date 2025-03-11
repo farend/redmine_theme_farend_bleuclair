@@ -1,6 +1,6 @@
 $table-head-cell-padding: 5px;
 $table-cell-padding:      4px;
-$line-height-base:        1.74;
+$line-height-base:        1.6;
 $line-height-computed:    25px;
 $color-table-border:      #dfe8f1;
 $color-th-bg:             #eff1f9;
@@ -22,6 +22,8 @@ table.list {
         line-height: $line-height-base;
         vertical-align: top;
         border-top: 1px solid $color-table-border;
+        padding-top: 6px;
+        padding-bottom: 6px;
         &.checkbox {
           padding: $table-cell-padding;
 

@@ -190,8 +190,7 @@ div#update .jstTabs.tabs li a {
           content: '';
           position: absolute;
           left: -8px;
-          top: 50%;
-          transform: translateY(-50%);
+          top: 8px;
           border-width: 7px 10px 7px 0;
           border-style: solid;
           border-color: transparent $color-note-title-bg transparent transparent;

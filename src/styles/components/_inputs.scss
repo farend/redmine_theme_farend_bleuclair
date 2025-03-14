@@ -84,7 +84,6 @@ $checkbox-margin: 7px 2px 7px 0px;
     .select2-selection__rendered {
       padding: 1px 2px;
       font-family: Arial;
-      font-size: 13px;
       color: #2b2f33;
       line-height: 1.5;
       font-weight: 400;
@@ -102,14 +101,6 @@ $checkbox-margin: 7px 2px 7px 0px;
     cursor: not-allowed;
     color: graytext;
     background-color: #ebebe4 !important;
-  }
-
-  input[type="text"] {
-    font-size: 100%;
-  }
-
-  textarea.wiki-edit {
-    font-size: 13px;
   }
 
   select {

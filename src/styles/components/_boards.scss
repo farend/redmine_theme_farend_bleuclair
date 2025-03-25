@@ -114,8 +114,7 @@
       }
     }
 
-    // #change-n               #note-n
-    &:target h4.note-header, div:target h4.note-header {
+    &:target h4.reply-header {
       background: $color-target-bg;
 
       &:before {

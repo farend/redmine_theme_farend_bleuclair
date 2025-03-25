@@ -209,7 +209,7 @@ div#update .jstTabs.tabs li a {
         background: $color-target-bg;
 
         &:before {
-          border-right: 6px solid $color-target-bg;
+          border-right-color: $color-target-bg;
         }
       }
 

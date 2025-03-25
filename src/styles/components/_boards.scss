@@ -36,7 +36,7 @@
       background-color: $color-history-bg;
       position: absolute;
       left: 6px;
-      top: 16px;
+      top: 19px;
       border-radius: 50%;
       box-shadow: 0 0 0 3px $color-timeline;
       z-index: 1;
@@ -53,7 +53,7 @@
     }
 
     &:first-of-type:after {
-      top: 15px;
+      top: 19px;
     }
 
     &:last-of-type:after {
@@ -96,13 +96,11 @@
       &:before {
         content: '';
         position: absolute;
-        left: -6px;
+        left: -8px;
         top: 8px;
-        width: 0;
-        height: 0;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-right: 6px solid $color-note-title-bg;
+        border-width: 7px 10px 7px 0;
+        border-style: solid;
+        border-color: transparent $color-note-title-bg transparent transparent;
       }
 
       .gravatar {

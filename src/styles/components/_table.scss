@@ -58,9 +58,6 @@ table.list {
         color: $color-closed;
         a { color: $color-closed; }
       }
-      &:hover {
-        background-color: #fff9c4;
-      }
     }
   }
   // Bottom align for column headings
@@ -73,6 +70,11 @@ table.list {
     padding: $table-head-cell-padding;
     &.checkbox { padding: $table-head-cell-padding; }
   }
+
+  tbody > tr:hover {
+    background-color: #fff9c4;
+  }
+
   // Remove top border from thead by default
   > caption + thead,
   > colgroup + thead,

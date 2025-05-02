@@ -26,7 +26,7 @@ $checkbox-margin: 7px 2px 7px 0px;
 
 
 #wrapper, .modal {
-  input[type="text"],
+  input[type="text"]:not(.filename),
   input[type="password"],
   input[type="date"],
   input[type="file"],
@@ -50,11 +50,6 @@ $checkbox-margin: 7px 2px 7px 0px;
     &:focus,
     &:active {
       border-color: $color-input-border-focus !important;
-    }
-
-    &.filename {
-      box-shadow: none;
-      padding-left: 20px;
     }
 
     &:disabled {

@@ -8,20 +8,26 @@
 
   & > p {
     background-color: $color-note-title-bg;
+    border-radius: 4px;
+    margin: 0;
     padding: $note-title-padding;
     a[href*="activity"][data-absolute-date*=":"] {
       box-shadow: none;
       padding: 0;
     }
   }
+
+  div.reaction {
+    margin: 0;
+    padding: $note-title-padding;
+  }
 }
 
 #replies {
   background-color: $color-history-bg;
-  border-radius: 0px 0px 3px 3px;
+  border-radius: 3px;
   border: 1px solid $color-history-border;
-  padding-top: $histry-padding;
-  padding-left: 10px;
+  padding: $histry-padding;
 
   .message.reply {
     padding: 8px 3px 3px 3px !important;

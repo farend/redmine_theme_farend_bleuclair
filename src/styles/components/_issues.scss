@@ -160,11 +160,12 @@ div#update .jstTabs.tabs li a {
       }
 
       .contextual {
-        padding-right: 10px;
-        padding-top: 5px;
+        padding: $note-title-padding;
+        margin-left: 9px;
 
         .journal-actions, a.journal-link {
           position: relative;
+          vertical-align: middle;
           z-index: 5;
         }
       }

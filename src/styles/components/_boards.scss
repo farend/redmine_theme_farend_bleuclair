@@ -71,11 +71,12 @@
     }
 
     .contextual {
-      padding-right: 10px;
-      padding-top: 5px;
+      padding: $note-title-padding;
+      margin-left: 9px;
 
       a {
         position: relative;
+        vertical-align: middle;
         z-index: 5;
       }
     }
@@ -84,7 +85,7 @@
       padding-left: 32px;
     }
 
-    .contextual + h4 {
+    h4.reply-header {
       left: 20px;
       position: relative;
       margin: $note-title-margin;

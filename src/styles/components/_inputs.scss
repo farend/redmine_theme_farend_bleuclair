@@ -55,6 +55,16 @@ $checkbox-margin: 7px 2px 7px 0px;
     &:disabled {
       background-color: $color-disabled-input-bg;
     }
+
+    // Select box for project selection
+    &#flyout-search {
+      padding-left: 27px;
+    }
+
+    // Quick search box
+    &#q {
+      height: 24px;
+    }
   }
   .select2-container--default .select2-selection--single {
     color: $color-input-text;

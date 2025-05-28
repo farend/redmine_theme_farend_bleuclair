@@ -13,6 +13,10 @@ Redmine用のカスタムテーマです。
 
 [「今日使える明日のRedmine」RedMica](https://www.farend.co.jp/products/redmica/)(Redmine互換のオープンソースソフトウェア)にはBleuclairテーマが標準で入っています。
 
+このテーマは、Redmimeのクラウドサービス [My Redmine](https://hosting.redmine.jp/) のサービス提供用に開発し、OSSとして公開したものです。
+
+[<img src="https://www.farend.co.jp/files/myredmine-logo/hz/myredmine-logo-hz.png" width="250">](https://hosting.redmine.jp/)
+
 ## 画面サンプル
 
 Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook)): https://farend.github.io/redmine_theme_farend_bleuclair

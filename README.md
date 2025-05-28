@@ -14,6 +14,10 @@ The position and color scheme of the menu are close to the default theme, so eve
 
 Bleuclair theme is used as standard for [RedMica - the future Redmine you can get today](https://www.farend.co.jp/products/redmica/) (RedMica is yet another distribution of Redmine)
 
+The theme was originally developed for the cloud-based Redmine service [My Redmine](https://www.redminecloud.net/), and was later released as open source.
+
+[<img src="https://www.farend.co.jp/files/myredmine-logo/hz/myredmine-logo-hz.png" width="250">](https://www.redminecloud.net/)
+
 ## Demo
 
 Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook)): https://farend.github.io/redmine_theme_farend_bleuclair

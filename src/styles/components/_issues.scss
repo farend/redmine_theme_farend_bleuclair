@@ -38,10 +38,18 @@ table.progress {
 
   td {
     height: $progress-height;
-    border-radius: 2px;
 
     &.closed {
       background-color: $color-progress-closed-bg;
+    }
+
+    &:first-child {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    &:last-child {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
     }
   }
 }

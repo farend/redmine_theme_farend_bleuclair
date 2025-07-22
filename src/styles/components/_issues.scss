@@ -103,6 +103,37 @@ div#update .jstTabs.tabs li a {
   border-bottom: 1px solid $color-history-border;
 }
 
+.tabular p {
+  padding-left: 160px;
+
+  .edit_issue & {
+    padding-left: 130px;
+  }
+}
+.edit_issue .tabular .wiki-preview p {padding-left: 0 !important}
+
+.tabular label {
+  margin-left: -160px;
+  width: 150px;
+
+  .edit_issue & {
+    margin-left: -130px;
+    width: 120px;
+  }
+}
+
+fieldset#filters td.values input {
+  height: inherit;
+}
+
+.jstBlock .wiki-preview {
+  border: 1px solid $color-history-border;
+}
+
+.issue-card {
+  background-color: $color-issue-bg;
+}
+
 #history {
   div.tabs {
     margin-bottom: 0px;
@@ -112,20 +143,19 @@ div#update .jstTabs.tabs li a {
       border-bottom: 1px solid $color-history-bg;
     }
   }
+
   .tab-content {
     background-color: $color-history-bg;
-    border-radius: 0px 0px 3px 3px;
-    border-right: 1px solid $color-history-border;
-    border-left: 1px solid $color-history-border;
-    border-bottom: 1px solid $color-history-border;
-    padding-top: $histry-padding;
-    padding-left: 10px;
+    border: 1px solid $color-history-border;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    padding: $histry-padding 8px 0 10px;
+  }
+}
 
-    // Do not show vertical lines connecting history if tab-notes or tab-properties
-    &.discontinuity .journal:after {
-        content: none;
-      }
-
+/* After Redmine 6.0 This is achieved by common styles in _speech_balloon_layout.scss. The :not(.journals) disables the following styles after Redmine 6.0 */
+#history:not(.journals) {
+  .tab-content {
     .journal {
       padding: 8px 3px 3px 3px;
       background-color: $color-history-bg;
@@ -254,35 +284,4 @@ div#update .jstTabs.tabs li a {
       }
     }
   }
-}
-
-.tabular p {
-  padding-left: 160px;
-
-  .edit_issue & {
-    padding-left: 130px;
-  }
-}
-.edit_issue .tabular .wiki-preview p {padding-left: 0 !important}
-
-.tabular label {
-  margin-left: -160px;
-  width: 150px;
-
-  .edit_issue & {
-    margin-left: -130px;
-    width: 120px;
-  }
-}
-
-fieldset#filters td.values input {
-  height: inherit;
-}
-
-.jstBlock .wiki-preview {
-  border: 1px solid $color-history-border;
-}
-
-.issue-card {
-  background-color: $color-issue-bg;
 }

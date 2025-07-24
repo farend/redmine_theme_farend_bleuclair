@@ -1,12 +1,17 @@
 .controller-news.action-show {
-  #content > div.message {
+
+  #edit-news + p + div.wiki, h2 + p + div.wiki, /* For Redmine 6.0 and earlier */
+  #content div.news /* For versions after Redmine 6.0 */ {
+    position: relative;
+    margin-bottom: 10px;
     border-radius: 3px;
     background-color: $color-history-bg;
     border: 1px solid $color-history-border;
     padding: $histry-padding;
   }
 
-  #comments {
+  /* After Redmine 6.0 This is achieved by common styles in _speech_balloon_layout.scss. The :not(.journals) disables the following styles after Redmine 6.0 */
+  #comments:not(.journals) {
     background-color: $color-history-bg;
     border-radius: 0px 0px 3px 3px;
     border: 1px solid $color-history-border;
@@ -62,15 +67,5 @@
         margin-left: 0;
       }
     }
-  }
-
-
-  #edit-news + p + div.wiki, h2 + p + div.wiki {
-    position: relative;
-    background-color: #fff;
-    margin-bottom: 10px;
-    padding: 20px;
-    border-radius: 3px;
-    border: 1px solid #dfe8f1;
   }
 }

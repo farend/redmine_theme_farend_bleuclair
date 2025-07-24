@@ -1,0 +1,123 @@
+#content .journals {
+  .journal {
+    padding: 8px 3px 3px;
+    background-color: $color-history-bg;
+    position: relative;
+    overflow: visible;
+
+    &:before {
+      content: "";
+      width: $timeline-point-size;
+      height: $timeline-point-size;
+      background-color: $color-history-bg;
+      position: absolute;
+      left: 6px;
+      top: 19px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px $color-timeline;
+      z-index: 1;
+    }
+
+    &:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background-color: $color-timeline;
+      position: absolute;
+      left: 9px;
+      top: 0;
+    }
+
+    &:first-of-type:after {
+      top: 19px;
+    }
+
+    &:last-of-type:after {
+      height: 18px;
+    }
+
+    &:first-of-type:last-of-type:after {
+      content: none;
+    }
+  }
+  // Do not show vertical lines connecting history if tab-notes or tab-properties
+  .discontinuity .journal:after {
+    content: none;
+  }
+
+  h4.journal-header {
+    left: 20px;
+    position: relative;
+    margin: $note-title-margin;
+    border: none;
+    font-weight: bold;
+    background-color: $color-note-title-bg;
+    padding: $note-title-padding;
+    border-radius: 4px;
+
+    a[href*="activity"][data-absolute-date*=":"] {
+      box-shadow: none;
+      padding: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 8px;
+      border-width: 7px 10px 7px 0;
+      border-style: solid;
+      border-color: transparent $color-note-title-bg transparent transparent;
+    }
+
+    .gravatar {
+      position: absolute;
+      left: -35px;
+      top: 4px;
+      z-index: 5;
+      margin-left: 0;
+    }
+  }
+
+  div[id^="change-"]:target h4.journal-header,
+  div[id^="note-"]:target h4.journal-header {
+    background: $color-target-bg;
+
+    &:before {
+      border-right-color: $color-target-bg;
+    }
+  }
+
+  ul.journal-details {
+    list-style: none;
+    line-height: 1.5;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    margin-left: -32px;
+
+    li {
+      position: relative;
+
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0.5em;
+        left: -1em;
+        width: 4px;
+        height: 4px;
+        background-color: $color-history-bg;
+        border: 1px solid #888;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  div.journal-content {
+    margin-left: 32px;
+
+    .wiki {
+      margin-left: 0px; // override default Redmine margin
+    }
+  }
+}

@@ -1,6 +1,6 @@
 // forum(board)
 
-.controller-messages.action-show #content > div.message {
+.controller-messages.action-show #content h2 + div.message {
   border-radius: 3px;
   background-color: $color-history-bg;
   border: 1px solid $color-history-border;
@@ -28,7 +28,10 @@
   border-radius: 3px;
   border: 1px solid $color-history-border;
   padding: $histry-padding;
+}
 
+/* After Redmine 6.0 This is achieved by common styles in _speech_balloon_layout.scss. The :not(.journals) disables the following styles after Redmine 6.0 */
+#replies:not(.journals) {
   .message.reply {
     padding: 8px 3px 3px 3px !important;
     background-color: $color-history-bg;

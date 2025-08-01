@@ -7,8 +7,8 @@
 
 Redmine用のカスタムテーマです。
 
-デフォルトのRedmineよりインターフェイスをモダンな見栄えにすることを意識し、青をテーマカラーに寒色系でまとめました。  
-また、日本語環境でも見やすくなるようにフォントサイズや行間などを変更しています。  
+デフォルトのRedmineよりインターフェイスをモダンな見栄えにすることを意識し、青をテーマカラーに寒色系でまとめました。
+また、日本語環境でも見やすくなるようにフォントサイズや行間などを変更しています。
 メニューの位置や配色はデフォルトのテーマに近いので、既存のテーマに慣れ親しんだ方も違和感なくご利用になれます。
 
 [「今日使える明日のRedmine」RedMica](https://www.farend.co.jp/products/redmica/)(Redmine互換のオープンソースソフトウェア)にはBleuclairテーマが標準で入っています。
@@ -28,44 +28,26 @@ Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook))
 
 ### 1: テーマが格納されたディレクトリを作成
 
-**Gitが利用できる環境の場合:**
+[Releases](https://github.com/farend/redmine_theme_farend_bleuclair/releases) より取得してテーマディレクトリに配置してください。テーマ配置後にRedmineの再起動が必要です。
 
-Redmineのインストールディレクトリで以下のコマンドを実行してください。
+Gitコマンドが利用できる場合は、バージョンのタグを指定して直接配置できます。
 
-- Redmine3.4.nより古いバージョンの場合
-```bash
-$ git clone -b redmine3.4 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+```
+$ git clone -b [バージョンのタグ（例: v1.1.0）] > https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
 ```
 
-- Redmine4.0.nの場合
-```bash
-$ git clone -b redmine4.0 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
-```
+Gitコマンドが利用できない場合は、[Releases](https://github.com/farend/redmine_theme_farend_bleuclair/releases) よりzipファイルまたはtar.gzファイルをダウンロードし、展開して配置してください。
 
-- Redmine4.1.nの場合
-```bash
-$ git clone -b redmine4.1 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
-```
+#### Redmine 5.0, 5.1 の場合
 
-- Redmine4.2.nの場合
-```bash
-$ git clone -b redmine4.2 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
-```
+redmine5.1ブランチから取得して配置してください。
 
-- Redmine5.0.n、Redmine5.1.nの場合
+> [!Note]
+> Redmine 5.1 以前のテーマの配置ディレクトリはpublic/themes/bleuclairです。
+
 ```bash
 $ git clone -b redmine5.1 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
 ```
-
-- Redmine6以降、Redmine trunkの場合 ※ インストールディレクトリが変わります
-```bash
-$ git clone https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
-$ # Redmineを再起動するか、rake assets:precompileを実行してください
-```
-
-**Gitが利用できない環境の場合:**
-
-https://github.com/farend/redmine_theme_farend_bleuclair/releases を確認し、利用しているRedmineと互換性のあるバージョンのzipファイルかtar.gzファイルをダウンロード・解凍し、Redmineのpublic/themesディレクトリに配置してください。
 
 ### 2: テーマの設定を変更
 
@@ -85,17 +67,17 @@ $ npm run build
 
 ## LICENSE
 
-GNU GPL v2  
+GNU GPL v2
 https://github.com/farend/redmine_theme_farend_bleuclair/blob/master/LICENSE
 
 ---
 
-Web fonts in [webfonts](src/webfonts) uses the following library:  
-Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com  
+Web fonts in [webfonts](src/webfonts) uses the following library:
+Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
 License - https://fontawesome.com/license/free (Fonts: SIL OFL 1.1 License)
 
-The icon [search.svg](src/images/search.svg) uses svg files from the following library:  
-Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com  
+The icon [search.svg](src/images/search.svg) uses svg files from the following library:
+Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0 License)
 
 ## 著作者

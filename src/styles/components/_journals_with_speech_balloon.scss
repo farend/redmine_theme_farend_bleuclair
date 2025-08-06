@@ -54,6 +54,14 @@
     padding: $note-title-padding;
     border-radius: 4px;
 
+    span.journal-info {
+      font-weight: bold;
+    }
+
+    span.journal-meta .journal-link {
+      color: #169;
+    }
+
     a[href*="activity"][data-absolute-date*=":"] {
       box-shadow: none;
       padding: 0;

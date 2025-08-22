@@ -1,10 +1,13 @@
-.controller-news.action-show {
-  #content div.news {
-    position: relative;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    background-color: $color-history-bg;
-    border: 1px solid $color-history-border;
-    padding: $histry-padding;
+.controller-news.action-show div.news {
+  & > p {
+    margin-top: 0;
   }
+
+  .wiki p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+div#add-news, div#edit-news {
+  margin-bottom: 20px;
 }

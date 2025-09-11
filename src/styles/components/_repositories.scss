@@ -1,4 +1,4 @@
-// forum(board)
+// repository
 
 .controller-repositories.action-revision, .controller-repositories.action-diff {
   #content > div.message {
@@ -8,15 +8,15 @@
     padding: $histry-padding;
   }
 
-  &.avatars-on .details {
+  .details {
     h4 {
-      left: 35px;
       position: relative;
-      margin: $note-title-margin;
       border: none;
       font-weight: bold;
       background-color: $color-note-title-bg;
       padding: $note-title-padding;
+      margin-left: 40px;
+      margin-right: 5px;
       border-radius: 4px;
 
       a[href*="activity"][data-absolute-date*=":"] {
@@ -36,27 +36,11 @@
         border-right: 6px solid $color-note-title-bg;
       }
 
-      .gravatar {
+      .avatar {
         position: absolute;
         left: -35px;
         z-index: 5;
         margin-left: 0;
-      }
-    }
-  }
-
-  &.avatars-off .details {
-    h4 {
-      margin: $note-title-margin;
-      border: none;
-      font-weight: bold;
-      background-color: $color-note-title-bg;
-      padding: $note-title-padding;
-      border-radius: 4px;
-
-      a[href*="activity"][data-absolute-date*=":"] {
-        box-shadow: none;
-        padding: 0;
       }
     }
   }

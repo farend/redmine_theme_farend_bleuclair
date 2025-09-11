@@ -5,19 +5,6 @@
     position: relative;
     overflow: visible;
 
-    &:before {
-      content: "";
-      width: $timeline-point-size;
-      height: $timeline-point-size;
-      background-color: $color-history-bg;
-      position: absolute;
-      left: 6px;
-      top: 19px;
-      border-radius: 50%;
-      box-shadow: 0 0 0 3px $color-timeline;
-      z-index: 1;
-    }
-
     &:after {
       content: "";
       height: 100%;
@@ -56,6 +43,14 @@
 
     span.journal-info {
       font-weight: bold;
+
+      .avatar {
+        position: absolute;
+        left: -35px;
+        top: 4px;
+        z-index: 5;
+        margin-left: 0;
+      }
     }
 
     span.journal-meta .journal-link {
@@ -75,14 +70,6 @@
       border-width: 7px 10px 7px 0;
       border-style: solid;
       border-color: transparent $color-note-title-bg transparent transparent;
-    }
-
-    .gravatar {
-      position: absolute;
-      left: -35px;
-      top: 4px;
-      z-index: 5;
-      margin-left: 0;
     }
   }
 

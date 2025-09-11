@@ -10,13 +10,13 @@
 
   .details {
     h4 {
-      left: 35px;
       position: relative;
-      margin: $note-title-margin;
       border: none;
       font-weight: bold;
       background-color: $color-note-title-bg;
       padding: $note-title-padding;
+      margin-left: 40px;
+      margin-right: 5px;
       border-radius: 4px;
 
       a[href*="activity"][data-absolute-date*=":"] {

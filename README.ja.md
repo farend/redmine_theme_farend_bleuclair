@@ -40,10 +40,10 @@ Gitコマンドが利用できない場合は、[Releases](https://github.com/fa
 
 #### Redmine 6.0 の場合
 
-redmine5.1タグから取得して `themes/bleuclair` ディレクトリに配置してください。
+`redmine6.0`タグから取得して `themes/bleuclair` ディレクトリに配置してください。
 
 ```bash
-$ git clone -b redmine6.0 https://github.com/farend/redmine_theme_farend_bleuclair.git public/themes/bleuclair
+$ git clone -b redmine6.0 https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
 ```
 
 #### Redmine 5.0, 5.1 の場合

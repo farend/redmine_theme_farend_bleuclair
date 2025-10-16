@@ -41,7 +41,7 @@ If you cannot use Git, download the zip or tar.gz file from [Releases](https://g
 
 #### For Redmine 6.0
 
-Clone from the `redmine6.1` tag and place it in the `themes/bleuclair` directory.
+Clone from the `redmine6.0` tag and place it in the `themes/bleuclair` directory.
 
 ```bash
 $ git clone -b redmine6.0 https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair

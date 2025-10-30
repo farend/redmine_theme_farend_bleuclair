@@ -5,7 +5,7 @@ $line-height-computed:    25px;
 $color-table-border:      #dfe8f1;
 $color-th-bg:             #eff1f9;
 $color-odd-bg:            #f9f9f9;
-
+$color-badge-count:       #9DB9D5;
 
 table.list {
   border: none;
@@ -93,5 +93,9 @@ table.list {
 
   td.attachments {
     padding-bottom: 5px;
+  }
+
+  .badge-count {
+    background-color: $color-badge-count;
   }
 }

@@ -1,0 +1,47 @@
+/* Override --oc-blue-7 only to maintain visual consistency with the Bleuclair theme */
+$color-selected-line-bg: #507aaa;
+$color-context-menu-border: #628db6;
+$color-pagination-current: #628db6;
+$color-hovered-option-bg: #759FCF;
+$color-selected-gantt-bar-bg: rgba(80, 122, 170, 0.48);
+
+body .context-menu-selection {
+  background-color: $color-selected-line-bg !important;
+
+  &:hover {
+    background-color: $color-selected-line-bg !important;
+  }
+}
+
+.contextual .drdn-items > a:hover,
+.journal-actions .drdn-items > a:hover {
+  border: 1px solid $color-context-menu-border;
+}
+
+.pagination ul.pages li.current {
+  background-color: $color-pagination-current;
+  border-color: $color-pagination-current;
+}
+
+#project-jump .drdn-items > a:hover {
+  background-color: $color-hovered-option-bg;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border-color: $color-hovered-option-bg;
+  background: $color-hovered-option-bg;
+}
+
+.tribute-container li.highlight {
+  background-color: $color-hovered-option-bg;
+}
+
+div#gantt_area .context-menu-selection {
+  background-color: $color-selected-gantt-bar-bg !important;
+
+  &:hover {
+    background-color: $color-selected-gantt-bar-bg !important;
+  }
+}

@@ -34,14 +34,22 @@ Download the theme from [Releases](https://github.com/farend/redmine_theme_faren
 If you can use Git, you can clone the repository directly by specifying the version tag.
 
 ```
-$ git clone -b [version tag (e.g. v1.1.0)] https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
+$ git clone -b [version tag (e.g. v2.0.0)] https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
 ```
 
 If you cannot use Git, download the zip or tar.gz file from [Releases](https://github.com/farend/redmine_theme_farend_bleuclair/releases), extract it, and place it in the theme directory.
 
+#### For Redmine 6.0
+
+Clone from the `redmine6.0` tag and place it in the `themes/bleuclair` directory.
+
+```bash
+$ git clone -b redmine6.0 https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
+```
+
 #### For Redmine 5.0, 5.1
 
-Clone from the `redmine5.1` branch and place it in the directory.
+Clone from the `redmine5.1` tag and place it in the directory.
 
 > [!Note]
 > For Redmine 5.1 and earlier, the theme directory is `public/themes/bleuclair`.

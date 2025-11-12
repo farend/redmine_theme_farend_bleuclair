@@ -33,14 +33,22 @@ Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook))
 Gitコマンドが利用できる場合は、バージョンのタグを指定して直接配置できます。
 
 ```
-$ git clone -b [バージョンのタグ（例: v1.1.0）] > https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
+$ git clone -b [バージョンのタグ（例: v2.0.0）] > https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
 ```
 
 Gitコマンドが利用できない場合は、[Releases](https://github.com/farend/redmine_theme_farend_bleuclair/releases) よりzipファイルまたはtar.gzファイルをダウンロードし、展開して配置してください。
 
+#### Redmine 6.0 の場合
+
+`redmine6.0`タグから取得して `themes/bleuclair` ディレクトリに配置してください。
+
+```bash
+$ git clone -b redmine6.0 https://github.com/farend/redmine_theme_farend_bleuclair.git themes/bleuclair
+```
+
 #### Redmine 5.0, 5.1 の場合
 
-redmine5.1ブランチから取得して配置してください。
+redmine5.1タグから取得して配置してください。
 
 > [!Note]
 > Redmine 5.1 以前のテーマの配置ディレクトリはpublic/themes/bleuclairです。

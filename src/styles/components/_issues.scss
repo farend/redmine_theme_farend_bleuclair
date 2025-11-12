@@ -2,6 +2,7 @@ $issue-padding: 20px;
 
 $progress-height: 0.6em;
 $color-progress-closed-bg: #4DB6AC;
+$color-progress-done-bg: #D3EDD3;
 
 $histry-padding: 15px;
 $color-history-bg: #ffffff;
@@ -41,6 +42,10 @@ table.progress {
 
     &.closed {
       background-color: $color-progress-closed-bg;
+    }
+
+    &.done {
+      background-color: $color-progress-done-bg;
     }
 
     &:first-child {

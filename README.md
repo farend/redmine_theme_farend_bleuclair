@@ -12,8 +12,6 @@ Custom theme for Redmine.
 I created a theme using Cool Colors with an awareness of making the interface look more modern than the default Redmine.
 The position and color scheme of the menu are close to the default theme, so even those who are familiar with existing themes can use it without any discomfort.
 
-Bleuclair theme is used as standard for [RedMica - the future Redmine you can get today](https://www.farend.co.jp/products/redmica/) (RedMica is yet another distribution of Redmine)
-
 The theme was originally developed for the cloud-based Redmine service [My Redmine](https://www.redminecloud.net/), and was later released as open source.
 
 [<img src="https://www.farend.co.jp/files/myredmine-logo/hz/myredmine-logo-hz.png" width="250">](https://www.redminecloud.net/)

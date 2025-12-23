@@ -11,8 +11,6 @@ Redmine用のカスタムテーマです。
 また、日本語環境でも見やすくなるようにフォントサイズや行間などを変更しています。
 メニューの位置や配色はデフォルトのテーマに近いので、既存のテーマに慣れ親しんだ方も違和感なくご利用になれます。
 
-[「今日使える明日のRedmine」RedMica](https://www.farend.co.jp/products/redmica/)(Redmine互換のオープンソースソフトウェア)にはBleuclairテーマが標準で入っています。
-
 このテーマは、Redmimeのクラウドサービス [My Redmine](https://hosting.redmine.jp/) のサービス提供用に開発し、OSSとして公開したものです。
 
 [<img src="https://www.farend.co.jp/files/myredmine-logo/hz/myredmine-logo-hz.png" width="250">](https://hosting.redmine.jp/)

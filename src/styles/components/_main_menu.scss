@@ -12,6 +12,7 @@ $color-menu-children-hover-text: #2b2f33;
       margin: 0;
 
       a {
+        color: #fff;
         padding: 8px 12px;
         letter-spacing: 0.5px;
         font-weight: normal;
@@ -37,9 +38,10 @@ $color-menu-children-hover-text: #2b2f33;
           color: white;
         }
 
-        &.new-object {
-          background: rgba(255,255,255,.05);
-          border: 2px solid rgba(255,255,255,.25);
+        &#new-object {
+          background: rgba(255, 255, 255,.05);
+          border: 2px solid rgba(255, 255, 255,.25);
+          color: #fff;
           position: relative;
           margin: 0 10px;
           padding: 0;
@@ -80,6 +82,59 @@ $color-menu-children-hover-text: #2b2f33;
             color: $color-menu-children-hover-text;
             background: $color-menu-children-hover-bg;
           }
+        }
+      }
+    }
+  }
+}
+
+// Keep Bleuclair's original "module menu on header" appearance after Redmine 7's header redesign (https://www.redmine.org/issues/43937).
+#main-menu {
+  background: initial;
+  padding: 0;
+  inset-inline-start: 14px;
+
+  li:has(a#new-object) {
+    padding-inline-end: 0;
+  }
+
+  li a {
+    border-start-start-radius: 3px;
+    border-start-end-radius: 3px;
+    line-height: initial;
+  }
+
+  .menu-children li a {
+    padding: 8px 12px;
+  }
+
+  .tabs-buttons {
+    inset-inline-end: -3px;
+    inset-block-start: auto;
+    inset-block-end: 0;
+    transform: none;
+  }
+}
+
+body.has-main-menu {
+  #header {
+    padding-block-end: 10px;
+
+    h1 {
+      font-size: 1.4375rem;
+      min-block-size: 0;
+      display: block;
+    }
+
+    #quick-search {
+      min-block-size: 0;
+      gap: 0px;
+
+      form {
+        margin-inline-end: 3px;
+
+        label {
+          margin-inline-end: 0px;
         }
       }
     }

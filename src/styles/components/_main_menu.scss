@@ -116,7 +116,10 @@ $color-menu-children-hover-text: #2b2f33;
   }
 }
 
-body.has-main-menu {
+body {
+  &.has-main-menu #header {
+    padding-block-end: 10px;
+  }
   #header {
     padding-block-end: 10px;
 
@@ -124,6 +127,7 @@ body.has-main-menu {
       font-size: 1.4375rem;
       min-block-size: 0;
       display: block;
+      padding-bottom: 25px;
     }
 
     #quick-search {

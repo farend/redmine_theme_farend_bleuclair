@@ -207,7 +207,7 @@ $checkbox-margin: 7px 2px 7px 0px;
     box-shadow: none;
   }
 
-  .pagination ul.pages li {
+  .pagination:not(.contextual.next-prev-links .pagination) ul.pages li {
     &.page,
     &.previous,
     &.next {

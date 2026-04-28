@@ -18,9 +18,8 @@ body .context-menu-selection {
   border: 1px solid $color-context-menu-border;
 }
 
-.pagination ul.pages li.current {
+#wrapper .pagination:not(.contextual.next-prev-links .pagination) ul.pages li.current {
   background-color: $color-pagination-current;
-  border-color: $color-pagination-current;
 }
 
 #project-jump .drdn-items > a:hover {

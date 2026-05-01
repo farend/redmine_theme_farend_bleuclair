@@ -44,3 +44,7 @@ div#gantt_area .context-menu-selection {
     background-color: $color-selected-gantt-bar-bg !important;
   }
 }
+
+#sidebar a.selected,
+#sidebar a.selected:hover { background-color: #1864ab99; color: #fff; box-shadow: none; border-radius: 3px; }
+#sidebar a.selected svg.icon-svg { stroke: #fff !important; }

@@ -18,9 +18,8 @@ body .context-menu-selection {
   border: 1px solid $color-context-menu-border;
 }
 
-.pagination ul.pages li.current {
+#wrapper .pagination:not(.contextual.next-prev-links .pagination) ul.pages li.current {
   background-color: $color-pagination-current;
-  border-color: $color-pagination-current;
 }
 
 #project-jump .drdn-items > a:hover {
@@ -45,3 +44,7 @@ div#gantt_area .context-menu-selection {
     background-color: $color-selected-gantt-bar-bg !important;
   }
 }
+
+#sidebar a.selected,
+#sidebar a.selected:hover { background-color: #1864ab99; color: #fff; box-shadow: none; border-radius: 3px; }
+#sidebar a.selected svg.icon-svg { stroke: #fff !important; }

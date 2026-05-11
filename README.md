@@ -72,6 +72,17 @@ $ # debug
 $ npm run build
 ```
 
+## Releasing
+
+The `master` branch is used for development, and the `stable` branch is used for releases.
+
+1. Ensure all tests pass
+2. Create a pull request targeting `stable`
+3. Review and approve the pull request
+4. Merge the approved pull request into `stable`
+5. Ensure all tests pass on `stable`
+6. Create a tag on `stable`, then create a release from that tag
+
 ## LICENSE
 
 GNU GPL v2

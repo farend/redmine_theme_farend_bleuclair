@@ -16,6 +16,10 @@ The theme was originally developed for the cloud-based Redmine service [My Redmi
 
 [<img src="https://www.farend.co.jp/files/myredmine-logo/hz/myredmine-logo-hz.png" width="250">](https://www.redminecloud.net/)
 
+## Compatibility
+
+* Tested and working in Redmine 4.0.7-stable with Debian 10
+
 ## Demo
 
 Storybook([redmine-theme/storybook](https://github.com/redmine-theme/storybook)): https://farend.github.io/redmine_theme_farend_bleuclair
